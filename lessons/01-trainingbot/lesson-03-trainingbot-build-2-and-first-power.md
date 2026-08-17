@@ -1,7 +1,7 @@
 # Lesson 03 — TrainingBot Build II and First Power-On
 
 ## Course position
-Week 2 · Build Foundations
+Weeks 5–6 · VEX V5 Foundations and TrainingBot
 
 ## Learning objectives
 Students will be able to:
