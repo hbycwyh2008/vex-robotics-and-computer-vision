@@ -1,7 +1,7 @@
 # Lesson 09 — Distance Sensor: Obstacle Response
 
 ## Course position
-Week 6 · Sensors and Autonomous Control
+Weeks 14–15 · Sensors and Autonomous Control
 
 ## Learning objectives
 Students will be able to configure and read a VEX Distance Sensor, collect repeated measurements, implement a simple stop response, diagnose sensing versus control issues, and evaluate reliability through trials.
