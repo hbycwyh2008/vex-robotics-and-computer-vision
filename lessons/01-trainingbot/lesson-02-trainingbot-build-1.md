@@ -1,7 +1,7 @@
 # Lesson 02 — TrainingBot Build I: Chassis and Drivetrain
 
 ## Course position
-Week 1–2 · Build Foundations
+Weeks 3–4 · VEX V5 Foundations and TrainingBot
 
 ## Learning objectives
 Students will be able to:
