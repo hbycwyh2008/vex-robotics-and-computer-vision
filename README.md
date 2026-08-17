@@ -84,7 +84,7 @@ Full detail: [pacing-guide.md](pacing-guide.md)
 
 ## Ready-to-Teach Lesson Anchors
 
-The repository currently contains **26 anchor lessons** spanning the full 36-week course. These are not 26 total class periods; long build/project lessons intentionally span multiple meetings, with practice, debugging, assessment and iteration days between anchors.
+The repository contains **26 anchor lessons** spanning the full 36-week course. These are not 26 total class periods; long build/project lessons intentionally span multiple meetings, with practice, debugging, assessment and iteration days between anchors.
 
 Start here: **[lessons/README.md](lessons/README.md)**
 
@@ -130,6 +130,20 @@ Start here: **[lessons/README.md](lessons/README.md)**
 - [Lesson 25 — Capstone Build, Integrate and Test](lessons/07-capstone/lesson-25-capstone-build-integrate-test.md)
 - [Lesson 26 — Final Validation, Showcase and Engineering Defense](lessons/07-capstone/lesson-26-final-validation-showcase-and-defense.md)
 
+## Classroom Execution Resources
+
+The lesson sequence is supported by materials that can be used directly during class:
+
+- [VEXcode V5 Python classroom examples](examples/vexcode-python/README.md) — small device-configuration-aware programming patterns rather than unexplained full solutions
+- [Driver Control Test Sheet](student-handouts/driver-control-test-sheet.md) — baseline trials, diagnosis and controlled iteration
+- [Sensor & Autonomous Test Sheet](student-handouts/sensor-autonomy-test-sheet.md) — raw measurements, threshold justification and 10-trial reliability testing
+- [Engineering Notebook Guide](student-handouts/engineering-notebook-guide.md)
+- [Robot Debugging Checklist](student-handouts/robot-debugging-checklist.md)
+- [AI Use Policy](student-handouts/ai-use-policy.md)
+- [Teacher Demonstration Playbook](teacher-notes/demo-playbook.md) — short predict/show/observe/explain demos for major concepts
+- [Hardware Preparation Checklist](teacher-notes/hardware-preparation-checklist.md)
+- [Advanced Competition Extension Track](extensions/competition-track.md) — optional work for teams that master the core sequence early
+
 ## Major Performance Milestones
 
 1. **TrainingBot Build & First Drive** — reliable hardware baseline
@@ -169,17 +183,13 @@ vex-robotics-and-computer-vision/
 ├── assessment-plan.md
 ├── portfolio-requirements.md
 ├── resources.md
-├── lesson-template.md
-├── project-template.md
 ├── lessons/
-│   ├── 00-getting-started/
-│   ├── 01-trainingbot/
-│   ├── 02-driver-control/
-│   ├── 03-sensors-autonomy/
-│   ├── 04-engineering-design/
-│   ├── 05-computer-vision/
-│   ├── 06-ai-robotics-integration/
-│   └── 07-capstone/
+├── examples/
+├── student-handouts/
+├── teacher-notes/
+├── assessments/
+├── rubrics/
+├── extensions/
 └── public-documents/
 ```
 
