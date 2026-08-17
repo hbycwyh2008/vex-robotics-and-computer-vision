@@ -1,7 +1,7 @@
 # Lesson 07 — Driver Control Engineering Challenge
 
 ## Course position
-Week 4–5 · Driver Control
+Weeks 11–12 · Driver Control and Robot Motion Programming
 
 ## Learning objectives
 Students will be able to:
