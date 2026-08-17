@@ -1,7 +1,7 @@
 # Lesson 04 — VEXcode and Device Configuration
 
 ## Course position
-Week 3 · Programming Foundations
+Weeks 7–8 · Driver Control and Robot Motion Programming
 
 ## Learning objectives
 Students will be able to:
