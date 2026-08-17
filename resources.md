@@ -1,59 +1,100 @@
 # Resources
 
-Curated resources for students and teachers. Where an official link should be added by the teacher (to ensure it is current and reliable), the placeholder `[Add official resource link here]` is used. **Do not give students unverified links.**
+Curated classroom resources for the **VEX V5 Competition Starter Kit**, VEXcode, engineering design, and introductory computer vision. Prefer official documentation for student-facing technical instructions.
 
 ---
 
-## VEX Official Documentation
+## Start Here — VEX V5 Competition Kit
 
-- VEX Robotics official site — [Add official resource link here]
-- VEX V5 product and hardware documentation — [Add official resource link here]
-- VEX IQ product and hardware documentation — [Add official resource link here]
-- VEX Library / knowledge base — [Add official resource link here]
+### Official first robot: TrainingBot
 
-> Teacher note: Use the official VEX documentation that matches your kit (V5 or IQ).
+- **Team Freeze Tag STEM Lab:** https://education.vex.com/stemlabs/v5/team-freeze-tag
+- **Lesson 1 — Build TrainingBot:** https://education.vex.com/stemlabs/v5/team-freeze-tag/lesson-1-introduction/build
+  - Select **3D Build Instructions — Competition Kits**.
+- **V5 Build Instructions:** https://www.vexrobotics.com/v5/downloads/build-instructions
 
-## VEXcode Resources
+TrainingBot is the standard starting platform for this course. Students should first learn correct construction, wiring, controller use, testing, and maintenance before moving to custom mechanisms.
 
-- VEXcode download page — [Add official resource link here]
-- VEXcode V5 / IQ getting started — [Add official resource link here]
-- VEXcode API reference (blocks / text) — [Add official resource link here]
-- VEXcode example projects — [Add official resource link here]
+## VEX V5 Official Documentation
 
-## OpenCV Documentation
+- VEX Robotics: https://www.vexrobotics.com/
+- VEX V5 Knowledge Base: https://kb.vex.com/hc/en-us/categories/360002333191-V5
+- Understanding and Using V5 Tools: https://kb.vex.com/hc/en-us/articles/13078845924884-Understanding-and-Using-V5-Tools
+- V5 Fasteners: https://kb.vex.com/hc/en-us/articles/360035952791-Using-V5-Fasteners
+- V5 Build Instructions: https://www.vexrobotics.com/v5/downloads/build-instructions
 
-- OpenCV official documentation — [Add official resource link here]
-- OpenCV-Python tutorials — [Add official resource link here]
-- OpenCV color space (HSV) reference — [Add official resource link here]
-- OpenCV contour detection reference — [Add official resource link here]
+## VEXcode V5
 
-## Beginner Computer Vision Tutorials
+- VEXcode V5 web app: https://codev5.vex.com/
+- VEXcode downloads: https://www.vexrobotics.com/vexcode/install/v5
+- VEXcode V5 Knowledge Base: https://kb.vex.com/hc/en-us/categories/360002333191-V5
+- VEX Education STEM Labs: https://education.vex.com/stemlabs/v5
 
-- Introduction to images as arrays of pixels — [Add official resource link here]
-- Thresholding and masking basics — [Add official resource link here]
-- Finding and drawing contours — [Add official resource link here]
+### Programming pathway used in this course
 
-> Teacher note: Verify any third-party tutorial before sharing. Prefer official OpenCV docs where possible.
+1. Configure drivetrain and devices correctly.
+2. Test controller driving.
+3. Program basic forward/reverse/turn movement.
+4. Use functions and loops to reduce repeated code.
+5. Read sensor values.
+6. Use conditionals to create autonomous behavior.
+7. Connect perception results to decisions and robot actions.
 
-## Robotics Engineering Design Resources
+## Engineering Design and Competition Context
 
-- Engineering design process overview — [Add official resource link here]
-- VEX competition resources and game manuals — [Add official resource link here]
-- Engineering notebook guidance — [Add official resource link here]
+- VEX Robotics Competition: https://www.vexrobotics.com/v5/competition/vrc-current-game
+- VEX Competition resources: https://www.vexrobotics.com/competition
+- VEX Education: https://education.vex.com/
 
-## GitHub / Markdown Resources
+Competition-style challenges are used as engineering contexts. The course does not require students to enter an official competition.
 
-- GitHub documentation / GitHub Skills — [Add official resource link here]
-- Markdown basic syntax guide — [Add official resource link here]
-- Writing a good README — [Add official resource link here]
+## OpenCV / Computer Vision
+
+- OpenCV official documentation: https://docs.opencv.org/
+- OpenCV-Python tutorials: https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html
+- Changing color spaces / HSV: https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html
+- Image thresholding: https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html
+- Contours: https://docs.opencv.org/4.x/d4/d73/tutorial_py_contours_begin.html
+
+### Computer vision learning sequence
+
+1. Images as arrays of pixels
+2. BGR/RGB and HSV color spaces
+3. Thresholding and masks
+4. Morphological cleanup
+5. Contours and bounding boxes
+6. Centroid / target position
+7. Perception → decision → action
+8. Testing under changing lighting, distance, background, and occlusion
+
+## GitHub / Markdown
+
+- GitHub Docs: https://docs.github.com/
+- GitHub Skills: https://skills.github.com/
+- Markdown basic syntax: https://www.markdownguide.org/basic-syntax/
 
 ## AI Literacy Connections
 
-This course treats computer vision as an **AI application**: a camera perceives, the program decides, the robot acts. These connections help students think about AI responsibly without deep ML math.
+This course treats computer vision and sensor fusion as practical **AI application thinking**:
 
-- What "perception" means for an AI system, and why it has limits.
-- Why a vision system can be confidently wrong (lighting, occlusion, color shifts).
-- Responsible use of AI coding assistants: disclose, understand, and test.
-- General AI literacy foundations — [Add official resource link here]
+> **Perceive → Decide → Act → Test → Improve**
 
-> Teacher note: Keep AI discussion grounded in the robot's actual behavior. Ask "what did the robot *see*, and why did it decide that?" rather than introducing model training.
+Students should be able to explain:
+
+- what information the robot actually receives from sensors or a camera;
+- how code converts observations into decisions;
+- why a vision system can fail because of lighting, occlusion, calibration, background, or ambiguous inputs;
+- why testing across conditions matters;
+- when AI/coding assistants are useful and when their output must be checked;
+- how to disclose and explain AI-assisted work.
+
+AI tools may assist learning and debugging, but students remain responsible for understanding, testing, and defending the code and engineering decisions they submit.
+
+## Teacher Verification Rule
+
+Before assigning any external resource:
+
+1. verify that the page still exists;
+2. confirm that it matches **VEX V5**, not VEX IQ or another platform;
+3. confirm that build instructions match the **Competition Kit** when a kit-specific version is offered;
+4. preview third-party content before sharing it with students.
