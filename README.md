@@ -1,78 +1,132 @@
-# VEX Robotics and Computer Vision
+# VEX Robotics, AI Vision, and Intelligent Control
 
-A project-based high school course where students build, program, and debug real robots — then teach those robots to *see* using introductory computer vision. The course connects hands-on robotics engineering with AI application thinking, without turning into a deep machine learning course.
+A **36-week, project-based high school robotics course** built around the **VEX V5 Competition Starter Kit**. Students build and maintain real robots, program driver-controlled and autonomous behavior, solve engineering challenges, and then extend their systems with **OpenCV / AI vision**.
 
-> Students don't just learn about robots and AI. They **build robots, program behavior, and make a robot act on what a camera sees.**
+> Students do not just learn *about* robotics and AI. They **build, program, test, debug, redesign, and defend intelligent robotic systems.**
 
----
+## Course Format
 
-## Course Purpose
+- **Length:** approximately 36 instructional weeks
+- **Meetings:** 2–3 classes per week (approximately 72–108 periods)
+- **Hardware:** VEX V5 Competition Starter Kit
+- **First official build:** TrainingBot — Competition Kit
+- **Programming:** VEXcode V5 + Python where appropriate
+- **AI / Vision:** Python + OpenCV
+- **Method:** project-based engineering, build–test–debug–iterate
+- **Evidence:** engineering notebook + GitHub/Markdown portfolio
 
-Give students a practical, portfolio-ready pathway through:
+## Core Learning Path
 
-- Robot building, wiring, and the build–test–debug cycle
-- Programming robot motion, functions, and driver control
-- Sensors and autonomous decision making
-- The engineering design process and robot challenges
-- Computer vision foundations with OpenCV
-- Vision-based robot decision making
-- Documentation, GitHub/Markdown portfolios, and final presentations
+```text
+V5 hardware & safety
+        ↓
+TrainingBot — Competition Kit
+        ↓
+Controller driving + VEXcode
+        ↓
+Robot motion + modular programming
+        ↓
+Sensors + autonomous control
+        ↓
+Mechanisms + engineering challenges
+        ↓
+OpenCV / computer vision
+        ↓
+Perception → Decision → Action
+        ↓
+Integrated robotics + AI vision capstone
+```
 
-## Target Students
+## What Students Learn
 
-High school students in a CS / AI pathway. No robotics experience required. Some prior programming exposure is helpful but not required — programming concepts are taught with Python-style pseudocode and VEXcode.
+### Robotics Engineering
 
-## Course Outcomes
+- VEX V5 structural components, fasteners, shafts, bearings, motors, Brain, battery, controller, and sensors
+- Reliable drivetrain construction, wiring, maintenance, and troubleshooting
+- Mechanisms, gear ratios, speed/torque trade-offs, iteration, and engineering constraints
 
-By the end of the course, students can:
+### Programming and Control
 
-1. Build and wire a working VEX robot and keep an engineering notebook.
-2. Program robot motion using functions and modular code.
-3. Use sensors to make a robot act autonomously.
-4. Apply the engineering design cycle to a robot challenge.
-5. Process images with OpenCV (color, thresholding, contours).
-6. Connect a vision result to a robot decision.
-7. Document work in a GitHub/Markdown portfolio and present a final project.
+- VEXcode V5
+- Python-style computational thinking and modular programming
+- Sequences, variables, functions, loops, conditionals
+- Driver control and autonomous routines
+- Sensor input, motor encoders, calibration, and feedback
 
----
+### AI Vision
 
-## Course Map
+- Images and pixels
+- RGB/BGR and HSV color spaces
+- Thresholding and masks
+- Contours, bounding boxes, and target position
+- Vision-system testing and failure analysis
+- Connecting perception to robot decisions and actions
 
-### Unit Map
+### Engineering Practice
+
+- Build → test → debug → redesign
+- Engineering notebook evidence
+- Team roles and technical communication
+- Competition-style challenges
+- Responsible use of AI coding tools
+- Portfolio and final technical presentation
+
+## 36-Week Course Map
+
+| Weeks | Phase | Focus |
+|---|---|---|
+| 1–6 | Foundations | Safety, V5 hardware, parts management, official TrainingBot build |
+| 7–12 | Programming | Driver control, VEXcode/Python, programmed movement |
+| 13–18 | Autonomy | Sensors, conditionals, calibration, autonomous behavior |
+| 19–24 | Engineering | Mechanisms, design process, competition-style robot challenges |
+| 25–30 | AI Vision | OpenCV, HSV, masks, contours, object position |
+| 31–33 | Intelligent Control | Vision → decision → robot action, robustness and limitations |
+| 34–36 | Capstone | Integrated build, testing, demo, engineering defense |
+
+Full detail: [pacing-guide.md](pacing-guide.md)
+
+## Unit Map
 
 | Unit | Title | Focus |
 |---|---|---|
 | [00](units/Unit%2000%20-%20Course%20Onboarding%20and%20Safety/unit-overview.md) | Course Onboarding and Safety | Safety, teams, notebook, GitHub |
-| [01](units/Unit%2001%20-%20VEX%20Robotics%20Foundations/unit-overview.md) | VEX Robotics Foundations | Components, drivetrain, build cycle |
-| [02](units/Unit%2002%20-%20Programming%20Robot%20Motion/unit-overview.md) | Programming Robot Motion | Movement, functions, driver control |
-| [03](units/Unit%2003%20-%20Sensors%20and%20Autonomous%20Control/unit-overview.md) | Sensors and Autonomous Control | Sensors, autonomy, calibration |
-| [04](units/Unit%2004%20-%20Engineering%20Design%20and%20Robot%20Challenges/unit-overview.md) | Engineering Design and Robot Challenges | Design cycle, strategy, iteration |
-| [05](units/Unit%2005%20-%20Computer%20Vision%20Foundations/unit-overview.md) | Computer Vision Foundations | Pixels, HSV, contours |
-| [06](units/Unit%2006%20-%20Vision-Based%20Robot%20Decision%20Making/unit-overview.md) | Vision-Based Robot Decision Making | Vision → action, tracking, limits |
-| [07](units/Unit%2007%20-%20Integrated%20Robotics%20and%20Vision%20Project/unit-overview.md) | Integrated Robotics and Vision Project | Final integrated project |
+| [01](units/Unit%2001%20-%20VEX%20Robotics%20Foundations/unit-overview.md) | VEX V5 Foundations and TrainingBot | Competition Kit components, drivetrain, build cycle |
+| [02](units/Unit%2002%20-%20Programming%20Robot%20Motion/unit-overview.md) | Driver Control and Robot Motion | Movement, functions, controller programming |
+| [03](units/Unit%2003%20-%20Sensors%20and%20Autonomous%20Control/unit-overview.md) | Sensors and Autonomous Control | Sensors, feedback, autonomy, calibration |
+| [04](units/Unit%2004%20-%20Engineering%20Design%20and%20Robot%20Challenges/unit-overview.md) | Engineering Design and Robot Challenges | Mechanisms, strategy, iteration |
+| [05](units/Unit%2005%20-%20Computer%20Vision%20Foundations/unit-overview.md) | Computer Vision Foundations | Pixels, HSV, masks, contours |
+| [06](units/Unit%2006%20-%20Vision-Based%20Robot%20Decision%20Making/unit-overview.md) | AI Vision and Robot Decision Making | Perception → decision → action |
+| [07](units/Unit%2007%20-%20Integrated%20Robotics%20and%20Vision%20Project/unit-overview.md) | Integrated Robotics + Vision Capstone | Final intelligent robotics project |
 
-### Project Map
+## Major Projects
 
-| Project | Title | Unit Link |
-|---|---|---|
-| [01](projects/project-01-basic-driving-robot.md) | Basic Driving Robot | Unit 02 |
-| [02](projects/project-02-sensor-based-autonomous-robot.md) | Sensor-Based Autonomous Robot | Unit 03 |
-| [03](projects/project-03-robot-challenge-design.md) | Robot Challenge Design | Unit 04 |
-| [04](projects/project-04-color-object-detection-with-opencv.md) | Color Object Detection with OpenCV | Unit 05 |
-| [05](projects/project-05-vision-guided-robot-decision-system.md) | Vision-Guided Robot Decision System | Unit 06 |
-| [Final](projects/final-project-integrated-robotics-and-vision.md) | Integrated Robotics and Vision | Unit 07 |
+1. **TrainingBot Build & Driver Challenge**
+2. [Project 01 — Basic Driving Robot](projects/project-01-basic-driving-robot.md)
+3. [Project 02 — Sensor-Based Autonomous Robot](projects/project-02-sensor-based-autonomous-robot.md)
+4. [Project 03 — Robot Challenge Design](projects/project-03-robot-challenge-design.md)
+5. [Project 04 — Color Object Detection with OpenCV](projects/project-04-color-object-detection-with-opencv.md)
+6. [Project 05 — Vision-Guided Robot Decision System](projects/project-05-vision-guided-robot-decision-system.md)
+7. [Final — Integrated Robotics and Vision](projects/final-project-integrated-robotics-and-vision.md)
 
-### Assessment Overview
+## Official Starting Resources
 
-- **Formative checks** — quick in-class checks (see [assessments/formative-checks.md](assessments/formative-checks.md)).
-- **Unit quizzes** — short concept checks (see [assessments/unit-quizzes.md](assessments/unit-quizzes.md)).
-- **Project assessments** — graded with [rubrics/](rubrics/).
-- **Final assessment** — final integrated project + presentation.
-- Full plan: [assessment-plan.md](assessment-plan.md).
+- VEX Team Freeze Tag STEM Lab: https://education.vex.com/stemlabs/v5/team-freeze-tag
+- TrainingBot build lesson: https://education.vex.com/stemlabs/v5/team-freeze-tag/lesson-1-introduction/build
+  - Choose **3D Build Instructions — Competition Kits**.
+- VEX V5 build instructions: https://www.vexrobotics.com/v5/downloads/build-instructions
+- VEXcode V5: https://codev5.vex.com/
+- Full curated resource list: [resources.md](resources.md)
 
----
+## Assessment
 
-## Folder Structure
+- **Engineering notebook & portfolio:** ongoing evidence of design and debugging
+- **Formative checks / quizzes:** hardware, programming, sensors, engineering, vision
+- **Projects:** robot performance + engineering process + technical explanation
+- **Final capstone:** integrated system + testing + demonstration + defense
+
+See [assessment-plan.md](assessment-plan.md).
+
+## Repository Structure
 
 ```text
 vex-robotics-and-computer-vision/
@@ -85,38 +139,26 @@ vex-robotics-and-computer-vision/
 ├── resources.md
 ├── lesson-template.md
 ├── project-template.md
-├── units/                # 8 unit folders, each with 6 planning files
-├── lessons/              # 24 ready-to-teach lessons
-├── projects/             # 6 project briefs
-├── assessments/          # formative, quizzes, project, final
-├── rubrics/              # 6 four-level rubrics
-├── student-handouts/     # safety, notebook, portfolio, debugging guides
-├── teacher-notes/        # hardware, management, errors, differentiation
-├── media/                # images, diagrams, screenshots
-└── examples/             # exemplar student work
+├── units/
+├── lessons/
+├── projects/
+├── assessments/
+├── rubrics/
+├── student-handouts/
+├── teacher-notes/
+├── media/
+└── examples/
 ```
 
----
+## AI Application Philosophy
 
-## How Students Use This Course
+The course treats AI as a **system capability that must be tested**, not as magic. Students repeatedly ask:
 
-1. Start with [syllabus.md](syllabus.md) and the safety handout in [student-handouts/](student-handouts/).
-2. Set up your engineering notebook and GitHub/Markdown portfolio (Unit 00).
-3. Follow lessons in [lessons/](lessons/) in order.
-4. Build the projects in [projects/](projects/) and save evidence to your portfolio.
-5. Use the debugging checklists when robots or vision code misbehave.
-6. Present your final integrated project.
+1. **What can the robot sense or see?**
+2. **How is that information represented?**
+3. **What rule or algorithm makes the decision?**
+4. **What action does the robot take?**
+5. **Under what conditions does the system fail?**
+6. **How can evidence guide the next design iteration?**
 
-## How Teachers Use This Course
-
-1. Read [course-overview.md](course-overview.md) and [pacing-guide.md](pacing-guide.md).
-2. Prepare hardware using [teacher-notes/hardware-preparation-checklist.md](teacher-notes/hardware-preparation-checklist.md).
-3. Teach unit by unit using the unit folders and [lessons/](lessons/).
-4. Grade with [rubrics/](rubrics/) and track progress with [assessments/](assessments/).
-5. Adapt placeholders to your school's equipment and policies.
-
-> Edit any document to match your VEX hardware (V5 or IQ), schedule, and school policies. Placeholders are marked where school-specific info is needed.
-
-## AI Application Connection
-
-This course treats computer vision as an **AI application**: a robot uses a camera to perceive, then decides and acts. Students discuss responsible AI use, the limits of perception systems, and where AI helps vs. where it fails — without needing to train machine learning models. See [resources.md](resources.md#ai-literacy-connections).
+AI coding tools may support development, but students must understand, test, explain, and take responsibility for the work they submit.
