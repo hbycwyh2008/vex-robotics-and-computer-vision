@@ -1,7 +1,7 @@
 # Lesson 06 — Controller Input: Tank Drive and Arcade Drive
 
 ## Course position
-Week 4 · Driver Control
+Weeks 10–11 · Driver Control and Robot Motion Programming
 
 ## Learning objectives
 Students will be able to:
