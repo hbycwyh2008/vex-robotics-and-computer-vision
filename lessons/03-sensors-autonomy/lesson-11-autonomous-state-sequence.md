@@ -1,7 +1,7 @@
 # Lesson 11 — Autonomous State Sequence
 
 ## Course position
-Week 7–8 · Sensors and Autonomous Control
+Weeks 16–17 · Sensors and Autonomous Control
 
 ## Learning objectives
 Students will be able to:
@@ -92,5 +92,5 @@ Computer vision later changes the type of perception, but the control architectu
 ## AI use
 AI may help review a state diagram for missing transitions or suggest test cases. Students must still create, run and interpret the physical trials themselves.
 
-## Next unit
-Move from control to engineering design: mechanisms, gear ratios, torque/speed trade-offs, and open-ended robot challenges.
+## Next lesson
+Apply the full sensor-and-autonomy workflow in a measured autonomous navigation challenge.
