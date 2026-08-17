@@ -1,8 +1,8 @@
 # VEX Robotics, AI Vision, and Intelligent Control
 
-A **36-week, project-based high school robotics course** built around the **VEX V5 Competition Starter Kit**. Students build and maintain real robots, program driver-controlled and autonomous behavior, solve engineering challenges, and then extend their systems with **OpenCV / AI vision**.
+A **36-week, project-based high school robotics course** built around the **VEX V5 Competition Starter Kit**. Students build and maintain real robots, program driver-controlled and autonomous behavior, solve engineering challenges, and then extend their systems with **Python + OpenCV / AI vision**.
 
-> Students do not just learn *about* robotics and AI. They **build, program, test, debug, redesign, and defend intelligent robotic systems.**
+> Students do not just learn *about* robotics and AI. They **build, program, test, debug, redesign, measure, and defend intelligent robotic systems.**
 
 ## Course Format
 
@@ -24,7 +24,7 @@ TrainingBot — Competition Kit
         ↓
 Controller driving + VEXcode
         ↓
-Robot motion + modular programming
+Python robot motion + modular programming
         ↓
 Sensors + autonomous control
         ↓
@@ -40,73 +40,105 @@ Integrated robotics + AI vision capstone
 ## What Students Learn
 
 ### Robotics Engineering
-
-- VEX V5 structural components, fasteners, shafts, bearings, motors, Brain, battery, controller, and sensors
-- Reliable drivetrain construction, wiring, maintenance, and troubleshooting
-- Mechanisms, gear ratios, speed/torque trade-offs, iteration, and engineering constraints
+- VEX V5 structure, fasteners, shafts, bearings, motors, Brain, battery, controller and sensors
+- Reliable drivetrain construction, wiring, maintenance and troubleshooting
+- Mechanisms, gear ratios, speed/torque trade-offs, rigidity, alignment and engineering constraints
 
 ### Programming and Control
-
 - VEXcode V5
 - Python-style computational thinking and modular programming
-- Sequences, variables, functions, loops, conditionals
+- Sequences, variables, functions, loops and conditionals
 - Driver control and autonomous routines
-- Sensor input, motor encoders, calibration, and feedback
+- Sensor input, motor feedback, calibration and state-based control
 
 ### AI Vision
-
 - Images and pixels
-- RGB/BGR and HSV color spaces
+- BGR/RGB and HSV color spaces
 - Thresholding and masks
-- Contours, bounding boxes, and target position
+- Contours, bounding boxes and target position
 - Vision-system testing and failure analysis
 - Connecting perception to robot decisions and actions
 
 ### Engineering Practice
-
 - Build → test → debug → redesign
 - Engineering notebook evidence
 - Team roles and technical communication
 - Competition-style challenges
 - Responsible use of AI coding tools
-- Portfolio and final technical presentation
+- Portfolio and final technical presentation/defense
 
 ## 36-Week Course Map
 
 | Weeks | Phase | Focus |
 |---|---|---|
-| 1–6 | Foundations | Safety, V5 hardware, parts management, official TrainingBot build |
+| 1–2 | Onboarding | Safety, parts organization, engineering notebook |
+| 3–6 | Foundations | V5 hardware + official TrainingBot build |
 | 7–12 | Programming | Driver control, VEXcode/Python, programmed movement |
-| 13–18 | Autonomy | Sensors, conditionals, calibration, autonomous behavior |
-| 19–24 | Engineering | Mechanisms, design process, competition-style robot challenges |
+| 13–18 | Autonomy | Sensors, conditionals, feedback, autonomous behavior |
+| 19–24 | Engineering | Mechanisms, gear ratios, iteration, competition-style challenge |
 | 25–30 | AI Vision | OpenCV, HSV, masks, contours, object position |
 | 31–33 | Intelligent Control | Vision → decision → robot action, robustness and limitations |
-| 34–36 | Capstone | Integrated build, testing, demo, engineering defense |
+| 34–36 | Capstone | Integrated build, testing, demo and engineering defense |
 
 Full detail: [pacing-guide.md](pacing-guide.md)
 
-## Unit Map
+## Ready-to-Teach Lesson Anchors
 
-| Unit | Title | Focus |
-|---|---|---|
-| [00](units/Unit%2000%20-%20Course%20Onboarding%20and%20Safety/unit-overview.md) | Course Onboarding and Safety | Safety, teams, notebook, GitHub |
-| [01](units/Unit%2001%20-%20VEX%20Robotics%20Foundations/unit-overview.md) | VEX V5 Foundations and TrainingBot | Competition Kit components, drivetrain, build cycle |
-| [02](units/Unit%2002%20-%20Programming%20Robot%20Motion/unit-overview.md) | Driver Control and Robot Motion | Movement, functions, controller programming |
-| [03](units/Unit%2003%20-%20Sensors%20and%20Autonomous%20Control/unit-overview.md) | Sensors and Autonomous Control | Sensors, feedback, autonomy, calibration |
-| [04](units/Unit%2004%20-%20Engineering%20Design%20and%20Robot%20Challenges/unit-overview.md) | Engineering Design and Robot Challenges | Mechanisms, strategy, iteration |
-| [05](units/Unit%2005%20-%20Computer%20Vision%20Foundations/unit-overview.md) | Computer Vision Foundations | Pixels, HSV, masks, contours |
-| [06](units/Unit%2006%20-%20Vision-Based%20Robot%20Decision%20Making/unit-overview.md) | AI Vision and Robot Decision Making | Perception → decision → action |
-| [07](units/Unit%2007%20-%20Integrated%20Robotics%20and%20Vision%20Project/unit-overview.md) | Integrated Robotics + Vision Capstone | Final intelligent robotics project |
+The repository currently contains **26 anchor lessons** spanning the full 36-week course. These are not 26 total class periods; long build/project lessons intentionally span multiple meetings, with practice, debugging, assessment and iteration days between anchors.
 
-## Major Projects
+Start here: **[lessons/README.md](lessons/README.md)**
 
-1. **TrainingBot Build & Driver Challenge**
-2. [Project 01 — Basic Driving Robot](projects/project-01-basic-driving-robot.md)
-3. [Project 02 — Sensor-Based Autonomous Robot](projects/project-02-sensor-based-autonomous-robot.md)
-4. [Project 03 — Robot Challenge Design](projects/project-03-robot-challenge-design.md)
-5. [Project 04 — Color Object Detection with OpenCV](projects/project-04-color-object-detection-with-opencv.md)
-6. [Project 05 — Vision-Guided Robot Decision System](projects/project-05-vision-guided-robot-decision-system.md)
-7. [Final — Integrated Robotics and Vision](projects/final-project-integrated-robotics-and-vision.md)
+### Unit 00 — Getting Started
+- [Lesson 01 — Kit Safety and Parts](lessons/00-getting-started/lesson-01-kit-safety-and-parts.md)
+
+### Unit 01 — TrainingBot
+- [Lesson 02 — TrainingBot Build I: Chassis and Drivetrain](lessons/01-trainingbot/lesson-02-trainingbot-build-1.md)
+- [Lesson 03 — TrainingBot Build II and First Power-On](lessons/01-trainingbot/lesson-03-trainingbot-build-2-and-first-power.md)
+
+### Unit 02 — Driver Control and Programming
+- [Lesson 04 — VEXcode and Device Configuration](lessons/02-driver-control/lesson-04-vexcode-and-device-configuration.md)
+- [Lesson 05 — Python Motion, Variables and Functions](lessons/02-driver-control/lesson-05-python-motion-and-functions.md)
+- [Lesson 06 — Controller Input: Tank Drive and Arcade Drive](lessons/02-driver-control/lesson-06-controller-tank-and-arcade-drive.md)
+- [Lesson 07 — Driver Control Engineering Challenge](lessons/02-driver-control/lesson-07-driver-control-challenge.md)
+
+### Unit 03 — Sensors and Autonomous Control
+- [Lesson 08 — Sensor Data and Thresholds](lessons/03-sensors-autonomy/lesson-08-sensor-data-and-thresholds.md)
+- [Lesson 09 — Distance Sensor: Obstacle Response](lessons/03-sensors-autonomy/lesson-09-distance-sensor-obstacle-response.md)
+- [Lesson 10 — Inertial Sensor: Reliable Turning](lessons/03-sensors-autonomy/lesson-10-inertial-sensor-turning.md)
+- [Lesson 11 — Autonomous State Sequence](lessons/03-sensors-autonomy/lesson-11-autonomous-state-sequence.md)
+- [Lesson 12 — Autonomous Navigation Challenge](lessons/03-sensors-autonomy/lesson-12-autonomous-navigation-challenge.md)
+
+### Unit 04 — Engineering Design and Mechanisms
+- [Lesson 13 — Gear Ratio: Speed and Torque Trade-Offs](lessons/04-engineering-design/lesson-13-gear-ratio-speed-and-torque.md)
+- [Lesson 14 — Manipulator Mechanism Prototype](lessons/04-engineering-design/lesson-14-manipulator-mechanism-prototype.md)
+- [Lesson 15 — Engineering Iteration and Test Data](lessons/04-engineering-design/lesson-15-iteration-and-test-data.md)
+- [Lesson 16 — Competition-Style Robot Challenge](lessons/04-engineering-design/lesson-16-competition-style-robot-challenge.md)
+
+### Unit 05 — Computer Vision Foundations
+- [Lesson 17 — Images as Data: Pixels and Color](lessons/05-computer-vision/lesson-17-images-pixels-and-color.md)
+- [Lesson 18 — HSV Thresholding and Color Masks](lessons/05-computer-vision/lesson-18-hsv-thresholding-and-masks.md)
+- [Lesson 19 — Contours, Bounding Boxes and Centroids](lessons/05-computer-vision/lesson-19-contours-bounding-boxes-centroids.md)
+- [Lesson 20 — Color Object Detection Project](lessons/05-computer-vision/lesson-20-color-object-detection-project.md)
+
+### Unit 06 — AI Robotics Integration
+- [Lesson 21 — Vision to Decision Logic](lessons/06-ai-robotics-integration/lesson-21-vision-to-decision-logic.md)
+- [Lesson 22 — Closed-Loop Vision Alignment](lessons/06-ai-robotics-integration/lesson-22-closed-loop-vision-alignment.md)
+- [Lesson 23 — Vision Robustness and Failure Modes](lessons/06-ai-robotics-integration/lesson-23-vision-robustness-and-failure-modes.md)
+
+### Unit 07 — Capstone
+- [Lesson 24 — Capstone Proposal and System Architecture](lessons/07-capstone/lesson-24-capstone-proposal-and-architecture.md)
+- [Lesson 25 — Capstone Build, Integrate and Test](lessons/07-capstone/lesson-25-capstone-build-integrate-test.md)
+- [Lesson 26 — Final Validation, Showcase and Engineering Defense](lessons/07-capstone/lesson-26-final-validation-showcase-and-defense.md)
+
+## Major Performance Milestones
+
+1. **TrainingBot Build & First Drive** — reliable hardware baseline
+2. **Driver Control Challenge** — controller mapping + measured iteration
+3. **Autonomous Navigation Challenge** — sensors + feedback + state logic
+4. **Competition-Style Robot Challenge** — mechanisms + strategy + testing
+5. **Color Object Detection Project** — complete OpenCV perception pipeline
+6. **Vision-Guided Robot Decision System** — perception → decision → action
+7. **Final Integrated Capstone** — build + vision + control + evidence + defense
 
 ## Official Starting Resources
 
@@ -120,13 +152,13 @@ Full detail: [pacing-guide.md](pacing-guide.md)
 ## Assessment
 
 - **Engineering notebook & portfolio:** ongoing evidence of design and debugging
-- **Formative checks / quizzes:** hardware, programming, sensors, engineering, vision
-- **Projects:** robot performance + engineering process + technical explanation
+- **Formative checks / quizzes:** hardware, programming, sensors, engineering and vision
+- **Performance challenges:** robot performance + engineering process + technical explanation
 - **Final capstone:** integrated system + testing + demonstration + defense
 
 See [assessment-plan.md](assessment-plan.md).
 
-## Repository Structure
+## Core Repository Files
 
 ```text
 vex-robotics-and-computer-vision/
@@ -139,15 +171,16 @@ vex-robotics-and-computer-vision/
 ├── resources.md
 ├── lesson-template.md
 ├── project-template.md
-├── units/
 ├── lessons/
-├── projects/
-├── assessments/
-├── rubrics/
-├── student-handouts/
-├── teacher-notes/
-├── media/
-└── examples/
+│   ├── 00-getting-started/
+│   ├── 01-trainingbot/
+│   ├── 02-driver-control/
+│   ├── 03-sensors-autonomy/
+│   ├── 04-engineering-design/
+│   ├── 05-computer-vision/
+│   ├── 06-ai-robotics-integration/
+│   └── 07-capstone/
+└── public-documents/
 ```
 
 ## AI Application Philosophy
