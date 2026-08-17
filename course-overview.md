@@ -2,7 +2,7 @@
 
 ## What This Course Is
 
-A **full-year, hands-on, project-based robotics and AI vision course** for high school using the **VEX V5 Competition Starter Kit** as the standard hardware platform. Students build and maintain real robots, program them with VEXcode/Python, add sensors and autonomous behavior, solve engineering challenges, and then use OpenCV to give robotic systems a basic sense of sight.
+A **full-year, 90-minute regular academic course** in hands-on robotics and AI vision for high school using the **VEX V5 Competition Starter Kit** as the standard hardware platform. Students build and maintain real robots, program them with VEXcode/Python, add sensors and autonomous behavior, solve engineering challenges, and then use OpenCV to give robotic systems a basic sense of sight.
 
 The course culminates in an integrated system where students connect:
 
@@ -12,10 +12,14 @@ The course culminates in an integrated system where students connect:
 
 - **36 academic weeks**
 - **2–3 class meetings per week**
-- Approximately **72–108 class periods**
-- Rough target: **70% robotics/engineering + 30% computer vision/AI application**
+- **90 minutes per meeting**
+- Approximately **72–108 class meetings**
+- Approximately **108–162 instructional hours**
+- Rough target: **70% robotics/engineering/control + 30% computer vision/AI application**
 
-See [pacing-guide.md](pacing-guide.md) for the full-year sequence.
+This is not paced as a club or short enrichment course. The schedule deliberately protects sustained laboratory time for building, programming, testing, failure analysis, redesign, documentation, and technical defense.
+
+See [pacing-guide.md](pacing-guide.md) for the full-year sequence and 90-minute lesson architecture.
 
 ## Standard Hardware
 
@@ -35,10 +39,23 @@ Computer vision may initially run from a laptop/webcam before integration with t
 - **Program for understanding.** Students should be able to explain their control logic, not merely make the robot move.
 - **Document everything.** Engineering notebooks and GitHub portfolios make design thinking and evidence visible.
 - **AI application thinking.** Students study perception, decision logic, limitations, and responsible AI-assisted development without requiring advanced ML mathematics.
+- **Protect lab time.** In a 90-minute course, direct instruction is intentionally concise so students have enough uninterrupted time to build and test real systems.
 
-## Teaching Pattern
+## Standard 90-Minute Teaching Pattern
 
-A typical lesson uses this cycle:
+A typical technical meeting uses this rhythm:
+
+1. **0–10 min — Retrieve / predict** — prior learning, safety, system inspection, or prediction.
+2. **10–25 min — Focused demo** — one new concept or debugging model.
+3. **25–70 min — Engineering lab** — sustained build, programming, investigation, or challenge work.
+4. **70–85 min — Test / debug / document** — measured trials, failure analysis, notebook or GitHub evidence.
+5. **85–90 min — Reset / exit** — restore the lab and answer one mastery-focused exit question.
+
+Build days, challenge days, AI-vision labs, and practical assessments use adapted 90-minute structures defined in [pacing-guide.md](pacing-guide.md). Teachers can expand individual anchor lessons into specific meetings with [teacher-notes/90-minute-lesson-template.md](teacher-notes/90-minute-lesson-template.md).
+
+## Teaching Cycle
+
+Across individual meetings and multi-day projects, students repeatedly use:
 
 1. **Phenomenon / Challenge** — observe a robot behavior or engineering problem.
 2. **Prediction** — students predict what will happen or propose a solution.
