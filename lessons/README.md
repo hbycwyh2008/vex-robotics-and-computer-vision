@@ -30,10 +30,13 @@ Each lesson should contain:
 - Lesson 02: TrainingBot Build I — Chassis and Drivetrain
 - Lesson 03: TrainingBot Build II and First Power-On
 
-## Planned sequence
 ### Unit 02 — Driver Control and Programming
-VEXcode setup, motor configuration, controller input, Python fundamentals for robotics, programmed motion, debugging and driving challenges.
+- Lesson 04: VEXcode and Device Configuration
+- Lesson 05: Python Motion, Variables and Functions
+- Lesson 06: Controller Input — Tank Drive and Arcade Drive
+- Lesson 07: Driver Control Engineering Challenge
 
+## Planned sequence
 ### Unit 03 — Sensors and Autonomous Control
 Sensor fundamentals, measurement, thresholds, feedback, repeatable autonomous routines and challenge testing.
 
