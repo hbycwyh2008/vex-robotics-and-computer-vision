@@ -1,7 +1,7 @@
 # Lesson 08 — Sensor Data and Thresholds
 
 ## Course position
-Week 5–6 · Sensors and Autonomous Control
+Weeks 13–14 · Sensors and Autonomous Control
 
 ## Learning objectives
 Students will be able to:
