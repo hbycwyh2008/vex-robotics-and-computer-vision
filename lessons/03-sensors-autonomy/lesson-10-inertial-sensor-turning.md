@@ -1,7 +1,7 @@
 # Lesson 10 — Inertial Sensor: Reliable Turning
 
 ## Course position
-Week 6–7 · Sensors and Autonomous Control
+Weeks 15–16 · Sensors and Autonomous Control
 
 ## Learning objectives
 Students will be able to:
