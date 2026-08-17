@@ -49,15 +49,21 @@ Each lesson should contain:
 - Lesson 15: Engineering Iteration and Test Data
 - Lesson 16: Competition-Style Robot Challenge
 
-## Planned sequence
-### Unit 05 — Computer Vision
-Python/OpenCV foundations, images as data, color/object detection, camera calibration and reliable perception.
+### Unit 05 — Computer Vision Foundations
+- Lesson 17: Images as Data — Pixels and Color
+- Lesson 18: HSV Thresholding and Color Masks
+- Lesson 19: Contours, Bounding Boxes and Centroids
+- Lesson 20: Color Object Detection Project
 
 ### Unit 06 — AI Robotics Integration
-Perception → Decision → Action, vision-triggered robot behavior, state logic, failure modes and testing.
+- Lesson 21: Vision to Decision Logic
+- Lesson 22: Closed-Loop Vision Alignment
+- Lesson 23: Vision Robustness and Failure Modes
 
-### Unit 07 — Capstone
-Define, prototype, test, document and demonstrate an integrated robotics + AI system.
+### Unit 07 — Integrated Capstone
+- Lesson 24: Capstone Proposal and System Architecture
+- Lesson 25: Capstone Build, Integrate and Test
+- Lesson 26: Final Validation, Showcase and Engineering Defense
 
 ## 36-week alignment
 - Weeks 1–2: onboarding, safety, parts organization
@@ -71,3 +77,5 @@ Define, prototype, test, document and demonstrate an integrated robotics + AI sy
 
 ## Teacher implementation note
 A week may contain 2 or 3 class meetings. Lessons are therefore not required to map one-to-one to calendar weeks. Long build, testing and capstone lessons can span multiple meetings, while short programming missions may share a week.
+
+The 26 lesson files are anchor lessons, not 26 total class periods. A 36-week course meeting 2–3 times per week should use each anchor lesson across one or more meetings, with additional build, practice, debugging, assessment and project days between anchors.
