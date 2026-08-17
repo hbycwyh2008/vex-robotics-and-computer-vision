@@ -1,6 +1,12 @@
 # Pacing Guide — 36-Week Full-Year Course
 
-This course is designed for a full academic year of approximately **36 weeks**, meeting **2–3 times per week** (about **72–108 class periods**). The pacing intentionally leaves room for building, failures, debugging, redesign, driver practice, documentation, and showcase days.
+This is a **regular academic course**, not an after-school club. It is designed for approximately **36 instructional weeks**, meeting **2–3 times per week**, with **90 minutes per class**.
+
+That provides approximately:
+
+- **72–108 class meetings** per year;
+- **108–162 instructional hours**;
+- enough time for sustained building, programming, failure analysis, redesign, driver practice, assessment, documentation, AI/computer-vision work, and a substantial capstone.
 
 The course uses the **VEX V5 Competition Starter Kit** as the standard hardware platform. Students begin with the official **TrainingBot — Competition Kit** pathway before progressing to custom mechanisms, autonomous control, and computer vision.
 
@@ -29,15 +35,92 @@ The course uses the **VEX V5 Competition Starter Kit** as the standard hardware 
 | 35 | Unit 07 | Build, integrate, test, debug, collect evidence | Working capstone prototype |
 | 36 | Unit 07 | Final demo, engineering defense, portfolio cleanup, reflection | **Final Integrated Robotics + Vision Project** |
 
+## Standard 90-Minute Lesson Architecture
+
+A normal technical lesson should reserve most of the period for active engineering.
+
+| Time | Phase | Typical activity |
+|---:|---|---|
+| 0–10 min | Entry / retrieval | Safety check, prior-learning retrieval, prediction, quick hardware/code inspection |
+| 10–25 min | Teacher demo / concept | One focused concept, worked example, physical demonstration, or debugging model |
+| 25–70 min | Engineering lab | Build, program, measure, test, challenge, or structured investigation |
+| 70–85 min | Test / debug / document | Repeat trials, diagnose failures, collect evidence, engineering notebook |
+| 85–90 min | Reset / exit | Parts reset, battery/cable check, exit ticket, next-step assignment |
+
+This is a **default architecture**, not a rigid script. The lab block should expand when the task requires it.
+
+## 90-Minute Lesson Variants
+
+### Build Day
+- 0–10: setup + build target
+- 10–20: teacher demonstration / common assembly risk
+- 20–75: sustained build
+- 75–85: quality-control inspection + documentation
+- 85–90: parts/tool reset
+
+### Programming / Control Day
+- 0–10: retrieval / predict program behavior
+- 10–25: code demonstration
+- 25–65: implementation + controlled tests
+- 65–82: debugging / measurement / comparison
+- 82–90: commit/save + notebook + exit check
+
+### Engineering Challenge Day
+- 0–10: requirements + scoring + safety
+- 10–20: team plan / baseline prediction
+- 20–75: repeated test–modify–retest cycles
+- 75–85: final measured trial + evidence
+- 85–90: reset
+
+### Computer Vision / AI Day
+- 0–10: retrieval + failure-case image/video
+- 10–30: Python/OpenCV concept and teacher demonstration
+- 30–68: coding / image experiment
+- 68–82: robustness testing under changed conditions
+- 82–90: evidence + AI-use disclosure + exit check
+
+### Assessment / Engineering Defense Day
+- 0–10: setup and criteria review
+- 10–65: performance test / practical assessment
+- 65–82: technical explanation or defense
+- 82–90: evidence submission and reset
+
 ## Recommended Weekly Rhythm
 
-For weeks with three meetings:
+### Three 90-minute meetings
+1. **Concept + investigation** — establish the engineering/computing idea through a short demo and controlled experiment.
+2. **Build / code / test** — sustained production and debugging.
+3. **Challenge / iteration / assessment** — measured performance, redesign, notebook evidence, or technical explanation.
 
-1. **Learn / investigate** — short direct instruction, demo, safety or concept check.
-2. **Build / code / test** — sustained lab work with engineering notebook evidence.
-3. **Challenge / debug / reflect** — performance task, iteration, documentation, or mini-assessment.
+### Two 90-minute meetings
+1. **Concept + substantial lab** — keep direct instruction short enough to preserve a meaningful engineering block.
+2. **Challenge + debugging + evidence** — apply the concept, test reliability, and document decisions.
 
-For weeks with two meetings, combine the first two phases and preserve the challenge/debug cycle.
+Do not eliminate the testing/iteration meeting merely to cover more content.
+
+## Anchor Lessons vs Actual Class Meetings
+
+The repository's **26 anchor lessons are curriculum milestones**, not a claim that the year contains only 26 lessons. A 90-minute full-year course should use anchor lessons to organize approximately 72–108 actual meetings.
+
+Additional meetings are intentionally used for:
+
+- TrainingBot build continuation;
+- mechanical skill practice;
+- VEXcode practice;
+- driver training;
+- autonomous reliability testing;
+- mechanism prototyping;
+- redesign after failure;
+- quizzes/practicals;
+- engineering notebook conferences;
+- competition-style challenge rounds;
+- OpenCV coding labs;
+- computer-vision robustness experiments;
+- capstone integration;
+- catch-up / hardware repair;
+- final portfolio and technical defense.
+
+A useful planning target is **80–90 explicitly planned 90-minute meetings**, while retaining the remaining calendar capacity as controlled buffers, reteaching, assessment, extended challenges, and capstone iteration.
 
 ## Year-at-a-Glance
 
@@ -64,9 +147,10 @@ For weeks with two meetings, combine the first two phases and preserve the chall
 
 ## Teacher Pacing Notes
 
+- Treat each 90-minute meeting as a substantial lab period; avoid filling it with lecture.
 - Do **not** rush the TrainingBot build. Students should learn correct fastening, alignment, wiring, maintenance, and systematic diagnosis rather than merely copy assembly steps.
 - Preserve iteration time. A robot that fails and is debugged carefully is often more valuable than a build that works immediately.
 - Keep the course primarily robotics engineering. A useful target is roughly **70% robotics / control / engineering** and **30% computer vision / AI application**.
 - Computer vision work can run on laptops while robot hardware is shared.
-- Use buffer days after major builds and before showcases for hardware failures, absent students, and redesign.
-- Advanced teams can extend into PID-style control, more complex mechanisms, multi-object tracking, or current VEX competition strategy.
+- Use buffer meetings after major builds and before showcases for hardware failures, absent students, redesign, and reassessment.
+- Advanced teams can use the competition extension track rather than accelerating the entire class prematurely.
