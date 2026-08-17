@@ -1,7 +1,7 @@
 # Lesson 05 — Python Motion, Variables and Functions
 
 ## Course position
-Week 3–4 · Programming Foundations
+Weeks 9–10 · Driver Control and Robot Motion Programming
 
 ## Learning objectives
 Students will be able to:
