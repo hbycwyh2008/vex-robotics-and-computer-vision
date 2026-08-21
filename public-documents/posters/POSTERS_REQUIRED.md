@@ -1,1 +1,0 @@
-Required shared posters: classroom-flow.png, mastery-level.png, ai-use-policy.png, cs-competition-pathways.png.
