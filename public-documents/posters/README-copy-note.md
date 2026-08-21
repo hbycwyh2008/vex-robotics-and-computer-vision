@@ -1,1 +1,0 @@
-The poster assets in this folder are the shared CS-program posters used in both Full-Stack Web/AI and VEX Robotics.
