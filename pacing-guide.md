@@ -6,34 +6,55 @@ That provides approximately:
 
 - **72–108 class meetings** per year;
 - **108–162 instructional hours**;
-- enough time for sustained building, programming, failure analysis, redesign, driver practice, assessment, documentation, AI/computer-vision work, and a substantial capstone.
+- enough time for sustained building, programming, rebuilding, failure analysis, redesign, driver practice, assessment, documentation, AI/computer-vision work, and a substantial capstone.
 
 The course uses the **VEX V5 Competition Starter Kit** as the standard hardware platform. Students begin with the official **TrainingBot — Competition Kit** pathway before progressing to custom mechanisms, autonomous control, and computer vision.
+
+## Shared Learning Framework
+
+Across the year, students use:
+
+> **Learn → Practice → Rebuild → Share**
+
+and the VEX engineering cycle:
+
+> **Predict → Build / Program → Test → Debug → Redesign → Retest → Document → Explain / Transfer**
+
+Teachers should not advance simply because a robot or program worked once. Pacing should protect time for students to explain, rebuild, test, debug, and document important skills.
+
+See:
+
+- [classroom-learning-flow.md](classroom-learning-flow.md)
+- [mastery-levels.md](mastery-levels.md)
+
+---
 
 ## Full-Year Sequence
 
 | Weeks | Unit | Focus | Major Evidence / Deliverable |
 |---|---|---|---|
-| 1–2 | Unit 00 | Onboarding, lab safety, parts organization, engineering notebook, GitHub | Lab-ready team + portfolio setup |
+| 1–2 | Unit 00 | Course orientation, shared posters/flow, Mastery Levels, lab safety, parts organization, Team Engineering Notebook, Individual Learning Log, GitHub | Lab-ready team + first team notebook + first individual mastery evidence + portfolio setup |
 | 3–4 | Unit 01 | V5 Competition Starter Kit orientation; structure, fasteners, shafts, bearings, motors, Brain, battery, controller | Hardware identification + build skills check |
-| 5–6 | Unit 01 | Official TrainingBot build; build–test–debug cycle | Working TrainingBot + build log |
-| 7–8 | Unit 02 | Controller setup, drivetrain configuration, tank/arcade driving, driver practice | Driver-control challenge |
-| 9–10 | Unit 02 | VEXcode / Python foundations: sequence, variables, functions, loops | Programmed movement challenges |
+| 5–6 | Unit 01 | Official TrainingBot build; guided build → explain → rebuild/check → test/debug cycle | Working TrainingBot + build log + mastery evidence |
+| 7–8 | Unit 02 | Controller setup, drivetrain configuration, tank/arcade driving, driver practice | Driver-control challenge + measured trials |
+| 9–10 | Unit 02 | VEXcode / Python foundations: sequence, variables, functions, loops | Programmed movement challenges + rebuild checks |
 | 11–12 | Unit 02 | Precise movement, motor encoders, reusable movement functions | **Project 01: Basic Driving Robot** |
-| 13–14 | Unit 03 | Sensors: bumper, distance, motor position/encoder, Inertial Sensor | Sensor investigation notebook |
+| 13–14 | Unit 03 | Sensors: bumper, distance, motor position/encoder, Inertial Sensor | Sensor investigation notebook + individual explanation |
 | 15–16 | Unit 03 | Conditionals, feedback, calibration, autonomous routines | Autonomous navigation challenge |
-| 17–18 | Unit 03 | Testing reliability and systematic debugging | **Project 02: Sensor-Based Autonomous Robot** |
+| 17–18 | Unit 03 | Testing reliability and systematic debugging | **Project 02: Sensor-Based Autonomous Robot** + repeated validation |
 | 19–20 | Unit 04 | Engineering design process; mechanisms, gear ratio, torque/speed trade-offs | Mechanism prototype + design review |
-| 21–22 | Unit 04 | Intake/lift/manipulator concepts; iteration and constraints | Mechanism challenge |
+| 21–22 | Unit 04 | Intake/lift/manipulator concepts; iteration and constraints | Mechanism challenge + redesign/retest evidence |
 | 23–24 | Unit 04 | Competition-style strategy, driver skills, autonomous strategy | **Project 03: Robot Challenge Design** |
 | 25–26 | Unit 05 | Computer vision foundations: images, pixels, RGB/BGR, HSV, camera input | First OpenCV camera/image program |
-| 27–28 | Unit 05 | Thresholding, masks, morphology, lighting and calibration | Color segmentation investigation |
+| 27–28 | Unit 05 | Thresholding, masks, morphology, lighting and calibration | Color segmentation investigation + controlled comparison |
 | 29–30 | Unit 05 | Contours, bounding boxes, centroids, target position | **Project 04: Color Object Detection** |
-| 31–32 | Unit 06 | Perception → decision → action; translating vision output into robot behavior | Vision decision prototype |
+| 31–32 | Unit 06 | Perception → decision → action; translating vision output into robot behavior | Vision decision prototype + robustness tests |
 | 33 | Unit 06 | Vision limitations, false detections, robustness, responsible AI | **Project 05: Vision-Guided Decision System** |
-| 34 | Unit 07 | Capstone proposal, requirements, system architecture | Approved capstone plan |
-| 35 | Unit 07 | Build, integrate, test, debug, collect evidence | Working capstone prototype |
-| 36 | Unit 07 | Final demo, engineering defense, portfolio cleanup, reflection | **Final Integrated Robotics + Vision Project** |
+| 34 | Unit 07 | Capstone proposal, requirements, system architecture | Approved capstone plan + test plan |
+| 35 | Unit 07 | Build, integrate, test, debug, collect evidence | Working capstone prototype + documented iteration |
+| 36 | Unit 07 | Final validation, demo, individual engineering defense, portfolio cleanup, reflection | **Final Integrated Robotics + Vision Project** |
+
+---
 
 ## Standard 90-Minute Lesson Architecture
 
@@ -41,62 +62,82 @@ A normal technical lesson should reserve most of the period for active engineeri
 
 | Time | Phase | Typical activity |
 |---:|---|---|
-| 0–10 min | Entry / retrieval | Safety check, prior-learning retrieval, prediction, quick hardware/code inspection |
-| 10–25 min | Teacher demo / concept | One focused concept, worked example, physical demonstration, or debugging model |
-| 25–70 min | Engineering lab | Build, program, measure, test, challenge, or structured investigation |
-| 70–85 min | Test / debug / document | Repeat trials, diagnose failures, collect evidence, engineering notebook |
-| 85–90 min | Reset / exit | Parts reset, battery/cable check, exit ticket, next-step assignment |
+| 0–10 min | Entry / retrieval / predict | Safety check, prior-learning retrieval, prediction, quick hardware/code inspection |
+| 10–25 min | Learn / focused demo | One concept, worked example, physical demonstration, or debugging model |
+| 25–55 min | Practice → rebuild | Guided work followed by reduced scaffolding or an independent engineering task |
+| 55–75 min | Test / debug / redesign / retest | Controlled tests, diagnosis, evidence-based change, comparison |
+| 75–85 min | Document / explain / share | Team Engineering Notebook, Individual Learning Log when assigned, technical explanation |
+| 85–90 min | Reset / exit | Parts reset, battery/cable check, mastery-focused exit ticket |
 
-This is a **default architecture**, not a rigid script. The lab block should expand when the task requires it.
+This is a **default architecture**, not a rigid script. Lab, testing, or rebuild blocks should expand when the task requires it.
+
+Use [teacher-notes/90-minute-lesson-template.md](teacher-notes/90-minute-lesson-template.md) to expand anchor lessons into actual class meetings.
+
+---
 
 ## 90-Minute Lesson Variants
 
 ### Build Day
-- 0–10: setup + build target
-- 10–20: teacher demonstration / common assembly risk
-- 20–75: sustained build
-- 75–85: quality-control inspection + documentation
-- 85–90: parts/tool reset
+
+- 0–10: setup + retrieval + build target
+- 10–20: focused teacher demonstration / common assembly risk
+- 20–55: guided build and practice
+- 55–72: reduced-support rebuild/check, alignment test, or subsystem validation
+- 72–85: quality-control inspection + Team Engineering Notebook + individual explanation if assigned
+- 85–90: parts/tool reset + exit
 
 ### Programming / Control Day
+
 - 0–10: retrieval / predict program behavior
 - 10–25: code demonstration
-- 25–65: implementation + controlled tests
-- 65–82: debugging / measurement / comparison
-- 82–90: commit/save + notebook + exit check
+- 25–55: guided implementation → reduced-support rebuild
+- 55–75: controlled tests / debugging / measurement / comparison
+- 75–85: commit/save + notebook + individual learning evidence
+- 85–90: reset + mastery check
 
 ### Engineering Challenge Day
+
 - 0–10: requirements + scoring + safety
 - 10–20: team plan / baseline prediction
-- 20–75: repeated test–modify–retest cycles
-- 75–85: final measured trial + evidence
-- 85–90: reset
+- 20–68: repeated **test → debug → modify → retest** cycles
+- 68–78: final measured trials / comparison
+- 78–85: engineering decision + notebook + individual contribution evidence
+- 85–90: reset + exit
 
 ### Computer Vision / AI Day
+
 - 0–10: retrieval + failure-case image/video
-- 10–30: Python/OpenCV concept and teacher demonstration
-- 30–68: coding / image experiment
-- 68–82: robustness testing under changed conditions
-- 82–90: evidence + AI-use disclosure + exit check
+- 10–25: Python/OpenCV concept and teacher demonstration
+- 25–55: coding / guided experiment → rebuild
+- 55–75: robustness testing under changed conditions
+- 75–85: evidence + AI-use disclosure + technical explanation
+- 85–90: exit mastery check
 
 ### Assessment / Engineering Defense Day
+
 - 0–10: setup and criteria review
-- 10–65: performance test / practical assessment
-- 65–82: technical explanation or defense
-- 82–90: evidence submission and reset
+- 10–60: performance test / practical assessment
+- 60–80: individual technical explanation, rebuild/debugging/transfer check, or engineering defense
+- 80–90: evidence submission and reset
+
+---
 
 ## Recommended Weekly Rhythm
 
 ### Three 90-minute meetings
-1. **Concept + investigation** — establish the engineering/computing idea through a short demo and controlled experiment.
-2. **Build / code / test** — sustained production and debugging.
-3. **Challenge / iteration / assessment** — measured performance, redesign, notebook evidence, or technical explanation.
+
+1. **Learn + investigation** — establish the engineering/computing idea through a short demo and controlled experiment.
+2. **Practice + rebuild + test** — sustained production, reduced scaffolding, debugging and validation.
+3. **Challenge + iteration + evidence** — measured performance, redesign, retest, notebook evidence, individual mastery check, or technical explanation.
 
 ### Two 90-minute meetings
-1. **Concept + substantial lab** — keep direct instruction short enough to preserve a meaningful engineering block.
-2. **Challenge + debugging + evidence** — apply the concept, test reliability, and document decisions.
 
-Do not eliminate the testing/iteration meeting merely to cover more content.
+1. **Learn + guided practice + substantial lab** — keep direct instruction short enough to preserve a meaningful engineering block.
+2. **Rebuild + challenge + debugging + evidence** — apply the concept with less support, test reliability, and document decisions.
+
+Do not eliminate the testing/iteration or rebuild opportunities merely to cover more content.
+
+---
 
 ## Anchor Lessons vs Actual Class Meetings
 
@@ -104,15 +145,18 @@ The repository's **26 anchor lessons are curriculum milestones**, not a claim th
 
 Additional meetings are intentionally used for:
 
+- course orientation and poster/mastery routines;
 - TrainingBot build continuation;
 - mechanical skill practice;
+- rebuild checks;
 - VEXcode practice;
 - driver training;
 - autonomous reliability testing;
 - mechanism prototyping;
 - redesign after failure;
 - quizzes/practicals;
-- engineering notebook conferences;
+- Team Engineering Notebook conferences;
+- Individual Engineering Learning Log / mastery conferences;
 - competition-style challenge rounds;
 - OpenCV coding labs;
 - computer-vision robustness experiments;
@@ -120,11 +164,14 @@ Additional meetings are intentionally used for:
 - catch-up / hardware repair;
 - final portfolio and technical defense.
 
-A useful planning target is **80–90 explicitly planned 90-minute meetings**, while retaining the remaining calendar capacity as controlled buffers, reteaching, assessment, extended challenges, and capstone iteration.
+A useful planning target is **80–90 explicitly planned 90-minute meetings**, while retaining the remaining calendar capacity as controlled buffers, reteaching, reassessment, extended challenges, and capstone iteration.
+
+---
 
 ## Year-at-a-Glance
 
-- **Weeks 1–6:** VEX V5 foundations + official TrainingBot
+- **Weeks 1–2:** Learning culture + safety + VEX kit + engineering evidence routines
+- **Weeks 3–6:** VEX V5 foundations + official TrainingBot
 - **Weeks 7–12:** Driver control + VEXcode/Python motion programming
 - **Weeks 13–18:** Sensors + autonomous robotics
 - **Weeks 19–24:** Engineering design + mechanisms + competition-style challenges
@@ -132,25 +179,31 @@ A useful planning target is **80–90 explicitly planned 90-minute meetings**, w
 - **Weeks 31–33:** Vision-based decision making and intelligent control
 - **Weeks 34–36:** Integrated capstone + showcase
 
+---
+
 ## Checkpoints
 
 | Checkpoint | By end of | Requirement |
 |---|---|---|
-| C1: Lab ready | Week 2 | Safety + notebook + GitHub ready |
-| C2: TrainingBot works | Week 6 | Correct build, wiring, controller operation |
-| C3: Programmed driving | Week 12 | Project 01 complete |
-| C4: Autonomous behavior | Week 18 | Project 02 complete |
-| C5: Engineering challenge | Week 24 | Project 03 complete |
-| C6: Vision pipeline | Week 30 | Project 04 complete |
-| C7: Vision drives decisions | Week 33 | Project 05 complete |
-| C8: Final showcase | Week 36 | Capstone + presentation + portfolio |
+| C1: Course/lab ready | Week 2 | Safety + posters/flow + mastery language + Team Notebook + Individual Log + GitHub ready |
+| C2: TrainingBot works | Week 6 | Correct build, wiring, controller operation + explanation/rebuild evidence |
+| C3: Programmed driving | Week 12 | Project 01 complete + core programming mastery evidence |
+| C4: Autonomous behavior | Week 18 | Project 02 complete + reliability/debugging evidence |
+| C5: Engineering challenge | Week 24 | Project 03 complete + redesign/retest evidence |
+| C6: Vision pipeline | Week 30 | Project 04 complete + varied-condition testing |
+| C7: Vision drives decisions | Week 33 | Project 05 complete + robustness evidence |
+| C8: Final showcase | Week 36 | Capstone + validation + individual defense + portfolio |
+
+---
 
 ## Teacher Pacing Notes
 
 - Treat each 90-minute meeting as a substantial lab period; avoid filling it with lecture.
-- Do **not** rush the TrainingBot build. Students should learn correct fastening, alignment, wiring, maintenance, and systematic diagnosis rather than merely copy assembly steps.
+- Use the local course posters in [`public-documents/posters/`](public-documents/posters/README.md) as recurring visual references, not as one-time decorations.
+- Do **not** rush the TrainingBot build. Students should learn correct fastening, alignment, wiring, maintenance, explanation, and systematic diagnosis rather than merely copy assembly steps.
+- Preserve rebuild time. A guided success should be followed later by an opportunity to reproduce the important pattern with less support.
 - Preserve iteration time. A robot that fails and is debugged carefully is often more valuable than a build that works immediately.
 - Keep the course primarily robotics engineering. A useful target is roughly **70% robotics / control / engineering** and **30% computer vision / AI application**.
 - Computer vision work can run on laptops while robot hardware is shared.
-- Use buffer meetings after major builds and before showcases for hardware failures, absent students, redesign, and reassessment.
+- Use buffer meetings after major builds and before showcases for hardware failures, absent students, redesign, reassessment, and mastery checks.
 - Advanced teams can use the competition extension track rather than accelerating the entire class prematurely.
