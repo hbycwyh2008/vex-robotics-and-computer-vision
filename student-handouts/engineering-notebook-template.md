@@ -1,76 +1,176 @@
-# Engineering Notebook Template
+# Team Engineering Notebook Template
 
-Use this template for every major build, programming challenge, sensor investigation, computer-vision test and capstone milestone.
+Use this template for every major build, programming challenge, sensor investigation, computer-vision test, engineering redesign, and capstone milestone.
+
+This is **team engineering evidence**. Each student should also complete the short [Individual Engineering Learning Log](individual-engineering-learning-log.md) when required.
+
+> **Goal → Design / Change → Test → Problem → Diagnosis → Decision → Retest → Next Step**
+
+---
 
 ## 1. Date / Lesson / Team
-- Date:
-- Lesson or project:
-- Team members:
-- My role today:
+
+- **Date:**
+- **Lesson or project:**
+- **Team members:**
+- **Team roles today:**
 
 ## 2. Goal
-What are we trying to make the robot/system do?
+
+What are we trying to make the robot/system do today?
+
+
+What constraint, requirement, or performance target matters?
+
 
 ## 3. Current Design / Setup
-Record enough detail that another team could reproduce the test.
+
+Record enough detail that another team could understand or reproduce the setup.
 
 - Robot/mechanism configuration:
 - Motor/sensor ports:
-- Important code version or commit:
+- Important code version or GitHub commit:
 - Camera/vision settings if relevant:
 - Test environment/start position:
 
-Add a photo, diagram or screenshot when useful.
+Add a photo, diagram, sketch, or screenshot when useful.
 
-## 4. Prediction / Hypothesis
-Before changing the system, write what you expect and why.
+## 4. Design / Build / Code Change
+
+What did we build, program, configure, or change today?
+
+
+Why did we make this change?
+
+
+## 5. Prediction / Hypothesis
+
+Before a major change or test, write what you expect and why.
 
 > If we change ___, then ___ should happen because ___.
 
-## 5. Test Procedure
-Describe what you will keep constant and what variable you will change.
+## 6. Test Procedure
 
-## 6. Results
+Describe the test so it could be repeated.
+
+- What will we measure or observe?
+- What variable will change?
+- What conditions will stay the same?
+- How many trials will we run?
+
+## 7. Results
+
 Use measurements whenever possible.
 
-| Trial | Change / Condition | Result | Success? | Notes |
+| Trial | Change / Condition | Measured Result | Success? | Notes |
 |---|---|---|---|---|
 | 1 | | | | |
 | 2 | | | | |
 | 3 | | | | |
+| 4 | | | | |
+| 5 | | | | |
 
-## 7. Debugging Log
-Use the pattern:
+For reliability or improvement claims, use additional repeated trials when needed. You may also use [test-record-template.md](test-record-template.md).
 
-**Symptom → Hypothesis → Test → Evidence → Decision**
+## 8. Problem / Failure / Unexpected Behavior
 
-Example:
-- Symptom: robot turns left while commanded forward.
-- Hypothesis: right drivetrain side has higher resistance.
-- Test: lift robot, inspect wheel rotation and compare free movement.
-- Evidence: right rear wheel rubs against a spacer/structure.
-- Decision: correct spacing, then repeat the same driving test.
+What did not work as expected?
 
-## 8. Decision
-Choose one and explain:
-- Keep the change
-- Revert the change
-- Test again
-- Redesign
 
-## 9. What We Learned
-Answer at least one:
-- What assumption turned out to be wrong?
-- What evidence changed our decision?
-- What failure taught us the most?
-- What would we test next?
+Be specific. Describe the observable symptom before guessing the cause.
 
-## 10. AI Assistance Disclosure
+## 9. Debugging Log
+
+Use:
+
+> **Symptom → Hypothesis → Test → Evidence → Decision**
+
+- **Symptom:**
+- **Hypothesis:**
+- **Test:**
+- **Evidence:**
+- **Decision:**
+
+A failed hypothesis is still useful engineering evidence if the test was valid.
+
+## 10. Decision / Redesign
+
+Based on the evidence, choose one and explain:
+
+- [ ] Keep the current design/change
+- [ ] Modify the design/change
+- [ ] Revert the change
+- [ ] Test again
+- [ ] Redesign the subsystem or test
+
+Why?
+
+
+## 11. Retest
+
+After the change, repeat the relevant test.
+
+What changed in the result?
+
+
+If possible, compare before/after evidence:
+
+| Metric | Before | After | Interpretation |
+|---|---:|---:|---|
+| | | | |
+| | | | |
+
+## 12. Engineering Conclusion
+
+What can we reasonably conclude from the evidence?
+
+
+What limitation, uncertainty, or failure still remains?
+
+
+## 13. Next Step
+
+What should the team build, test, debug, or redesign next class?
+
+
+## 14. Evidence Links
+
+- Photo / diagram:
+- Video:
+- GitHub commit / code:
+- Test record:
+- Other evidence:
+
+## 15. AI Assistance Disclosure
+
 If AI was used, record:
-- Tool used:
-- What question/task it helped with:
-- What suggestion/code it provided:
-- How we verified it:
-- What we changed ourselves:
 
-AI output is not evidence that the robot works. Physical tests, measured data and explainable code are the evidence.
+- **Tool used:**
+- **What question/task it helped with:**
+- **What suggestion/code it provided:**
+- **How we verified it:**
+- **What we changed or did ourselves:**
+
+If no AI was used, write: **No AI assistance used.**
+
+AI output is not evidence that the robot works. Physical tests, measured data, explainable code, and student reasoning are the evidence.
+
+---
+
+## Before Leaving Class
+
+Minimum team evidence:
+
+- [ ] Today's goal is recorded.
+- [ ] At least one design/build/code change is recorded.
+- [ ] At least one test or observation is recorded.
+- [ ] A result, measurement, or failure is recorded.
+- [ ] The next step is recorded.
+
+For major challenge sessions:
+
+- [ ] Failure/debugging evidence is included.
+- [ ] A decision is justified with evidence.
+- [ ] A retest or follow-up test is recorded.
+
+Then complete the individual learning log if assigned.
