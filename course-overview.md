@@ -31,40 +31,115 @@ Primary platform:
 
 Computer vision may initially run from a laptop/webcam before integration with the robot. Camera/sensor choices can be adapted to available school hardware, but the robotics platform remains VEX V5.
 
+## Shared Learning Culture
+
+This course uses the same core learning language as the Full-Stack Web and AI course:
+
+> **Learn → Practice → Rebuild → Share**
+
+The goal is consistency across CS and engineering courses: following instructions or making something work once is the beginning of learning, not the end.
+
+VEX Robotics applies the shared flow through an engineering-specific cycle:
+
+> **Predict → Build / Program → Test → Debug → Redesign → Retest → Document → Explain / Transfer**
+
+See [classroom-learning-flow.md](classroom-learning-flow.md).
+
+## Mastery Levels 0–5
+
+Students use the shared mastery language throughout the course:
+
+- **Level 0 — Exposure**
+- **Level 1 — Follow and make it work**
+- **Level 2 — Explain while looking**
+- **Level 3 — Rebuild with a checklist**
+- **Level 4 — Rebuild independently**
+- **Level 5 — Modify, debug, and transfer**
+
+Mastery Levels describe **student independence with a skill**. They do not replace the existing 4-level project rubrics, which assess **quality of a particular project**.
+
+See [mastery-levels.md](mastery-levels.md).
+
 ## Course Philosophy
 
 - **Build first, theory as needed.** Concepts appear when students need them to make a system work.
 - **Engineering, not assembly.** Following instructions is only the starting point; students must diagnose, test, redesign, and justify decisions.
 - **Iteration is the point.** Failure, debugging, calibration, and re-testing are assessed engineering skills.
 - **Program for understanding.** Students should be able to explain their control logic, not merely make the robot move.
-- **Document everything.** Engineering notebooks and GitHub portfolios make design thinking and evidence visible.
+- **Rebuild to prove learning.** Students increasingly reproduce important patterns with less support rather than relying on permanent step-by-step instructions.
+- **Document while engineering.** Evidence is recorded during the process, not reconstructed at the end.
+- **Separate team success from individual mastery.** A working team robot does not automatically prove that every student can explain or rebuild the relevant skill.
 - **AI application thinking.** Students study perception, decision logic, limitations, and responsible AI-assisted development without requiring advanced ML mathematics.
 - **Protect lab time.** In a 90-minute course, direct instruction is intentionally concise so students have enough uninterrupted time to build and test real systems.
+
+## Engineering Evidence System
+
+The course uses three connected evidence layers.
+
+### 1. Team Engineering Notebook
+
+The team documents the shared engineering process:
+
+> **Goal → Design / Change → Test → Problem → Diagnosis → Decision → Retest → Next Step**
+
+The notebook includes design sketches, configuration, code/commit references, test procedures, measurements, failures, debugging evidence, redesign decisions and next steps.
+
+### 2. Individual Engineering Learning Log
+
+Each student records:
+
+- what they personally worked on;
+- one engineering decision they understand;
+- one problem and diagnosis;
+- their specific contribution;
+- what they can now explain or rebuild;
+- their current Mastery Level and evidence.
+
+### 3. Portfolio Evidence
+
+Students curate major project evidence in GitHub/Markdown: code, photos/video, notebook evidence, test data, debugging stories, iteration and reflection.
+
+See:
+
+- [Engineering Notebook Guide](student-handouts/engineering-notebook-guide.md)
+- [Team Engineering Notebook Template](student-handouts/engineering-notebook-template.md)
+- [Individual Engineering Learning Log](student-handouts/individual-engineering-learning-log.md)
+- [Engineering Test Record Template](student-handouts/test-record-template.md)
+- [Portfolio Requirements](portfolio-requirements.md)
+
+> **Build / Program → Test → Record → Explain**
+
+If a claim involves reliability, accuracy or improvement, one successful run is not enough. Students should use repeated trials or controlled comparisons when appropriate.
 
 ## Standard 90-Minute Teaching Pattern
 
 A typical technical meeting uses this rhythm:
 
 1. **0–10 min — Retrieve / predict** — prior learning, safety, system inspection, or prediction.
-2. **10–25 min — Focused demo** — one new concept or debugging model.
-3. **25–70 min — Engineering lab** — sustained build, programming, investigation, or challenge work.
-4. **70–85 min — Test / debug / document** — measured trials, failure analysis, notebook or GitHub evidence.
-5. **85–90 min — Reset / exit** — restore the lab and answer one mastery-focused exit question.
+2. **10–25 min — Focused demo / learn** — one new concept or debugging model.
+3. **25–55 min — Guided practice → rebuild** — build/program with support, then reduce scaffolding.
+4. **55–75 min — Test / debug / redesign / retest** — use evidence to make an engineering decision.
+5. **75–85 min — Document / explain / share** — Team Engineering Notebook, Individual Learning Log when assigned, and technical explanation.
+6. **85–90 min — Reset / exit** — restore the lab and answer one mastery-focused exit question.
 
-Build days, challenge days, AI-vision labs, and practical assessments use adapted 90-minute structures defined in [pacing-guide.md](pacing-guide.md). Teachers can expand individual anchor lessons into specific meetings with [teacher-notes/90-minute-lesson-template.md](teacher-notes/90-minute-lesson-template.md).
+Build days, challenge days, AI-vision labs, and practical assessments may adapt the timing while preserving the same learning logic.
 
-## Teaching Cycle
+Teachers can expand individual anchor lessons into specific meetings with [teacher-notes/90-minute-lesson-template.md](teacher-notes/90-minute-lesson-template.md).
+
+## Engineering Teaching Cycle
 
 Across individual meetings and multi-day projects, students repeatedly use:
 
 1. **Phenomenon / Challenge** — observe a robot behavior or engineering problem.
-2. **Prediction** — students predict what will happen or propose a solution.
-3. **Build / Program / Test** — create evidence.
-4. **Explain** — connect evidence to the underlying concept.
-5. **Name** — introduce correct engineering/programming vocabulary.
-6. **Improve** — debug, redesign, calibrate, or optimize.
-7. **Document** — record evidence and decisions in the engineering notebook.
-8. **Transfer** — apply the idea to a new challenge.
+2. **Prediction** — predict what will happen or propose a solution.
+3. **Build / Program** — create or modify the system.
+4. **Test** — use a defined procedure to create evidence.
+5. **Debug** — use **Symptom → Hypothesis → Test → Evidence → Decision**.
+6. **Redesign** — change hardware, logic, parameters, geometry, configuration, or test conditions for a reason.
+7. **Retest** — repeat the relevant test and compare evidence.
+8. **Document** — record evidence and decisions while the work is happening.
+9. **Explain** — connect evidence to the engineering or programming concept.
+10. **Transfer** — apply the pattern to a new constraint or challenge.
 
 ## Big Ideas Across the Course
 
@@ -77,11 +152,12 @@ Across individual meetings and multi-day projects, students repeatedly use:
 - Images are numerical data; computer vision extracts useful information from those numbers.
 - AI perception can fail. Lighting, background, occlusion, calibration, and ambiguous inputs matter.
 - AI-assisted coding is useful only when students understand, test, and can defend the resulting work.
+- Team performance and individual mastery are related but not identical.
 
 ## Learning Path
 
 ```text
-Safety + Parts + Engineering Notebook
+Safety + Parts + Learning Culture + Engineering Notebook
   → VEX V5 Foundations + TrainingBot
     → Driver Control + VEXcode/Python
       → Sensors + Measurement
@@ -106,6 +182,19 @@ Across the year, students progress through increasingly independent systems:
 7. **Vision-Guided Robot System** — perception influences decisions and actions
 8. **Capstone** — integrated robotics + AI/vision project with presentation and engineering defense
 
+## Classroom Posters
+
+The VEX course uses shared classroom visuals for:
+
+- classroom flow;
+- Mastery Levels;
+- responsible AI use;
+- CS/robotics competition pathways.
+
+See [public-documents/posters/](public-documents/posters/README.md).
+
+These shared posters establish common learning language; VEX-specific engineering evidence and testing expectations are defined in this repository.
+
 ## AI in This Course
 
 AI is intentionally visible throughout the course rather than isolated into one final unit.
@@ -120,4 +209,4 @@ Students learn to:
 - explain the chain from perception to decision to action;
 - consider privacy, reliability, bias/error, and human responsibility in AI-enabled systems.
 
-The goal is to move students from **technology users** toward **technology creators who can explain and test what they build**.
+The goal is to move students from **technology users** toward **technology creators who can explain, test, document, rebuild, and improve what they build**.
