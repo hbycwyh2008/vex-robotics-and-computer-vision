@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1754" viewBox="0 0 1240 1754">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0B3A75" flood-opacity="0.14"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7FCFF"/>
+      <stop offset="1" stop-color="#EAF7FF"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EAF5FF"/>
+    </linearGradient>
+    <style>
+      .title{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:82px;letter-spacing:2px;fill:#0B3A75;}
+      .subtitle{font-family:Arial,Helvetica,sans-serif;font-weight:800;font-size:34px;fill:#FFFFFF;}
+      .stepTitle{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:25px;letter-spacing:.4px;}
+      .stepBody{font-family:Arial,Helvetica,sans-serif;font-size:18px;fill:#10233F;}
+      .num{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:36px;fill:#FFFFFF;}
+      .centerBig{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:39px;fill:#0B3A75;letter-spacing:.5px;}
+      .centerSmall{font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:22px;fill:#15528C;}
+      .bottom{font-family:Arial,Helvetica,sans-serif;font-weight:800;font-size:26px;fill:#FFFFFF;}
+      .bottomSmall{font-family:Arial,Helvetica,sans-serif;font-weight:600;font-size:20px;fill:#173A64;}
+      .icon{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:52px;}
+    </style>
+  </defs>
+  <rect width="1240" height="1754" fill="url(#bg)"/>
+  <circle cx="-60" cy="220" r="260" fill="#CFEFFF" opacity="0.55"/>
+  <circle cx="1195" cy="150" r="260" fill="#DDF5EA" opacity="0.7"/>
+  <circle cx="1120" cy="1630" r="260" fill="#CFEFFF" opacity="0.6"/>
+  <circle cx="80" cy="1620" r="250" fill="#DDF5EA" opacity="0.55"/>
+  <text x="620" y="116" text-anchor="middle" class="title">OUR CLASSROOM FLOW</text>
+  <rect x="226" y="152" width="788" height="64" rx="18" fill="#13A6A6" filter="url(#shadow)"/>
+  <text x="620" y="195" text-anchor="middle" class="subtitle">Every Class Follows a Clear Learning Cycle</text>
+  <circle cx="620" cy="875" r="238" fill="url(#centerGrad)" stroke="#C8E6FF" stroke-width="5" filter="url(#shadow)"/>
+  <text x="620" y="795" text-anchor="middle" class="centerBig">LEARN</text>
+  <text x="620" y="850" text-anchor="middle" class="centerBig">PRACTICE</text>
+  <text x="620" y="905" text-anchor="middle" class="centerBig">REBUILD</text>
+  <text x="620" y="960" text-anchor="middle" class="centerBig">SHARE</text>
+  <line x1="500" y1="990" x2="740" y2="990" stroke="#1375D1" stroke-width="5" stroke-linecap="round"/>
+  <text x="620" y="1030" text-anchor="middle" class="centerSmall">Mastery grows through repetition.</text>
+  <path d="M 620 300 A 575 575 0 0 1 1110 590" fill="none" stroke="#0B6BCB" stroke-width="8" stroke-linecap="round" opacity=".82"/>
+  <path d="M 1110 590 A 575 575 0 0 1 1038 1200" fill="none" stroke="#13A6A6" stroke-width="8" stroke-linecap="round" opacity=".82"/>
+  <path d="M 1038 1200 A 575 575 0 0 1 395 1370" fill="none" stroke="#7E57C2" stroke-width="8" stroke-linecap="round" opacity=".82"/>
+  <path d="M 395 1370 A 575 575 0 0 1 130 610" fill="none" stroke="#0B6BCB" stroke-width="8" stroke-linecap="round" opacity=".82"/>
+  <g id="step-1"><rect x="430" y="270" width="380" height="245" rx="34" fill="#FFFFFF" stroke="#0B6BCB" stroke-width="4" filter="url(#shadow)"/><circle cx="620" cy="266" r="44" fill="#0B6BCB"/><text x="620" y="279" text-anchor="middle" class="num">1</text><text x="620" y="335" text-anchor="middle" class="stepTitle" fill="#0B3A75">SKILL WARM-UP</text><text x="620" y="405" text-anchor="middle" class="icon" fill="#0B6BCB">▶</text><text x="620" y="458" text-anchor="middle" class="stepBody"><tspan x="620">Use a video, guide,</tspan><tspan x="620" dy="24">or task to meet the idea.</tspan></text></g>
+  <g id="step-2"><rect x="865" y="430" width="310" height="245" rx="34" fill="#FFFFFF" stroke="#13A6A6" stroke-width="4" filter="url(#shadow)"/><circle cx="1020" cy="426" r="44" fill="#13A6A6"/><text x="1020" y="439" text-anchor="middle" class="num">2</text><text x="1020" y="495" text-anchor="middle" class="stepTitle" fill="#0C8A8A">ENTRY CHECK</text><text x="1020" y="565" text-anchor="middle" class="icon" fill="#13A6A6">✓</text><text x="1020" y="618" text-anchor="middle" class="stepBody"><tspan x="1020">Check basic understanding</tspan><tspan x="1020" dy="24">before we go deeper.</tspan></text></g>
+  <g id="step-3"><rect x="895" y="755" width="310" height="250" rx="34" fill="#FFFFFF" stroke="#4CAF50" stroke-width="4" filter="url(#shadow)"/><circle cx="1050" cy="751" r="44" fill="#4CAF50"/><text x="1050" y="764" text-anchor="middle" class="num">3</text><text x="1050" y="820" text-anchor="middle" class="stepTitle" fill="#3E9B43">TALK ROBIN 1</text><text x="1050" y="890" text-anchor="middle" class="icon" fill="#4CAF50">☁</text><text x="1050" y="943" text-anchor="middle" class="stepBody"><tspan x="1050">Discuss what was done</tspan><tspan x="1050" dy="24">and what is confusing.</tspan></text></g>
+  <g id="step-4"><rect x="760" y="1100" width="330" height="245" rx="34" fill="#FFFFFF" stroke="#F39C12" stroke-width="4" filter="url(#shadow)"/><circle cx="925" cy="1096" r="44" fill="#F39C12"/><text x="925" y="1109" text-anchor="middle" class="num">4</text><text x="925" y="1165" text-anchor="middle" class="stepTitle" fill="#E18400">CORE PATTERN</text><text x="925" y="1235" text-anchor="middle" class="icon" fill="#F39C12">◆</text><text x="925" y="1288" text-anchor="middle" class="stepBody"><tspan x="925">Teacher explains the key</tspan><tspan x="925" dy="24">method or pattern clearly.</tspan></text></g>
+  <g id="step-5"><rect x="150" y="1100" width="330" height="245" rx="34" fill="#FFFFFF" stroke="#7E57C2" stroke-width="4" filter="url(#shadow)"/><circle cx="315" cy="1096" r="44" fill="#7E57C2"/><text x="315" y="1109" text-anchor="middle" class="num">5</text><text x="315" y="1165" text-anchor="middle" class="stepTitle" fill="#6A45B5">GUIDED PRACTICE</text><text x="315" y="1235" text-anchor="middle" class="icon" fill="#7E57C2">▣</text><text x="315" y="1288" text-anchor="middle" class="stepBody"><tspan x="315">Practice with teacher support.</tspan><tspan x="315" dy="24">Ask questions and improve.</tspan></text></g>
+  <g id="step-6"><rect x="35" y="755" width="310" height="250" rx="34" fill="#FFFFFF" stroke="#0B6BCB" stroke-width="4" filter="url(#shadow)"/><circle cx="190" cy="751" r="44" fill="#0B6BCB"/><text x="190" y="764" text-anchor="middle" class="num">6</text><text x="190" y="820" text-anchor="middle" class="stepTitle" fill="#0B3A75">INDEPENDENT</text><text x="190" y="852" text-anchor="middle" class="stepTitle" fill="#0B3A75">REBUILD</text><text x="190" y="930" text-anchor="middle" class="icon" fill="#0B6BCB">&lt;/&gt;</text><text x="190" y="975" text-anchor="middle" class="stepBody"><tspan x="190">Recreate the pattern</tspan><tspan x="190" dy="24">with less help.</tspan></text></g>
+  <g id="step-7"><rect x="65" y="430" width="310" height="245" rx="34" fill="#FFFFFF" stroke="#7E57C2" stroke-width="4" filter="url(#shadow)"/><circle cx="220" cy="426" r="44" fill="#7E57C2"/><text x="220" y="439" text-anchor="middle" class="num">7</text><text x="220" y="495" text-anchor="middle" class="stepTitle" fill="#6A45B5">TALK ROBIN 2</text><text x="220" y="527" text-anchor="middle" class="stepTitle" fill="#6A45B5">+ EVIDENCE</text><text x="220" y="595" text-anchor="middle" class="icon" fill="#7E57C2">☷</text><text x="220" y="648" text-anchor="middle" class="stepBody"><tspan x="220">Summarize, explain,</tspan><tspan x="220" dy="24">and submit proof of learning.</tspan></text></g>
+  <g fill="none" stroke="#0B6BCB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M810 392 C845 405,860 415,885 438"/><path d="M1035 676 C1045 700,1048 720,1050 752"/><path d="M1000 1005 C980 1040,960 1065,930 1096"/><path d="M760 1245 C650 1320,560 1320,480 1245"/><path d="M190 1100 C155 1065,135 1040,115 1005"/><path d="M220 675 C210 700,205 725,195 752"/><path d="M375 440 C405 415,430 400,470 390"/></g>
+  <rect x="120" y="1468" width="1000" height="120" rx="24" fill="#0B3A75" filter="url(#shadow)"/>
+  <text x="620" y="1518" text-anchor="middle" class="bottom">The goal is not just to finish the task.</text>
+  <text x="620" y="1558" text-anchor="middle" class="bottom">The goal is to rebuild and explain it independently.</text>
+  <text x="620" y="1658" text-anchor="middle" class="bottomSmall">For Computer Science, Programming, and Project-Based Learning</text>
+</svg>
