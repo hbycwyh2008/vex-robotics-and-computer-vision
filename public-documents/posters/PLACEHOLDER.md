@@ -1,1 +1,0 @@
-Poster image files are added separately as binary repository assets.
