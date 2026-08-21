@@ -1,0 +1,1 @@
+This folder stores classroom poster assets used directly by the VEX course.
