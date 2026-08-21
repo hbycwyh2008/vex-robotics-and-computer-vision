@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1754" viewBox="0 0 1240 1754">
+<rect width="1240" height="1754" fill="#F7FBFF"/>
+<style>.title{font-family:Arial,sans-serif;font-weight:900;fill:#0B3A75}.sub{font-family:Arial,sans-serif;font-weight:700;fill:#27506F}.head{font-family:Arial,sans-serif;font-weight:900;font-size:36px}.body{font-family:Arial,sans-serif;font-size:25px;fill:#22384A}.small{font-family:Arial,sans-serif;font-size:22px;fill:#355269}</style>
+<text x="620" y="120" text-anchor="middle" class="title" font-size="82">AI USE POLICY</text>
+<text x="620" y="180" text-anchor="middle" class="sub" font-size="31">Use AI as a learning tool, not a shortcut.</text>
+<rect x="80" y="255" width="1080" height="380" rx="34" fill="#ECF9F0" stroke="#3FAE63" stroke-width="4"/>
+<text x="130" y="325" class="head" fill="#2E8B50">ALLOWED — WHEN IT SUPPORTS LEARNING</text>
+<text x="140" y="385" class="body">✓ Ask for explanations in simpler words.</text>
+<text x="140" y="435" class="body">✓ Ask for debugging ideas, hints, or test strategies.</text>
+<text x="140" y="485" class="body">✓ Review code, pseudocode, or engineering reasoning.</text>
+<text x="140" y="535" class="body">✓ Generate practice questions or compare approaches.</text>
+<text x="140" y="585" class="body">✓ Use suggestions only after you test and verify them.</text>
+<rect x="80" y="675" width="1080" height="355" rx="34" fill="#FFF1F1" stroke="#D9534F" stroke-width="4"/>
+<text x="130" y="745" class="head" fill="#B93A36">NOT ALLOWED — AI CANNOT DO THE LEARNING FOR YOU</text>
+<text x="140" y="805" class="body">✕ Submit AI-generated work you do not understand.</text>
+<text x="140" y="855" class="body">✕ Ask AI to complete the entire task and claim it as your own.</text>
+<text x="140" y="905" class="body">✕ Hide meaningful AI use when disclosure is required.</text>
+<text x="140" y="955" class="body">✕ Invent measurements, test results, observations, or robot performance.</text>
+<rect x="80" y="1070" width="1080" height="425" rx="34" fill="#EEF5FF" stroke="#0B6BCB" stroke-width="4"/>
+<text x="130" y="1140" class="head" fill="#0B6BCB">REQUIRED — YOU OWN THE RESULT</text>
+<text x="140" y="1200" class="body">• Understand and explain your code, build, logic, and decisions.</text>
+<text x="140" y="1250" class="body">• Test AI suggestions on the real robot or system.</text>
+<text x="140" y="1300" class="body">• Rebuild key patterns when asked.</text>
+<text x="140" y="1350" class="body">• Record meaningful AI assistance in your evidence.</text>
+<text x="140" y="1400" class="body">• Use physical tests and measured data as proof — not AI output.</text>
+<text x="140" y="1460" class="small">Disclosure: What I asked AI · How it helped · How I verified it · What I did myself</text>
+<rect x="120" y="1550" width="1000" height="105" rx="24" fill="#0B3A75"/>
+<text x="620" y="1594" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="28" fill="white">AI can help you think.</text>
+<text x="620" y="1632" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="24" fill="white">It cannot replace your testing, understanding, or engineering responsibility.</text>
+</svg>
