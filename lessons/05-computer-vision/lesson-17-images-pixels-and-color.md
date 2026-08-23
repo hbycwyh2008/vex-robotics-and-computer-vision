@@ -11,11 +11,27 @@ Students will be able to:
 - inspect pixel values and simple image properties;
 - connect camera perception to the same perceive–decide–act architecture used with robot sensors.
 
-## Required resources
-- computer with Python and OpenCV
-- sample images and/or USB webcam
-- Jupyter notebook or Python IDE
-- engineering notebook / GitHub portfolio
+## Required video learning
+
+### Coursera — IBM: Introduction to Computer Vision and Image Processing
+Course: https://www.coursera.org/learn/introduction-computer-vision-watson-opencv
+
+Watch selected videos before/during this lesson:
+
+**Module 1 — Introduction to Computer Vision**
+- Introduction to Computer Vision
+- Applications of Computer Vision
+
+**Module 2 — Image Processing with OpenCV and Pillow**
+- What Is A Digital Image
+- Manipulating Images
+- Manipulating Images One Pixel At a Time
+
+Do not assign the entire Coursera course at once. Students should watch the selected videos and immediately connect them to the local OpenCV investigation.
+
+## Required technical reference
+
+- OpenCV-Python tutorials: https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html
 
 ## Core idea
 A camera does not give a robot "objects." It gives the computer a grid of numerical values. Computer vision turns those values into useful measurements and decisions.
@@ -46,6 +62,14 @@ Students should describe what information is preserved or lost.
 
 ## Part D — Camera connection
 If a webcam is available, capture one frame and compare it with a saved image. Discuss how repeated frames form a live perception stream.
+
+## Discussion bridge
+
+After the video and hands-on investigation, students should be able to answer through evidence rather than memorization:
+
+- What numerical information does the camera actually give the program?
+- Where is an "object" in the raw image data?
+- What must an algorithm do before a robot can make a decision from the image?
 
 ## Evidence to submit
 - Python script/notebook;
