@@ -6,12 +6,12 @@ These classroom visuals are stored **inside the VEX Robotics repository** so the
 
 | Poster | Local file | Purpose in VEX |
 |---|---|---|
-| **Our Classroom Flow** | [classroom-flow.svg](classroom-flow.svg) | Shared learning cycle: learn → practice → rebuild → share |
-| **Mastery Level** | [mastery-level.svg](mastery-level.svg) | Levels 0–5: exposure → follow → explain → rebuild → independent → debug/transfer |
-| **AI Use Policy** | [ai-use-policy.svg](ai-use-policy.svg) | AI supports learning, debugging and explanation; it does not replace testing or understanding |
-| **CS Competition Pathways** | [cs-competition-pathways.svg](cs-competition-pathways.svg) | Optional enrichment, including VEX/FIRST/robotics and other CS pathways |
+| **Our Classroom Flow** | [classroom-flow.png](classroom-flow.png) | Shared learning cycle: learn → practice → rebuild → share |
+| **Mastery Level** | [mastery-level.png](mastery-level.png) | Levels 0–5: exposure → follow → explain → rebuild → independent → debug/transfer |
+| **AI Use Policy** | [ai-use-policy.png](ai-use-policy.png) | AI supports learning, debugging and explanation; it does not replace testing or understanding |
+| **CS Competition Pathways** | [cs-competition-pathways.png](cs-competition-pathways.png) | Optional enrichment, including VEX/FIRST/robotics and other CS pathways |
 
-The SVG files are repository-local, printable, and editable classroom assets.
+These PNG files are the official shared classroom posters copied from the Full-Stack Web and AI course for visual consistency across courses.
 
 ---
 
