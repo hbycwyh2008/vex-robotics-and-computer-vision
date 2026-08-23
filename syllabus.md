@@ -4,13 +4,17 @@
 
 VEX Robotics, AI Vision, and Intelligent Control is a **full-year, project-based high school course** in which students build, program, test, debug, document, and improve real robots using the **VEX V5 Competition Starter Kit**.
 
-Students begin with the official VEX **TrainingBot — Competition Kit**, then progress through driver control, VEXcode/Python programming, sensors, autonomous behavior, engineering design, mechanisms, and competition-style challenges. In the later part of the course, students use **Python and OpenCV** to explore computer vision and connect visual perception to robot decisions and actions.
+Students begin with the official VEX **TrainingBot — Competition Kit**, then progress through driver control, VEXcode/Python programming, sensors, autonomous behavior, engineering design, mechanisms, and competition-style challenges. In the later part of the course, students use **Python and OpenCV** to build a transparent classical computer-vision pipeline, then study selected required material from **Andrew Ng / DeepLearning.AI's Convolutional Neural Networks** course and **Edge Impulse's Computer Vision with Embedded Machine Learning** course to connect classical vision to CNNs, transfer learning, object detection, embedded vision, and robot decision making.
 
 The central systems idea is:
 
 > **Perception → Decision → Action → Testing → Improvement**
 
-This is a hands-on robotics engineering course with a strong AI application connection. It develops AI literacy through real perception and control systems; it is **not** a deep machine-learning or model-training course.
+The computer-vision learning progression is:
+
+> **Pixels → Rules → Objects → CNNs → Detection → Embedded Vision → Robot Decisions**
+
+This remains a hands-on robotics engineering course rather than a full deep-learning specialization. However, **modern CNN-based computer vision is a required conceptual component**, not optional enrichment. Students learn enough CNN, MobileNet, transfer-learning, localization, IoU, NMS, and YOLO concepts to understand how modern learned perception differs from the classical OpenCV system they build themselves.
 
 ---
 
@@ -53,6 +57,7 @@ See [mastery-levels.md](mastery-levels.md).
 - **2–3 class meetings per week**
 - Approximately **72–108 class periods** depending on the school calendar
 - Significant lab time is reserved for building, testing, rebuilding, debugging, redesign, documentation, and demonstrations
+- Coursera content is assigned as **selected video segments mapped to local lessons**, not as an unstructured requirement to complete entire external courses
 
 ## Prerequisites
 
@@ -79,7 +84,14 @@ See [mastery-levels.md](mastery-levels.md).
 
 - Computer with Python
 - OpenCV
+- Jupyter notebook or Python IDE as appropriate
 - USB webcam and/or school-approved VEX vision hardware as available
+- Coursera access for selected videos from:
+  - IBM — **Introduction to Computer Vision and Image Processing**
+  - DeepLearning.AI / Andrew Ng — **Convolutional Neural Networks**
+  - Edge Impulse — **Computer Vision with Embedded Machine Learning**
+
+See [resources.md](resources.md) for the exact video-to-lesson mapping.
 
 ---
 
@@ -98,14 +110,20 @@ By the end of the course, students will be able to:
 9. Apply the engineering design process to open-ended robot challenges.
 10. Use repeated tests and evidence to diagnose failures and justify changes.
 11. Rebuild core robotics/programming patterns with progressively less support.
-12. Process camera images with OpenCV using color spaces, masks, contours, and target position.
-13. Connect a perception result to a robot decision and action.
-14. Test vision systems under changing conditions and explain common failure modes.
-15. Use AI coding tools responsibly while retaining understanding and ownership of submitted work.
-16. Maintain a Team Engineering Notebook with evidence of testing, debugging, iteration, and decisions.
-17. Maintain an Individual Engineering Learning Log showing personal contribution and mastery.
-18. Maintain a GitHub/Markdown portfolio with curated project evidence.
-19. Present and defend an integrated robotics project and explain individual technical contributions.
+12. Process camera images with OpenCV using color spaces, masks, contours, bounding boxes, and target position.
+13. Build and test a complete transparent classical computer-vision detector.
+14. Explain the conceptual roles of convolution, pooling, CNN feature learning, MobileNet, transfer learning, and data augmentation.
+15. Distinguish image classification, localization, object detection, and segmentation at the appropriate conceptual level.
+16. Explain bounding boxes, IoU, NMS, anchor boxes, and the basic idea behind YOLO.
+17. Compare classical hand-designed computer vision with learned CNN-based computer vision and justify when each may be appropriate.
+18. Explain why lightweight architectures and transfer learning are important for embedded/robotics vision.
+19. Connect a perception result—classical or learned—to a robot decision and action through a modular perception/decision/action architecture.
+20. Test vision systems under changing conditions and explain failure modes including brittle thresholds, domain shift, dataset mismatch, false positives/negatives, latency, and uncertain perception.
+21. Use AI coding tools responsibly while retaining understanding and ownership of submitted work.
+22. Maintain a Team Engineering Notebook with evidence of testing, debugging, iteration, and decisions.
+23. Maintain an Individual Engineering Learning Log showing personal contribution and mastery.
+24. Maintain a GitHub/Markdown portfolio with curated project evidence.
+25. Present and defend an integrated robotics project and explain individual technical contributions.
 
 ---
 
@@ -116,8 +134,8 @@ By the end of the course, students will be able to:
 3. **Unit 02 — Driver Control and Robot Motion Programming**
 4. **Unit 03 — Sensors and Autonomous Control**
 5. **Unit 04 — Engineering Design, Mechanisms, and Robot Challenges**
-6. **Unit 05 — Computer Vision Foundations with OpenCV**
-7. **Unit 06 — AI Vision and Robot Decision Making**
+6. **Unit 05 — Classical Computer Vision Foundations with OpenCV**
+7. **Unit 06 — Modern AI Vision, CNN Concepts, and Robot Decision Making**
 8. **Unit 07 — Integrated Robotics + Vision Capstone**
 
 ## Major Projects
@@ -129,6 +147,44 @@ By the end of the course, students will be able to:
 5. **Project 04 — Color Object Detection with OpenCV**
 6. **Project 05 — Vision-Guided Robot Decision System**
 7. **Final — Integrated Robotics and Vision Capstone**
+
+The capstone may use a classical, learned, or hybrid perception approach, but the choice must be justified by requirements, reliability evidence, deployment constraints, and testing—not by choosing the most complex method automatically.
+
+---
+
+## Required Computer Vision Video Path
+
+### Stage 1 — Classical CV foundation
+
+**IBM — Introduction to Computer Vision and Image Processing**
+
+Use selected introductory and image-processing videos alongside Lessons 17–18.
+
+### Stage 2 — Modern CV foundation — required
+
+**DeepLearning.AI / Andrew Ng — Convolutional Neural Networks**
+
+Required selected topics distributed across Lessons 19–23 include:
+- computer vision and edge detection;
+- convolution, padding, stride and pooling;
+- CNN architecture intuition;
+- MobileNet;
+- transfer learning;
+- data augmentation;
+- object localization and detection;
+- bounding-box prediction;
+- IoU;
+- non-max suppression;
+- anchor boxes;
+- YOLO.
+
+### Stage 3 — Embedded vision bridge
+
+**Edge Impulse — Computer Vision with Embedded Machine Learning**
+
+Use selected videos on image classification, CNNs, MobileNet/transfer learning, object-detection metrics, model training, and deployment to connect modern CV concepts to robotics/edge constraints.
+
+See [resources.md](resources.md) and Lessons 17–23 for exact assignments.
 
 ---
 
@@ -156,9 +212,11 @@ Each student records:
 
 ### Testing Rule
 
-When a student/team claims that a robot or subsystem became more reliable, accurate, consistent, or effective, the claim should be supported by repeated trials or a controlled comparison.
+When a student/team claims that a robot, perception module, or subsystem became more reliable, accurate, consistent, or effective, the claim should be supported by repeated trials or a controlled comparison.
 
 > **Build / Program → Test → Record → Explain**
+
+For learned vision, high model confidence alone is not proof of system reliability. Students must distinguish model output from measured deployment performance.
 
 See:
 
@@ -174,7 +232,7 @@ See:
 | Category | Suggested Weight | Evidence |
 |---|---:|---|
 | Engineering evidence & GitHub portfolio | 20% | Team notebook, individual logs, code, photos/video, test data, reflections |
-| Formative checks & quizzes | 15% | Hardware, programming, sensor, engineering, vision concepts, mastery checks |
+| Formative checks & quizzes | 15% | Hardware, programming, sensor, engineering, classical CV, CNN/object-detection concepts, mastery checks |
 | Projects & engineering challenges | 40% | Performance + design process + evidence |
 | Final integrated project | 20% | System design, build, code, testing, demo + individual defense |
 | Presentation & reflection | 5% | Technical explanation and defense |
@@ -200,6 +258,7 @@ See [assessment-plan.md](assessment-plan.md).
 - Use evidence to justify redesign and retest important changes.
 - Every team member must be able to explain their contribution and relevant robot structure/code.
 - Complete individual learning evidence honestly; do not copy a teammate's reflection.
+- Watch assigned external videos actively and connect them to the local build/program/test task rather than treating video completion as mastery.
 - Respect shared hardware and clean the workstation before leaving.
 
 ---
@@ -249,5 +308,14 @@ Every student maintains an engineering portfolio. Each major project should incl
 - final demonstration evidence;
 - individual contribution and mastery reflection;
 - reflection on what the student would improve or test next.
+
+Computer-vision portfolio evidence should also demonstrate that the student can distinguish:
+
+- hand-written classical CV rules;
+- learned CNN-based perception;
+- perception output;
+- decision logic;
+- robot action/control;
+- measured reliability under changing conditions.
 
 See [portfolio-requirements.md](portfolio-requirements.md) and [pacing-guide.md](pacing-guide.md).
