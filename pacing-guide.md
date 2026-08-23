@@ -6,7 +6,7 @@ That provides approximately:
 
 - **72–108 class meetings** per year;
 - **108–162 instructional hours**;
-- enough time for sustained building, programming, rebuilding, failure analysis, redesign, driver practice, assessment, documentation, AI/computer-vision work, and a substantial capstone.
+- enough time for sustained building, programming, rebuilding, failure analysis, redesign, driver practice, assessment, documentation, classical computer vision, required modern-CV video study, AI/robotics integration, and a substantial capstone.
 
 The course uses the **VEX V5 Competition Starter Kit** as the standard hardware platform. Students begin with the official **TrainingBot — Competition Kit** pathway before progressing to custom mechanisms, autonomous control, and computer vision.
 
@@ -29,6 +29,21 @@ See:
 
 ---
 
+## Computer Vision Resource Rule
+
+The CV portion uses **selected external videos mapped directly to local lessons**, not an expectation that students complete entire Coursera courses independently.
+
+Required progression:
+
+1. **IBM — Introduction to Computer Vision and Image Processing** for digital-image/OpenCV foundations.
+2. **OpenCV official documentation** for HSV, thresholding, masks and contours.
+3. **DeepLearning.AI / Andrew Ng — Convolutional Neural Networks** as the required modern-CV bridge: convolution, pooling, MobileNet, transfer learning, localization, IoU, NMS and YOLO.
+4. **Edge Impulse — Computer Vision with Embedded Machine Learning** for embedded deployment and object-detection context.
+
+See [resources.md](resources.md) for the exact video-to-lesson mapping.
+
+---
+
 ## Full-Year Sequence
 
 | Weeks | Unit | Focus | Major Evidence / Deliverable |
@@ -45,11 +60,12 @@ See:
 | 19–20 | Unit 04 | Engineering design process; mechanisms, gear ratio, torque/speed trade-offs | Mechanism prototype + design review |
 | 21–22 | Unit 04 | Intake/lift/manipulator concepts; iteration and constraints | Mechanism challenge + redesign/retest evidence |
 | 23–24 | Unit 04 | Competition-style strategy, driver skills, autonomous strategy | **Project 03: Robot Challenge Design** |
-| 25–26 | Unit 05 | Computer vision foundations: images, pixels, RGB/BGR, HSV, camera input | First OpenCV camera/image program |
-| 27–28 | Unit 05 | Thresholding, masks, morphology, lighting and calibration | Color segmentation investigation + controlled comparison |
-| 29–30 | Unit 05 | Contours, bounding boxes, centroids, target position | **Project 04: Color Object Detection** |
-| 31–32 | Unit 06 | Perception → decision → action; translating vision output into robot behavior | Vision decision prototype + robustness tests |
-| 33 | Unit 06 | Vision limitations, false detections, robustness, responsible AI | **Project 05: Vision-Guided Decision System** |
+| 25–26 | Unit 05 | Images, pixels, RGB/BGR, camera input + selected IBM Coursera image-processing videos | First OpenCV camera/image program + pixel/channel explanation |
+| 27–28 | Unit 05 | HSV, thresholding, masks, morphology, lighting/calibration + OpenCV docs; begin Andrew Ng edge-detection bridge | Color segmentation investigation + controlled comparison |
+| 29–30 | Unit 05 | Contours, bounding boxes, centroids, target position; complete classical detector; Andrew Ng CNN foundations | **Project 04: Color Object Detection** + classical-vs-CNN comparison |
+| 31 | Unit 06 | Andrew Ng MobileNet, transfer learning, data augmentation; Edge Impulse embedded-vision bridge; perception → decision → action | Vision decision prototype + classical/learned perception architecture diagram |
+| 32 | Unit 06 | Andrew Ng object localization/detection, bounding boxes, IoU, NMS, anchor boxes, YOLO; closed-loop alignment | Closed-loop vision alignment + modern object-detection concept check |
+| 33 | Unit 06 | Classical vs learned vision robustness, domain shift, false detections, deployment constraints, responsible AI | **Project 05: Vision-Guided Decision System** + robustness evidence |
 | 34 | Unit 07 | Capstone proposal, requirements, system architecture | Approved capstone plan + test plan |
 | 35 | Unit 07 | Build, integrate, test, debug, collect evidence | Working capstone prototype + documented iteration |
 | 36 | Unit 07 | Final validation, demo, individual engineering defense, portfolio cleanup, reflection | **Final Integrated Robotics + Vision Project** |
@@ -63,7 +79,7 @@ A normal technical lesson should reserve most of the period for active engineeri
 | Time | Phase | Typical activity |
 |---:|---|---|
 | 0–10 min | Entry / retrieval / predict | Safety check, prior-learning retrieval, prediction, quick hardware/code inspection |
-| 10–25 min | Learn / focused demo | One concept, worked example, physical demonstration, or debugging model |
+| 10–25 min | Learn / focused demo | One concept, selected video segment, worked example, physical demonstration, or debugging model |
 | 25–55 min | Practice → rebuild | Guided work followed by reduced scaffolding or an independent engineering task |
 | 55–75 min | Test / debug / redesign / retest | Controlled tests, diagnosis, evidence-based change, comparison |
 | 75–85 min | Document / explain / share | Team Engineering Notebook, Individual Learning Log when assigned, technical explanation |
@@ -107,11 +123,13 @@ Use [teacher-notes/90-minute-lesson-template.md](teacher-notes/90-minute-lesson-
 ### Computer Vision / AI Day
 
 - 0–10: retrieval + failure-case image/video
-- 10–25: Python/OpenCV concept and teacher demonstration
-- 25–55: coding / guided experiment → rebuild
-- 55–75: robustness testing under changed conditions
+- 10–25: selected Coursera segment / OpenCV concept / focused discussion; avoid passive long-form viewing
+- 25–55: coding, image experiment, concept reconstruction, or robot integration task
+- 55–75: robustness testing under changed conditions or classical-vs-learned comparison
 - 75–85: evidence + AI-use disclosure + technical explanation
 - 85–90: exit mastery check
+
+For Andrew Ng material, students should repeatedly connect the video idea to something already visible in their own system: edge/filter, bounding box, target center, false detection, latency, or robot response.
 
 ### Assessment / Engineering Defense Day
 
@@ -126,13 +144,13 @@ Use [teacher-notes/90-minute-lesson-template.md](teacher-notes/90-minute-lesson-
 
 ### Three 90-minute meetings
 
-1. **Learn + investigation** — establish the engineering/computing idea through a short demo and controlled experiment.
+1. **Learn + investigation** — establish the engineering/computing idea through a short demo, selected video segment and controlled experiment.
 2. **Practice + rebuild + test** — sustained production, reduced scaffolding, debugging and validation.
 3. **Challenge + iteration + evidence** — measured performance, redesign, retest, notebook evidence, individual mastery check, or technical explanation.
 
 ### Two 90-minute meetings
 
-1. **Learn + guided practice + substantial lab** — keep direct instruction short enough to preserve a meaningful engineering block.
+1. **Learn + guided practice + substantial lab** — keep direct instruction/video short enough to preserve a meaningful engineering block.
 2. **Rebuild + challenge + debugging + evidence** — apply the concept with less support, test reliability, and document decisions.
 
 Do not eliminate the testing/iteration or rebuild opportunities merely to cover more content.
@@ -159,6 +177,8 @@ Additional meetings are intentionally used for:
 - Individual Engineering Learning Log / mastery conferences;
 - competition-style challenge rounds;
 - OpenCV coding labs;
+- selected IBM / Andrew Ng / Edge Impulse video discussions;
+- CNN/object-detection concept reconstruction;
 - computer-vision robustness experiments;
 - capstone integration;
 - catch-up / hardware repair;
@@ -175,8 +195,8 @@ A useful planning target is **80–90 explicitly planned 90-minute meetings**, w
 - **Weeks 7–12:** Driver control + VEXcode/Python motion programming
 - **Weeks 13–18:** Sensors + autonomous robotics
 - **Weeks 19–24:** Engineering design + mechanisms + competition-style challenges
-- **Weeks 25–30:** OpenCV / AI vision foundations
-- **Weeks 31–33:** Vision-based decision making and intelligent control
+- **Weeks 25–30:** Classical OpenCV foundations + transition into Andrew Ng CNN foundations
+- **Weeks 31–33:** Modern CV concepts + embedded-vision context + vision-based decision making and intelligent control
 - **Weeks 34–36:** Integrated capstone + showcase
 
 ---
@@ -190,20 +210,21 @@ A useful planning target is **80–90 explicitly planned 90-minute meetings**, w
 | C3: Programmed driving | Week 12 | Project 01 complete + core programming mastery evidence |
 | C4: Autonomous behavior | Week 18 | Project 02 complete + reliability/debugging evidence |
 | C5: Engineering challenge | Week 24 | Project 03 complete + redesign/retest evidence |
-| C6: Vision pipeline | Week 30 | Project 04 complete + varied-condition testing |
-| C7: Vision drives decisions | Week 33 | Project 05 complete + robustness evidence |
+| C6: Classical vision + CNN bridge | Week 30 | Project 04 complete + varied-condition testing + explain hand-designed pipeline vs learned CNN features |
+| C7: Vision drives decisions | Week 33 | Project 05 complete + explain MobileNet/transfer learning/localization/IoU/NMS/YOLO + robustness evidence |
 | C8: Final showcase | Week 36 | Capstone + validation + individual defense + portfolio |
 
 ---
 
 ## Teacher Pacing Notes
 
-- Treat each 90-minute meeting as a substantial lab period; avoid filling it with lecture.
+- Treat each 90-minute meeting as a substantial lab period; avoid filling it with lecture or passive video watching.
 - Use the local course posters in [`public-documents/posters/`](public-documents/posters/README.md) as recurring visual references, not as one-time decorations.
 - Do **not** rush the TrainingBot build. Students should learn correct fastening, alignment, wiring, maintenance, explanation, and systematic diagnosis rather than merely copy assembly steps.
 - Preserve rebuild time. A guided success should be followed later by an opportunity to reproduce the important pattern with less support.
 - Preserve iteration time. A robot that fails and is debugged carefully is often more valuable than a build that works immediately.
 - Keep the course primarily robotics engineering. A useful target is roughly **70% robotics / control / engineering** and **30% computer vision / AI application**.
+- The Andrew Ng component is required, but it should be integrated through selected videos and discussion/application tasks rather than displacing the physical robotics work.
 - Computer vision work can run on laptops while robot hardware is shared.
 - Use buffer meetings after major builds and before showcases for hardware failures, absent students, redesign, reassessment, and mastery checks.
 - Advanced teams can use the competition extension track rather than accelerating the entire class prematurely.
