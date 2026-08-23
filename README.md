@@ -1,6 +1,6 @@
 # VEX Robotics, AI Vision, and Intelligent Control
 
-A **36-week, project-based high school robotics course** built around the **VEX V5 Competition Starter Kit**. Students build and maintain real robots, program driver-controlled and autonomous behavior, solve engineering challenges, and then extend their systems with **Python + OpenCV / AI vision**.
+A **36-week, project-based high school robotics course** built around the **VEX V5 Competition Starter Kit**. Students build and maintain real robots, program driver-controlled and autonomous behavior, solve engineering challenges, and then extend their systems with **Python + OpenCV + modern computer vision concepts**.
 
 > Students do not just learn *about* robotics and AI. They **build, program, test, debug, redesign, measure, document, and defend intelligent robotic systems.**
 
@@ -70,7 +70,8 @@ A working robot is not sufficient evidence by itself. Claims about reliability, 
 - **Hardware:** VEX V5 Competition Starter Kit
 - **First official build:** TrainingBot — Competition Kit
 - **Programming:** VEXcode V5 + Python where appropriate
-- **AI / Vision:** Python + OpenCV
+- **AI / Vision:** Python + OpenCV + required selected Coursera material
+- **CV video pathway:** IBM → Andrew Ng / DeepLearning.AI → Edge Impulse
 - **Method:** project-based engineering, build–test–debug–iterate
 - **Evidence:** Team Engineering Notebook + Individual Engineering Learning Log + GitHub/Markdown portfolio
 
@@ -89,12 +90,32 @@ Sensors + autonomous control
         ↓
 Mechanisms + engineering challenges
         ↓
-OpenCV / computer vision
+OpenCV classical computer vision
+        ↓
+Andrew Ng CNN foundations + object detection
+        ↓
+Embedded vision / Edge Impulse concepts
         ↓
 Perception → Decision → Action
         ↓
 Integrated robotics + AI vision capstone
 ```
+
+## Computer Vision Learning Strategy
+
+The CV sequence deliberately separates three layers:
+
+1. **Classical CV** — students build a transparent OpenCV pipeline themselves.
+2. **Modern learned CV** — students study required selected material from Andrew Ng / DeepLearning.AI to understand convolution, CNNs, MobileNet, transfer learning, localization, IoU, NMS and YOLO.
+3. **Embedded / robotics CV** — students use selected Edge Impulse material to understand deployment constraints and how perception feeds robot decisions.
+
+The progression is:
+
+> **Pixels → Rules → Objects → CNNs → Detection → Embedded Vision → Robot Decisions**
+
+Andrew Ng's CNN course is **required conceptual curriculum**, not optional enrichment. The robotics course does not require students to complete every Deep Learning Specialization programming assignment; selected videos are mapped directly to Lessons 19–23.
+
+See [resources.md](resources.md) for the exact mapping.
 
 ## What Students Learn
 
@@ -118,7 +139,14 @@ Integrated robotics + AI vision capstone
 - BGR/RGB and HSV color spaces
 - Thresholding and masks
 - Contours, bounding boxes and target position
-- Vision-system testing and failure analysis
+- Classical feature engineering vs learned feature representations
+- Convolution and pooling
+- CNN architecture intuition
+- MobileNet and transfer learning
+- Classification vs localization vs object detection
+- Bounding boxes, IoU, NMS, anchor boxes and YOLO concepts
+- Embedded-vision constraints
+- Vision-system testing, domain shift and failure analysis
 - Connecting perception to robot decisions and actions
 
 ### Engineering Practice
@@ -141,8 +169,8 @@ Integrated robotics + AI vision capstone
 | 7–12 | Programming | Driver control, VEXcode/Python, programmed movement |
 | 13–18 | Autonomy | Sensors, conditionals, feedback, autonomous behavior |
 | 19–24 | Engineering | Mechanisms, gear ratios, iteration, competition-style challenge |
-| 25–30 | AI Vision | OpenCV, HSV, masks, contours, object position |
-| 31–33 | Intelligent Control | Vision → decision → robot action, robustness and limitations |
+| 25–30 | Classical + CNN Bridge | OpenCV, HSV, masks, contours, object position + Andrew Ng CNN foundations |
+| 31–33 | Modern CV + Intelligent Control | MobileNet, transfer learning, localization/detection, IoU/NMS/YOLO, embedded vision, vision → decision → robot action |
 | 34–36 | Capstone | Integrated build, testing, demo and engineering defense |
 
 Full detail: [pacing-guide.md](pacing-guide.md)
@@ -191,7 +219,7 @@ Start here: **[lessons/README.md](lessons/README.md)**
 - [Lesson 19 — Contours, Bounding Boxes and Centroids](lessons/05-computer-vision/lesson-19-contours-bounding-boxes-centroids.md)
 - [Lesson 20 — Color Object Detection Project](lessons/05-computer-vision/lesson-20-color-object-detection-project.md)
 
-### Unit 06 — AI Robotics Integration
+### Unit 06 — Modern AI Vision + Robotics Integration
 
 - [Lesson 21 — Vision to Decision Logic](lessons/06-ai-robotics-integration/lesson-21-vision-to-decision-logic.md)
 - [Lesson 22 — Closed-Loop Vision Alignment](lessons/06-ai-robotics-integration/lesson-22-closed-loop-vision-alignment.md)
@@ -230,8 +258,8 @@ The lesson sequence is supported by materials that can be used directly during c
 2. **Driver Control Challenge** — controller mapping + measured iteration
 3. **Autonomous Navigation Challenge** — sensors + feedback + state logic
 4. **Competition-Style Robot Challenge** — mechanisms + strategy + testing
-5. **Color Object Detection Project** — complete OpenCV perception pipeline
-6. **Vision-Guided Robot Decision System** — perception → decision → action
+5. **Color Object Detection Project** — complete OpenCV perception pipeline + classical-vs-CNN explanation
+6. **Vision-Guided Robot Decision System** — perception → decision → action + modern object-detection concepts + robustness
 7. **Final Integrated Capstone** — build + vision + control + evidence + defense
 
 ## Official Starting Resources
@@ -241,13 +269,16 @@ The lesson sequence is supported by materials that can be used directly during c
   - Choose **3D Build Instructions — Competition Kits**.
 - VEX V5 build instructions: https://www.vexrobotics.com/v5/downloads/build-instructions
 - VEXcode V5: https://codev5.vex.com/
+- IBM Coursera — Introduction to Computer Vision and Image Processing: https://www.coursera.org/learn/introduction-computer-vision-watson-opencv
+- DeepLearning.AI / Andrew Ng — Convolutional Neural Networks: https://www.coursera.org/learn/convolutional-neural-networks
+- Edge Impulse — Computer Vision with Embedded Machine Learning: https://www.coursera.org/learn/computer-vision-with-embedded-machine-learning
 - Full curated resource list: [resources.md](resources.md)
 
 ## Assessment
 
 - **Team Engineering Notebook + portfolio:** ongoing evidence of design, testing, debugging and iteration
 - **Individual Engineering Learning Log + mastery checks:** evidence of each student's contribution and independence
-- **Formative checks / quizzes:** hardware, programming, sensors, engineering and vision
+- **Formative checks / quizzes:** hardware, programming, sensors, engineering, classical CV and modern CV concepts
 - **Performance challenges:** robot performance + engineering process + technical explanation
 - **Final capstone:** integrated system + testing + demonstration + defense
 
@@ -289,9 +320,10 @@ The course treats AI as a **system capability that must be tested**, not as magi
 
 1. **What can the robot sense or see?**
 2. **How is that information represented?**
-3. **What rule or algorithm makes the decision?**
-4. **What action does the robot take?**
-5. **Under what conditions does the system fail?**
-6. **How can evidence guide the next design iteration?**
+3. **Is perception based on hand-written rules, learned features, or both?**
+4. **What algorithm/model produces the perception output?**
+5. **What decision logic converts perception into action?**
+6. **Under what conditions does the system fail?**
+7. **How can evidence guide the next design iteration?**
 
 AI coding tools may support development, but students must understand, test, explain, document, and take responsibility for the work they submit.
