@@ -1,188 +1,188 @@
-# Teacher Start Here — Ready-to-Teach Delivery Guide
+# Teacher Start Here — Current Delivery Guide
 
-Use this file if you need to teach the course without first redesigning the curriculum.
+Use this file with [CURRENT-COURSE-PATH.md](CURRENT-COURSE-PATH.md). The current course has been intentionally simplified around VEX AI Vision + formal OpenCV learning.
 
-The repository has two layers:
+## Important 2026 Update
 
-1. **Anchor lessons** in `lessons/` explain the curriculum milestones and technical intent.
-2. **Core meeting playbooks** in `teacher-notes/core-meeting-playbook/` turn the year into 72 directly teachable 90-minute meetings.
+The current class has already:
+- built the VEX V5 TrainingBot / four-wheel robot;
+- driven it with an existing Controller program;
+- completed the TrainingBot in Onshape.
 
-For normal delivery, teach from the **core meeting playbook** and open the matching anchor lesson only when you need the deeper technical explanation, project context, or resource links.
+Therefore, do **not** restart with a long TrainingBot build, full Controller programming, or separate Distance/Optical/Inertial sensor sequence.
 
----
+The current backbone is:
 
-## Before the First Class
+> **Minimum VEXcode → AI Vision → Object Centering → Object Following → OpenCV → AprilTag → Integrated Vision Robot → Onshape Redesign**
 
-Complete these checks before students arrive:
+## What Is Authoritative
 
-- [ ] Confirm each team has a VEX V5 Competition Starter Kit or a documented equivalent parts set.
-- [ ] Charge and label V5 batteries; verify chargers and safe charging/storage location.
-- [ ] Confirm V5 Brain, Controller, Smart Motors, Smart Cables, tools, shafts, collars, spacers, gears and structural parts are available.
-- [ ] Open VEXcode V5 on student devices and confirm a Brain can connect/download.
-- [ ] Decide team size and assign the first role rotation.
-- [ ] Prepare one Team Engineering Notebook per team.
-- [ ] Prepare the Individual Engineering Learning Log for each student.
-- [ ] Create or confirm the GitHub/Markdown portfolio workflow.
-- [ ] Print or share `student-handouts/daily-engineering-lab-sheet.md`.
-- [ ] Review `teacher-notes/hardware-preparation-checklist.md`.
-- [ ] Review the Week 1 plans in `teacher-notes/core-meeting-playbook/weeks-01-09.md`.
+Use these files first:
+1. [CURRENT-COURSE-PATH.md](CURRENT-COURSE-PATH.md)
+2. [syllabus.md](syllabus.md)
+3. [pacing-guide.md](pacing-guide.md)
+4. [resources.md](resources.md)
 
-Do **not** begin the year with a long syllabus lecture. The first meetings use poster inspection, kit investigation, sorting, safety decisions and evidence creation.
+Older anchor lessons and the 72-meeting playbook remain useful as a resource bank, but parts of them reflect the previous broader curriculum. If they conflict with CURRENT-COURSE-PATH.md, follow CURRENT-COURSE-PATH.md.
 
----
+## Next Teaching Sequence
 
-## What to Open Each Day
-
-For each meeting, open these in this order:
-
-1. `teacher-notes/core-meeting-playbook/` — minute-by-minute plan.
-2. Matching file in `lessons/` — technical anchor and deeper notes.
-3. Matching student handout/project brief.
-4. `assessments/practical-checkpoints.md` when a checkpoint is scheduled.
-5. `assessments/teacher-answer-key.md` when using quiz-bank questions.
-
-For computer vision weeks also open:
-
-- `teacher-notes/cv-coursera-viewing-guide.md`
-- `resources.md`
-- OpenCV documentation linked there.
-
----
-
-## Standard 90-Minute Flow
-
-Unless a meeting plan says otherwise, use:
-
-| Time | Function |
-|---:|---|
-| 0–10 | Retrieval, prediction, failure case, safety/setup |
-| 10–25 | Short focused learning/demo/video segment |
-| 25–55 | Guided practice → reduced-support rebuild/application |
-| 55–75 | Test → debug → modify → retest |
-| 75–85 | Evidence, notebook, explanation/share |
-| 85–90 | Exit mastery check + physical reset |
-
-Direct instruction should normally be **15 minutes or less at a time**. The course is learned through building, programming, testing, discussion, comparison and explanation.
-
----
-
-## Required Learning Flow
-
-Across the whole course:
-
-> **Learn → Practice → Rebuild → Share**
-
-Robotics execution uses:
-
-> **Predict → Build / Program → Test → Debug → Redesign → Retest → Document → Explain / Transfer**
-
-A robot working once is not mastery. A team result is not automatic evidence of individual mastery.
-
----
-
-## Two Meetings vs Three Meetings per Week
-
-The core course is **72 meetings: Meeting A + Meeting B for 36 weeks**.
-
-If you have a third meeting, use it for one of these purposes before adding new content:
-
-1. rebuild without instructions;
-2. repeated trials and reliability measurement;
-3. debugging clinic;
-4. practical/reassessment;
-5. engineering notebook conference;
-6. driver practice;
-7. hardware repair;
-8. advanced competition extension;
-9. capstone iteration.
-
-Do not consume every third meeting with extra curriculum. Robotics needs buffer capacity.
-
----
-
-## Student Evidence Minimum
-
-Every substantial work session should leave evidence of:
-
-- goal;
-- what was built/programmed/changed;
-- test or observation;
-- result or failure;
-- diagnosis or explanation;
-- next step.
-
-Project sessions also require controlled retesting and an individual technical explanation.
+### 1. VEXcode V5 basics
 
 Use:
+- Lesson 1 — Coding with VEXcode V5: https://pd.vex.com/hu/node/1479
+- Lesson 2a — Code Viewer in VEXcode V5 (Python): https://pd.vex.com/training/v5/vex-v5-introductory-training-course/lesson-2a-using-the-code-viewer-in-vexcode-v5
 
-- `student-handouts/daily-engineering-lab-sheet.md`
-- `student-handouts/engineering-notebook-template.md`
-- `student-handouts/individual-engineering-learning-log.md`
-- `student-handouts/project-delivery-pack.md`
+Teach only enough for students to perform:
 
----
+> **Forward → Turn → Stop → Forward**
 
-## Assessment Baseline
+Students need:
+- drive / drive_for
+- turn / turn_for
+- stop
+- set_drive_velocity
+- variables
+- conditionals
+- while loops
+- simple functions
 
-Use performance evidence first and quizzes second.
+### 2. Mount AI Vision Sensor
 
-Suggested categories:
+Use the simple four-wheel V5 Advanced Trainingbot-style platform.
 
-- Engineering evidence / portfolio: 20%
-- Formative checks / quizzes: 15%
-- Projects / engineering challenges: 40%
-- Final integrated project: 20%
-- Presentation / reflection: 5%
+Resource:
+https://kb.vex.com/hc/en-us/articles/28385212896916-Mounting-and-Wiring-the-AI-Vision-Sensor-on-the-V5-Advanced-Trainingbot
 
-Practical checkpoints are in `assessments/practical-checkpoints.md`.
+Do not require a custom CAD mount before students have real vision-testing evidence.
 
-Quiz-bank answers and acceptable reasoning are in `assessments/teacher-answer-key.md`.
+### 3. Camera feed and Color Signature
 
----
+Resources:
+- https://kb.vex.com/hc/en-us/articles/24062385752212-Getting-Started-with-the-AI-Vision-Sensor-with-VEX-V5
+- https://kb.vex.com/hc/en-us/articles/24067512493972-Configuring-Color-Signatures-with-the-AI-Vision-Sensor-in-VEXcode-V5
 
-## Computer Vision / AI Sequence
+Students should test lighting, distance, angle, and background.
 
-The required conceptual order is:
+### 4. Vision data
 
-> **pixels → classical OpenCV rules → contours/geometry → CNNs → learned object detection → embedded vision → robot decisions**
+Focus on:
+- exists
+- centerX
+- centerY
+- width
+- height
+- take_snapshot()
 
-Required Coursera pathway:
+Resources:
+- https://kb.vex.com/hc/en-us/articles/24068869007636-Understanding-the-Data-in-the-AI-Vision-Utility-in-VEXcode-V5
+- https://kb.vex.com/hc/en-us/articles/24616732648468-Coding-with-the-AI-Vision-Sensor-in-VEXcode-V5-Python
 
-1. **IBM — Introduction to Computer Vision and Image Processing** for digital-image/OpenCV foundations.
-2. **DeepLearning.AI / Andrew Ng — Convolutional Neural Networks** as the required modern-CV bridge.
-3. **Edge Impulse — Computer Vision with Embedded Machine Learning** for edge/robotics deployment thinking.
+### 5. Object Centering
 
-Students do not need to complete every Coursera programming assignment. The local robotics labs remain the main assessed work. Exact assigned videos and discussion prompts are in `teacher-notes/cv-coursera-viewing-guide.md`.
+Teach:
 
----
+> **error = centerX - 160**
 
-## If Hardware Fails
+Students build:
 
-Do not lose the entire period. Move the affected team to one of these evidence-producing tasks:
+> **See → Measure → Decide → Turn → See Again**
 
-- configuration/code review;
-- fault diagnosis using the robot debugging checklist;
-- saved sensor-data analysis;
-- OpenCV work on laptop images/video;
-- test-plan design;
-- notebook reconstruction from same-day evidence only;
-- subsystem explanation/rebuild planning.
+### 6. Object Following
 
-See `teacher-notes/hardware-failure-continuity-plan.md`.
+Use:
+- centerX for steering
+- width/height as rough near/far evidence
 
----
+Target behavior:
 
-## Teacher Readiness Standard
+> **Find → Center → Approach → Stop**
 
-A meeting is ready to teach when you can answer, before class:
+### 7. Formal OpenCV course
 
-1. What will students be able to do by the end?
-2. What do I need physically/digitally prepared?
-3. What will students do during the first 10 minutes?
-4. What is the one focused concept/demo?
-5. What will students build/program/test themselves?
-6. What evidence will they submit?
-7. What is the exit mastery check?
-8. What will I do if hardware/software fails?
+Core course:
 
-The core meeting playbook supplies those answers for the 72 guaranteed meetings.
+**Master OpenCV Fundamentals for Real-Time Computer Vision**
+
+https://www.coursera.org/learn/master-opencv-fundamentals-for-real-time-computer-vision
+
+Required concepts:
+- image/pixel
+- RGB/BGR
+- HSV
+- thresholding
+- masks
+- contours
+- bounding boxes
+- center/centroid
+- real-time frames
+
+Face-recognition-specific material is optional.
+
+### 8. AprilTag
+
+Teach after color tracking is reliable.
+
+Resource:
+https://kb.vex.com/hc/en-us/articles/30488063603988-Using-AprilTags-with-the-AI-Vision-Sensor
+
+### 9. Final integrated project
+
+Core behavior:
+
+> **Search → Detect → Center → Approach → Stop / Perform Task**
+
+### 10. Return to Onshape
+
+Only after real testing reveals a camera-placement problem, redesign the mount.
+
+> **CAD → Build → Code → Vision → Test → Redesign**
+
+## Onshape Scope
+
+Do not continue full Onshape Fundamentals.
+
+Core scope:
+- Part Studio essentials
+- Introduction to Onshape Assemblies
+- VEX V5 Parts Library
+- TrainingBot CAD
+- later AI Vision mount redesign
+
+Skip:
+- Drawings
+- Detailed Drawings
+- Inspection and Repair
+- advanced surfacing
+- sheet metal
+- certification preparation
+
+## Engineering Notebook
+
+Use the notebook every major work session.
+
+Minimum evidence:
+- Goal
+- Work
+- Evidence
+- Decision
+- Next Step
+
+Useful files:
+- student-handouts/engineering-notebook-guide.md
+- student-handouts/engineering-notebook-template.md
+- student-handouts/individual-engineering-learning-log.md
+- student-handouts/test-record-template.md
+
+## What Is Now Optional
+
+The following no longer belong in the required core path:
+- separate Distance Sensor unit
+- separate Optical Sensor unit
+- separate Inertial Sensor unit
+- dedicated PID unit
+- long competition-autonomy unit
+- required Andrew Ng CNN sequence
+- required Edge Impulse sequence
+
+Use them only as extensions after the core vision robot works.
