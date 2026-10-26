@@ -1,26 +1,34 @@
-# 72 Core Meeting Playbook
+# Core Meeting Playbook — Legacy / Reference Status
 
-This directory is the daily delivery layer for the 36-week course.
+These meeting plans were built for the earlier broader 72-meeting sequence.
 
-Each week contains two guaranteed **90-minute core meetings**. A third meeting, when available, is used primarily for rebuild, reliability testing, practice, reassessment, repair, extension or capstone iteration.
+## Current Rule
 
-## Files
+Use [../../CURRENT-COURSE-PATH.md](../../CURRENT-COURSE-PATH.md) and [../../pacing-guide.md](../../pacing-guide.md) as the authoritative current sequence.
 
-- [Weeks 01–09](weeks-01-09.md) — onboarding, kit, TrainingBot, VEXcode, controller and first Python motion
-- [Weeks 10–18](weeks-10-18.md) — functions/loops, precise motion, sensors, autonomous control and Project 02
-- [Weeks 19–27](weeks-19-27.md) — mechanisms, engineering challenge and OpenCV foundations
-- [Weeks 28–36](weeks-28-36.md) — object detection, Andrew Ng CNN bridge, vision-guided control and capstone
+The current course now prioritizes:
 
-## How to Use
+> **Minimum VEXcode → AI Vision → Object Centering → Object Following → OpenCV → AprilTag → Integrated Vision Robot → Onshape Redesign**
 
-For each meeting:
+Therefore, do not automatically teach every meeting in these older week files in order.
 
-1. Read the **Prep** block before class.
-2. Put the **Launch** prompt where students can see it before they enter.
-3. Keep the **Learn / Demo** block short.
-4. Protect the **Build / Program / Test** block.
-5. Require the listed **Evidence** before cleanup.
-6. Use the **Exit** prompt individually; do not let teams submit one shared answer.
-7. Open the linked anchor lesson when deeper technical detail is needed.
+### Reuse selectively
 
-The playbook is intentionally operational. Anchor lessons remain the curriculum reference.
+Useful material may still be reused for:
+- hardware troubleshooting
+- VEXcode practice
+- engineering iteration
+- testing and documentation
+- OpenCV concepts
+- capstone planning
+
+### No longer required before CV
+
+- full sensor sequence
+- Distance Sensor unit
+- Inertial Sensor unit
+- long autonomous-navigation sequence
+- mechanism/competition sequence
+- required CNN/Edge Impulse sequence
+
+The current class has already completed the TrainingBot build and TrainingBot CAD model, so begin from the current path rather than Week 1 of this legacy playbook.
