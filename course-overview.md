@@ -2,179 +2,137 @@
 
 ## What This Course Is
 
-A project-based high school course that uses a simple VEX V5 mobile robot as the physical platform for learning robotics, computer vision, and intelligent control.
+A project-based high school course in which students use **VEX V5 + AI Vision Sensor + Python + Onshape + OpenCV** to build intelligent robotic systems.
 
-The current course is intentionally streamlined around:
+The course is organized in three layers:
 
-> **Essential CAD → Minimum Robot Control → AI Vision → Vision-Based Control → Formal OpenCV → Integrated Vision Robot**
+1. **VEX official robotics mainline** — build, code, sense, move, grab, navigate.
+2. **Robotics-focused classical CV** — explain the vision pipeline with OpenCV.
+3. **Modern learned CV theory** — introduce CNNs and object detection after the classical system is understood.
 
-The goal is not to complete every traditional VEX topic before computer vision. The goal is to make students understand and build a complete perception-to-action system.
+> **The robot is the main course. CV theory explains and extends what the robot already does.**
 
-See [CURRENT-COURSE-PATH.md](CURRENT-COURSE-PATH.md) for the authoritative sequence.
+## Current Status
 
-## Current Starting Point
+Students have already:
+- built the TrainingBot;
+- recreated it in Onshape;
+- learned basic VEXcode V5 / Python;
+- run the AI Vision Sensor successfully.
 
-The current class has already:
-- built the basic VEX V5 TrainingBot / four-wheel robot;
-- used an existing Controller program to drive it;
-- recreated the TrainingBot in Onshape.
-
-Therefore, the next sequence begins with minimal VEXcode/Python motion control and the AI Vision Sensor.
+The next stage is **arm + claw + AI Vision**.
 
 ## Standard Platform
 
-- VEX V5 TrainingBot / Advanced Trainingbot-style four-wheel drivetrain
+- VEX V5 Competition Starter Kit / equivalent V5 hardware
 - V5 Brain
 - Controller
 - Smart Motors
-- **VEX AI Vision Sensor**
+- AI Vision Sensor
+- arm + claw / V5 Clawbot structure
 - VEXcode V5
 - Python
 - Onshape
 - OpenCV
 
-## Course Philosophy
+## Core Robotics Sequence
 
-- **Keep the robot simple while vision is new.** Avoid unnecessary claw/arm complexity at the start of CV.
-- **Use CAD only when it serves the robot.** Students learn only the Onshape skills needed to understand assemblies and design a useful mount.
-- **Code only what vision needs first.** Students learn the Drivetrain API and basic Python control, then move directly to AI Vision.
-- **Make perception visible.** Students inspect centerX, centerY, width, height, masks, contours, and bounding boxes.
-- **Use closed-loop behavior early.** The core idea is See → Measure → Decide → Move → See Again.
-- **Teach formal CV, not only sensor APIs.** Students complete a structured OpenCV course and connect its pipeline to the VEX AI Vision data model.
-- **Redesign from evidence.** Camera mounting is revisited after real testing, not before students know what problem they need to solve.
+1. AI Vision Color Signature
+2. centerX / centerY / width / height
+3. Object Centering
+4. Object Following
+5. Add arm + claw
+6. Vision-Guided Grab
+7. AprilTag Navigation
+8. Integrated autonomous task
 
-## Essential Onshape Scope
+Core feedback loop:
 
-Required:
-- Part Studio essentials
-- Introduction to Onshape Assemblies
-- VEX V5 Parts Library
-- ability to understand/rebuild the robot as an assembly
-- later camera-mount redesign
+> **Camera → Perception Data → Decision Logic → Drivetrain / Arm / Claw → New Camera Data**
 
-Not required:
-- Drawings
-- Detailed Drawings
-- Inspection and Repair
-- advanced surfacing
-- sheet metal
-- certification preparation
+## Practical CV Sequence
 
-The current class has already completed the TrainingBot CAD model.
+Use selected sections from:
 
-## Minimum VEXcode Scope
+**Udemy — Hands on Robotic Vision: OpenCV, PyTorch, YOLO, Simulation**
 
-Students learn only enough to control the robot for vision work:
-- drive
-- drive_for
-- turn
-- turn_for
-- stop
-- set_drive_velocity
-- variables
-- conditionals
-- while loops
-- simple functions
+https://www.udemy.com/course/hands-on-computer-vision-for-robotics-opencv-pytorch-yolo/
 
-Checkpoint:
+Focus on:
+- Color Spaces
+- Thresholding
+- Contours
+- Morphology
+- Object Tracking
+- ArUco Marker
+- optional Visual Servoing
 
-> **Forward → Turn → Stop → Forward**
+The goal is not to finish all 110+ lectures. The goal is to explain the computer-vision concepts that directly map to the VEX projects.
 
-## AI Vision Learning Sequence
+## Modern CV Sequence
 
-1. Mount/connect the sensor.
-2. Open the camera feed and AI Vision Utility.
-3. Configure a Color Signature.
-4. Test detection under changing light, angle, distance, and background.
-5. Read exists, centerX, centerY, width, and height.
-6. Build an Object Centering Robot.
-7. Build an Object Following Robot.
-8. Add AprilTag behavior after color tracking is reliable.
+Use selected material from:
 
-## Formal Computer Vision
+**Stanford CS231n — Deep Learning for Computer Vision**
 
-Core structured course:
+https://cs231n.stanford.edu/
 
-**Coursera — Master OpenCV Fundamentals for Real-Time Computer Vision**
+Focus on:
+- CV overview
+- CNNs
+- architectures / transfer learning
+- object detection
 
-https://www.coursera.org/learn/master-opencv-fundamentals-for-real-time-computer-vision
+Students should understand the progression:
 
-Students learn:
-- images as pixels
-- RGB/BGR
-- HSV
-- thresholding
-- masks
-- contours
-- bounding boxes
-- center/centroid
-- real-time frames
+> **hand-written visual rules → learned features → modern object detection**
 
-They explicitly connect:
+## Core Concept Mapping
 
-> **OpenCV: image → HSV → mask → contour → bounding box → center**
+| Robot experience | CV concept |
+|---|---|
+| Color Signature | HSV + thresholding |
+| centerX / centerY | object / bounding-box center |
+| width / height | object scale / bounding-box size |
+| Following | tracking / visual servoing |
+| AprilTag | fiducial markers |
+| Grab | vision-guided manipulation |
+| AI Classification | learned perception |
 
-with:
+## Final Project
 
-> **VEX AI Vision: snapshot → detected object → centerX / centerY / width / height**
+Recommended capstone:
 
-Andrew Ng CNN and Edge Impulse are optional extensions after the core system works.
+> **Search → Detect → Center → Approach → Grab → Navigate → Deliver / Place**
 
-## Core Projects
+Students must explain:
+- perception;
+- decision logic;
+- control;
+- manipulator action;
+- failure modes;
+- test evidence;
+- classical vs learned CV.
 
-1. VEXcode Motion Mini-Task
-2. Reliable Color Detection
-3. Object Centering Robot
-4. Object Following Robot
-5. OpenCV Image/HSV/Mask/Contour Labs
-6. AprilTag Behavior
-7. Integrated Autonomous Vision Robot
-8. AI Vision Sensor Mount Redesign
+## CAD Role
 
-## Final System
+Onshape remains a just-enough engineering tool.
 
-The final core robot should be able to perform:
+Return to CAD only when real testing creates a design need such as:
+- poor camera angle;
+- occlusion by the arm;
+- unstable sensor mount;
+- claw interference;
+- cable routing.
 
-> **Search → Detect → Center → Approach → Stop / Perform Task**
+> **CAD → Build → Code → Vision → Test → Redesign**
 
-Students should be able to explain:
-- what the camera detects;
-- how the data is represented;
-- how code converts perception into a decision;
-- how the drivetrain acts;
-- why the system fails under some conditions;
-- what evidence justifies the next redesign.
+## What Is No Longer Core
 
-## Engineering Evidence
-
-Engineering Notebook work continues throughout the course.
-
-Evidence includes:
-- CAD screenshots
-- code
-- camera configuration
-- test conditions
-- detection data
-- failures
-- decisions
-- retest results
-- redesign evidence
-
-## Topics Removed from the Core Path
-
-These are now optional/just-in-time rather than required before CV:
-- separate Distance Sensor unit
-- separate Optical Sensor unit
-- separate Inertial Sensor unit
-- full Controller programming unit
-- long autonomous-navigation sequence
-- dedicated PID unit
-- full Onshape Fundamentals completion
-- mandatory Andrew Ng CNN sequence
-- mandatory Edge Impulse sequence
-
-## Central Systems Idea
-
-> **Camera → Perception Data → Decision Logic → Drivetrain Action → New Camera Data**
-
-That feedback loop is the core of the course.
+Not required as the main sequence:
+- IBM CV course;
+- previous Coursera OpenCV main-course plan;
+- mandatory Andrew Ng CNN;
+- mandatory Edge Impulse;
+- separate traditional VEX sensor units before CV;
+- full Onshape Fundamentals.
