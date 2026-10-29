@@ -1,188 +1,130 @@
 # Teacher Start Here — Current Delivery Guide
 
-Use this file with [CURRENT-COURSE-PATH.md](CURRENT-COURSE-PATH.md). The current course has been intentionally simplified around VEX AI Vision + formal OpenCV learning.
+Use [CURRENT-COURSE-PATH.md](CURRENT-COURSE-PATH.md) as the authoritative sequence.
 
-## Important 2026 Update
+## Current Class Status
 
-The current class has already:
-- built the VEX V5 TrainingBot / four-wheel robot;
-- driven it with an existing Controller program;
-- completed the TrainingBot in Onshape.
+Students have already:
+- built the TrainingBot / four-wheel V5 robot;
+- completed the TrainingBot CAD model;
+- completed basic VEXcode V5 / Python introduction;
+- run the AI Vision Sensor successfully.
 
-Therefore, do **not** restart with a long TrainingBot build, full Controller programming, or separate Distance/Optical/Inertial sensor sequence.
+Therefore, do not restart a long hardware or basic programming sequence.
 
-The current backbone is:
+## Current Backbone
 
-> **Minimum VEXcode → AI Vision → Object Centering → Object Following → OpenCV → AprilTag → Integrated Vision Robot → Onshape Redesign**
+> **AI Vision → Centering → Following → Arm + Claw → Vision-Guided Grab → AprilTag → Robotics-Focused OpenCV → CS231n selected theory → Final Intelligent Robot**
 
-## What Is Authoritative
+## Next Teaching Steps
 
-Use these files first:
-1. [CURRENT-COURSE-PATH.md](CURRENT-COURSE-PATH.md)
-2. [syllabus.md](syllabus.md)
-3. [pacing-guide.md](pacing-guide.md)
-4. [resources.md](resources.md)
+### 1. Confirm AI Vision reliability
+Students should be able to:
+- configure a Color Signature;
+- read centerX / centerY / width / height;
+- explain changing detection results;
+- test lighting, distance, angle, and background.
 
-Older anchor lessons and the 72-meeting playbook remain useful as a resource bank, but parts of them reflect the previous broader curriculum. If they conflict with CURRENT-COURSE-PATH.md, follow CURRENT-COURSE-PATH.md.
-
-## Next Teaching Sequence
-
-### 1. VEXcode V5 basics
-
-Use:
-- Lesson 1 — Coding with VEXcode V5: https://pd.vex.com/hu/node/1479
-- Lesson 2a — Code Viewer in VEXcode V5 (Python): https://pd.vex.com/training/v5/vex-v5-introductory-training-course/lesson-2a-using-the-code-viewer-in-vexcode-v5
-
-Teach only enough for students to perform:
-
-> **Forward → Turn → Stop → Forward**
-
-Students need:
-- drive / drive_for
-- turn / turn_for
-- stop
-- set_drive_velocity
-- variables
-- conditionals
-- while loops
-- simple functions
-
-### 2. Mount AI Vision Sensor
-
-Use the simple four-wheel V5 Advanced Trainingbot-style platform.
-
-Resource:
-https://kb.vex.com/hc/en-us/articles/28385212896916-Mounting-and-Wiring-the-AI-Vision-Sensor-on-the-V5-Advanced-Trainingbot
-
-Do not require a custom CAD mount before students have real vision-testing evidence.
-
-### 3. Camera feed and Color Signature
-
-Resources:
-- https://kb.vex.com/hc/en-us/articles/24062385752212-Getting-Started-with-the-AI-Vision-Sensor-with-VEX-V5
-- https://kb.vex.com/hc/en-us/articles/24067512493972-Configuring-Color-Signatures-with-the-AI-Vision-Sensor-in-VEXcode-V5
-
-Students should test lighting, distance, angle, and background.
-
-### 4. Vision data
-
-Focus on:
-- exists
-- centerX
-- centerY
-- width
-- height
-- take_snapshot()
-
-Resources:
-- https://kb.vex.com/hc/en-us/articles/24068869007636-Understanding-the-Data-in-the-AI-Vision-Utility-in-VEXcode-V5
-- https://kb.vex.com/hc/en-us/articles/24616732648468-Coding-with-the-AI-Vision-Sensor-in-VEXcode-V5-Python
-
-### 5. Object Centering
-
+### 2. Object Centering
 Teach:
-
 > **error = centerX - 160**
 
-Students build:
-
+Build:
 > **See → Measure → Decide → Turn → See Again**
 
-### 6. Object Following
-
+### 3. Object Following
 Use:
-- centerX for steering
-- width/height as rough near/far evidence
+- centerX for steering;
+- width / height as rough near/far evidence.
 
 Target behavior:
-
 > **Find → Center → Approach → Stop**
 
-### 7. Formal OpenCV course
+### 4. Add Arm + Claw
+Official resources:
+- AI Vision on V5 Clawbot: https://kb.vex.com/hc/en-us/articles/28385434989716-Mounting-and-Wiring-the-AI-Vision-Sensor-on-the-V5-Clawbot
+- V5 Claw 3D instructions: https://kb.vex.com/hc/en-us/articles/15516473701524-Repairing-and-Reassembling-a-V5-Clawbot-Claw-V5-Claw-Kit-v2
+- Robot Arm — Python: https://education.vex.com/stemlabs/v5/stem-labs/speedy-delivery/programming-the-robot-arm-python
 
-Core course:
+Core project:
+> **Detect → Center → Approach → Open → Grab → Lift**
 
-**Master OpenCV Fundamentals for Real-Time Computer Vision**
-
-https://www.coursera.org/learn/master-opencv-fundamentals-for-real-time-computer-vision
-
-Required concepts:
-- image/pixel
-- RGB/BGR
-- HSV
-- thresholding
-- masks
-- contours
-- bounding boxes
-- center/centroid
-- real-time frames
-
-Face-recognition-specific material is optional.
-
-### 8. AprilTag
-
-Teach after color tracking is reliable.
-
-Resource:
+### 5. AprilTag
+Use after the basic claw project works:
 https://kb.vex.com/hc/en-us/articles/30488063603988-Using-AprilTags-with-the-AI-Vision-Sensor
 
-### 9. Final integrated project
+Possible extension:
+> **Grab → find destination tag → navigate → deliver**
 
-Core behavior:
+### 6. Robotics-Focused OpenCV
+Use selected sections from:
 
-> **Search → Detect → Center → Approach → Stop / Perform Task**
+**Udemy — Hands on Robotic Vision: OpenCV, PyTorch, YOLO, Simulation**
 
-### 10. Return to Onshape
+https://www.udemy.com/course/hands-on-computer-vision-for-robotics-opencv-pytorch-yolo/
 
-Only after real testing reveals a camera-placement problem, redesign the mount.
+Assign only:
+- Color Spaces
+- Thresholding
+- Contour Detection
+- Morphology
+- Object Tracking
+- ArUco Marker
+- optional Visual Servoing
 
-> **CAD → Build → Code → Vision → Test → Redesign**
+Every video should connect to a VEX behavior.
 
-## Onshape Scope
+### 7. Modern CV Theory
+Use selected Stanford CS231n material:
+https://cs231n.stanford.edu/
 
-Do not continue full Onshape Fundamentals.
+Focus on:
+- CV overview;
+- CNNs;
+- transfer learning / architectures;
+- object detection.
 
-Core scope:
-- Part Studio essentials
-- Introduction to Onshape Assemblies
-- VEX V5 Parts Library
-- TrainingBot CAD
-- later AI Vision mount redesign
+Do not assign the full Stanford course.
 
-Skip:
-- Drawings
-- Detailed Drawings
-- Inspection and Repair
-- advanced surfacing
-- sheet metal
-- certification preparation
+### 8. Final Project
+Recommended behavior:
+
+> **Search → Detect → Center → Approach → Grab → Navigate → Deliver / Place**
+
+### 9. Return to Onshape
+Redesign only when test data shows a real problem.
+
+Possible redesigns:
+- camera angle;
+- sensor height;
+- arm occlusion;
+- claw geometry;
+- mount stiffness.
 
 ## Engineering Notebook
 
-Use the notebook every major work session.
-
-Minimum evidence:
+Every major session should leave:
 - Goal
 - Work
 - Evidence
 - Decision
-- Next Step
+- Next step
 
-Useful files:
-- student-handouts/engineering-notebook-guide.md
-- student-handouts/engineering-notebook-template.md
-- student-handouts/individual-engineering-learning-log.md
-- student-handouts/test-record-template.md
+## Resource Priority
 
-## What Is Now Optional
+Use this order:
+1. VEX official docs / videos for V5 and AI Vision;
+2. VEX STEM Labs for Python / robot manipulation;
+3. Udemy selected robotics-CV videos for classical CV;
+4. OpenCV official docs for technical reference;
+5. Stanford CS231n selected lectures for modern CV theory.
 
-The following no longer belong in the required core path:
-- separate Distance Sensor unit
-- separate Optical Sensor unit
-- separate Inertial Sensor unit
-- dedicated PID unit
-- long competition-autonomy unit
-- required Andrew Ng CNN sequence
-- required Edge Impulse sequence
+## No Longer the Main Path
 
-Use them only as extensions after the core vision robot works.
+Do not treat these as required core courses:
+- IBM CV;
+- previous Coursera OpenCV main-course plan;
+- mandatory Andrew Ng CNN;
+- mandatory Edge Impulse.
+
+Older lesson files can still be mined for activities, but the sequence above controls delivery.
