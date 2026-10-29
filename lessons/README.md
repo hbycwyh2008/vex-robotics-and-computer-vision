@@ -2,98 +2,83 @@
 
 Use [../CURRENT-COURSE-PATH.md](../CURRENT-COURSE-PATH.md) as the authoritative sequence.
 
-## Important
+## Current Path
 
-This repository contains lesson material from an earlier broader VEX curriculum. Some of those lessons remain useful, but the current course no longer requires students to complete every sensor/autonomy/mechanism topic before computer vision.
+The current class has already:
+- built the TrainingBot;
+- completed the TrainingBot CAD model in Onshape;
+- learned basic VEXcode V5 / Python;
+- run the AI Vision Sensor successfully.
 
-The current class has already built and CAD-modeled the TrainingBot. The current path is:
+The current lesson sequence is:
 
-> **Minimum VEXcode → AI Vision → Object Centering → Object Following → OpenCV → AprilTag → Integrated Vision Robot → Onshape Redesign**
+> **AI Vision → Object Centering → Object Following → Arm + Claw → Vision-Guided Grab → AprilTag → Robotics-Focused OpenCV → CS231n selected theory → Final Intelligent Robot**
 
-## Use These Existing Lesson Areas Selectively
+## How to Use the Existing Lesson Folders
 
 ### 01-trainingbot
-
-Reference only for hardware/build troubleshooting. The current class has already completed the physical TrainingBot and Onshape TrainingBot model.
+Reference only for build/hardware troubleshooting.
 
 ### 02-driver-control
-
-Use only the minimum material needed for:
-- VEXcode device setup
-- Python/Code Viewer bridge
-- drivetrain motion
-- variables / functions / conditionals / loops
-
-Do not require a long Controller-programming sequence before AI Vision.
+Use selectively for VEXcode/Python review.
 
 ### 03-sensors-autonomy
-
-**Extension/reference, not required core.**
-
-Distance Sensor, Optical Sensor, Inertial Sensor, and long autonomous-navigation work should not delay AI Vision. Use individual lessons only if a later project creates a real need.
+Extension/reference only. Separate Distance/Optical/Inertial units are not required before CV.
 
 ### 04-engineering-design
-
-Use engineering iteration/testing ideas as needed. Mechanism/competition lessons are optional until after the core vision robot works.
+Reuse iteration/testing ideas. Mechanism content becomes useful now when adding arm + claw.
 
 ### 05-computer-vision
+Reuse the OpenCV labs and classical-CV concepts, but replace older required IBM/Coursera viewing assignments with the current robotics-focused CV video path.
 
-OpenCV concepts remain important, but teach them after students have first used the VEX AI Vision Sensor enough to understand the practical meaning of target position and size.
+Current practical CV resource:
 
-Core OpenCV concepts:
-- image/pixel
-- RGB/BGR and HSV
-- thresholding
-- masks
-- contours
-- bounding boxes
-- center/centroid
-- real-time frames
+**Udemy — Hands on Robotic Vision: OpenCV, PyTorch, YOLO, Simulation**
 
-Core structured course:
+https://www.udemy.com/course/hands-on-computer-vision-for-robotics-opencv-pytorch-yolo/
 
-**Coursera — Master OpenCV Fundamentals for Real-Time Computer Vision**
-
-https://www.coursera.org/learn/master-opencv-fundamentals-for-real-time-computer-vision
+Use selected topics only:
+- Color Spaces
+- Thresholding
+- Contour Detection
+- Morphological Operations
+- Object Tracking
+- ArUco Marker
+- optional Visual Servoing
 
 ### 06-ai-robotics-integration
+Use closed-loop alignment, robustness, perception → decision → action, and failure analysis.
 
-Use for perception → decision → action concepts, especially closed-loop alignment and robustness.
-
-However, the current implementation should first use the VEX AI Vision Sensor:
+Current implementation should emphasize:
 - Color Signature
 - centerX / centerY
 - width / height
 - Object Centering
 - Object Following
+- arm + claw
 - AprilTag
 
 ### 07-capstone
+Use after students can combine vision, motion, and manipulation.
 
-Use the capstone structure after students can build a working vision-guided robot.
+Recommended final behavior:
 
-Core final behavior:
+> **Search → Detect → Center → Approach → Grab → Navigate → Deliver / Place**
 
-> **Search → Detect → Center → Approach → Stop / Perform Task**
+## Modern CV Theory
 
-## New Current Sequence
+Use selected Stanford CS231n material only after students understand the VEX + classical OpenCV system:
 
-1. VEXcode V5 intro videos
-2. Drivetrain mini-task
-3. mount/connect AI Vision Sensor
-4. camera feed
-5. Color Signature
-6. vision data
-7. Object Centering Robot
-8. Object Following Robot
-9. Coursera OpenCV Fundamentals
-10. OpenCV HSV/mask/contour/bounding-box labs
-11. AprilTag
-12. final integrated vision robot
-13. Onshape camera-mount redesign based on real test evidence
+https://cs231n.stanford.edu/
 
-## Deep Learning
+Focus on:
+- CV overview
+- CNNs
+- architectures / transfer learning
+- object detection
 
-Older lesson/resource references to required Andrew Ng CNN and Edge Impulse work should now be treated as optional advanced extension material.
+Older lesson references that call IBM, Andrew Ng, or Edge Impulse **required** should now be treated as legacy. They may be used as optional enrichment, but they are not the current core path.
 
-The current required CV core is VEX AI Vision + classical OpenCV.
+## Current Required CV Core
+
+> **VEX AI Vision + robotics-focused OpenCV + selected CS231n theory**
