@@ -1,57 +1,76 @@
-# Legacy Coursera Viewing Guide
+# Current Coursera Viewing Guide
 
-> **Status: legacy / optional reference only.**
->
-> This file documents an older curriculum design that used IBM, Andrew Ng / DeepLearning.AI, and Edge Impulse as the required CV video stack. That is **no longer the current required path**.
+This guide defines how Coursera resources are used in the current VEX Robotics + Computer Vision course.
 
-For the current course, use:
+## Core Coursera Bridge
 
-- [Current Course Path](../CURRENT-COURSE-PATH.md)
-- [Current CV Video Learning Guide](cv-video-learning-guide.md)
-- [Resources](../resources.md)
+### IBM — Introduction to Computer Vision and Image Processing
 
-## Current Required Structure
+https://www.coursera.org/learn/introduction-computer-vision-watson-opencv
 
-> **VEX official robotics mainline → robotics-focused OpenCV → selected Stanford CS231n theory**
+Use this as a **short OpenCV bridge**, not as a full required course.
 
-The current practical CV video resource is:
+### Required / selected
 
-**Udemy — Hands on Robotic Vision: OpenCV, PyTorch, YOLO, Simulation**
+**Module 1 — Introduction**
+- select the videos needed to establish what computer vision is and what problems it solves.
 
-https://www.udemy.com/course/hands-on-computer-vision-for-robotics-opencv-pytorch-yolo/
+**Module 2 — Image Processing with OpenCV and Pillow**
+- this is the main required block;
+- focus on digital images, pixels/channels, basic OpenCV operations, and image-processing concepts that help explain VEX AI Vision.
 
-Use selected sections only:
-- Color Spaces
-- Thresholding
-- Contour Detection
-- Morphological Operations
-- Object Tracking
-- ArUco Marker
-- optional Image-Based Visual Servoing
+**Module 5 — Object Detection**
+- select only the object-detection concepts that help bridge classical image processing to modern CV.
 
-The modern-CV theory extension is:
+### Skip as core
 
-**Stanford CS231n — Deep Learning for Computer Vision**
+- Module 3 — machine-learning image classification;
+- Module 4 — CNN;
+- Module 6 — transfer-learning project.
 
-https://cs231n.stanford.edu/
+Reason: CNN / learned-CV theory is handled more cleanly through selected Stanford CS231n material later.
 
-Use selected material on:
-- CV overview
-- CNNs
-- architectures / transfer learning
-- object detection
+## Required local connection
 
-## Optional Legacy Resources
+Students must connect:
 
-The following may still be used for enrichment when useful:
-- IBM — Introduction to Computer Vision and Image Processing
-- DeepLearning.AI / Andrew Ng — Convolutional Neural Networks
-- Edge Impulse — Computer Vision with Embedded Machine Learning
+> **image → HSV / threshold → mask → object region → bounding box → center**
 
-They are not required for the current VEX course.
+to:
 
-## Teaching Rule
+> **VEX Color Signature → centerX / centerY / width / height**
 
-Videos must support the current robot project. Do not let an external course become a separate passive video track.
+## Optional Advanced Coursera
 
-> **Watch a focused concept → apply it to VEX / OpenCV → test → document → explain**
+### University of Toronto — Visual Perception for Self-Driving Cars
+
+https://www.coursera.org/learn/visual-perception-self-driving-cars
+
+Status: **Optional Advanced / after-class enrichment.**
+
+Recommended for stronger students who want deeper study in:
+- camera models / calibration;
+- feature detection / matching;
+- visual odometry;
+- object detection / tracking;
+- semantic segmentation;
+- mobile-platform perception.
+
+Do not make this advanced course a whole-class requirement.
+
+## Not Required
+
+- full IBM completion;
+- old Coursera OpenCV main-course plan;
+- mandatory Andrew Ng CNN;
+- mandatory Edge Impulse.
+
+## Viewing Protocol
+
+1. Give a prediction question before the clip.
+2. Watch only the focused segment needed.
+3. Apply the idea immediately in OpenCV or VEX.
+4. Test and collect evidence.
+5. Have students explain the concept from memory.
+
+Coursera supports the project; it does not replace the project.
