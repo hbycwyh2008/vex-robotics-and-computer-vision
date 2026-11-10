@@ -4,107 +4,125 @@ Use [CURRENT-COURSE-PATH.md](CURRENT-COURSE-PATH.md) as the authoritative sequen
 
 ## Current Class Status
 
-Students have already:
-- built the TrainingBot;
-- completed the TrainingBot CAD model;
-- completed basic VEXcode V5 / Python;
-- completed the official VEX AI Vision Sensor project sequence.
+Completed:
+- TrainingBot;
+- TrainingBot CAD;
+- basic VEXcode V5 / Python;
+- official AI Vision Sensor project sequence.
 
 Do not restart official AI Vision tutorials.
 
 ## Current Backbone
 
-> **IBM OpenCV Bridge → Independent VEX Vision Challenge → Selected CS231n → Final Autonomous Vision Robot**
+> **IBM OpenCV Bridge → Independent VEX Vision Challenge → CS231n Core + Frontier → Final Autonomous Vision Robot**
 
 Optional advanced enrichment:
 
 > **University of Toronto — Visual Perception for Self-Driving Cars**
 
-## 1. OpenCV Bridge
+## 1. IBM OpenCV Bridge
 
-Core Coursera resource:
-
-**IBM — Introduction to Computer Vision and Image Processing**
-
+Course:
 https://www.coursera.org/learn/introduction-computer-vision-watson-opencv
 
+Detailed guide:
+[teacher-notes/ibm-opencv-bridge-guide.md](teacher-notes/ibm-opencv-bridge-guide.md)
+
 Assign:
-- selected Module 1;
-- core Module 2;
-- selected Module 5 object-detection concepts.
+- Module 1: Introduction / Applications / Recent Research;
+- Module 2: all videos;
+- required OpenCV labs only;
+- local VEX/OpenCV bridge lab;
+- Module 5: selected detection concepts.
 
-Do not require Modules 3, 4, or 6.
-
-Target concepts:
-- image / pixel / channels;
-- HSV / threshold;
-- mask;
-- contour / object region;
-- bounding box;
-- center;
-- mapping back to VEX centerX / centerY / width / height.
+Skip:
+- Module 3;
+- Module 4;
+- Module 6;
+- duplicate Pillow labs.
 
 ## 2. Independent VEX Vision Challenge
 
-Recommended behavior:
-
 > **Search → Detect → Center → Approach → Identify Marker → Choose Action → Navigate → Stop**
 
-Do not give a full solution. Students should design the state / decision logic, test, and iterate.
+Do not give a complete solution.
 
-## 3. Stanford CS231n — Selected Theory
+## 3. Stanford CS231n — Core Mastery
 
-https://cs231n.stanford.edu/
+Public playlist:
+https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16
 
-Use selected content on:
-- CV overview;
-- CNNs;
-- feature learning / pooling;
-- transfer-learning overview;
-- object detection;
-- IoU / NMS / YOLO-style ideas.
+Current schedule:
+https://cs231n.stanford.edu/schedule
 
-Do not assign the full Stanford course.
+Detailed guide:
+[teacher-notes/cs231n-selected-viewing-guide.md](teacher-notes/cs231n-selected-viewing-guide.md)
 
-## 4. Final Autonomous Vision Robot
+Core:
+> **L1 → L4 → L5 → L6 → L9**
 
-Core behavior:
+Emphasize:
+- CNN
+- convolution / pooling
+- feature learning
+- ResNet
+- transfer learning
+- object detection
+- IoU / NMS / YOLO
+
+## 4. CS231n — Frontier Vision
+
+Frontier:
+> **L8 → L12 → L16 → latest World Modeling discussion**
+
+Use these for breadth:
+- Transformers / ViT;
+- Self-Supervised Learning / DINO;
+- Vision-Language;
+- World Models.
+
+Rule:
+
+> **Core content: master it. Frontier content: understand where the field is going.**
+
+The public playlist is 2025. The 2026 course changed L17 from Robot Learning to World Modeling, so use the 2026 schedule/slides for the latest-frontier component.
+
+## 5. Final Autonomous Vision Robot
 
 > **Search → Detect → Center → Approach → Identify → Decide → Navigate → Stop**
 
 Assess:
-- working behavior;
+- behavior;
 - reliability;
 - repeated-trial evidence;
 - debugging;
 - decision logic;
 - engineering notebook;
-- explanation of classical vs learned CV.
+- classical vs learned CV explanation;
+- awareness of modern CV directions.
 
-## 5. Optional Advanced Coursera
+## 6. Optional Advanced Coursera
 
-**University of Toronto — Visual Perception for Self-Driving Cars**
-
+University of Toronto:
 https://www.coursera.org/learn/visual-perception-self-driving-cars
 
-Use only as **optional after-class enrichment** for students who want deeper mobile perception.
+After-class enrichment only.
 
 ## Resource Priority
 
-1. VEX official docs for reference;
+1. VEX official reference;
 2. IBM selected OpenCV bridge;
 3. OpenCV official docs;
-4. independent VEX project work;
-5. selected Stanford CS231n theory;
-6. University of Toronto advanced course as optional enrichment.
+4. independent VEX project;
+5. CS231n core;
+6. CS231n frontier;
+7. Toronto advanced optional.
 
 ## Explicitly Not Core
 
-- mechanical arm / claw / pick-and-place;
-- Udemy Hands on Robotic Vision course;
-- full IBM course;
+- mechanical arm / pick-and-place;
+- Udemy Robotics Vision;
+- full IBM;
 - full CS231n;
-- required Andrew Ng CNN;
-- required Edge Impulse.
-
-Older lesson files may still provide activities, but this guide controls current delivery.
+- mandatory Andrew Ng CNN;
+- mandatory Edge Impulse.
