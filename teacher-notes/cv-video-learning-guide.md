@@ -1,54 +1,47 @@
 # Current CV Learning Guide
 
-This guide aligns CV learning with the current VEX V5 mobile-robot course.
+The class has completed the official VEX AI Vision Sensor project sequence. The next stage is:
 
-## Current Status
-
-The class has completed the official VEX AI Vision Sensor project sequence. The next stage is to understand the underlying CV concepts and then design independent autonomous behavior.
+> **Understand the underlying CV → build independently → learn modern CV core → gain frontier vision**
 
 ---
 
-# Layer 1 — Short OpenCV Bridge
+# Layer 1 — IBM OpenCV Bridge
 
-## IBM Coursera
-
-**Introduction to Computer Vision and Image Processing**
-
+Course:
 https://www.coursera.org/learn/introduction-computer-vision-watson-opencv
 
-Use:
-- Module 1 — selected introduction;
-- Module 2 — core digital-image / OpenCV content;
-- Module 5 — selected object-detection concepts.
+Detailed guide:
+[ibm-opencv-bridge-guide.md](ibm-opencv-bridge-guide.md)
+
+Core selection:
+- Module 1: Introduction / Applications / Recent Research;
+- Module 2: all six videos;
+- required OpenCV labs;
+- local VEX/OpenCV bridge lab;
+- Module 5 detection concepts.
 
 Skip as core:
-- Module 3;
-- Module 4;
-- Module 6.
+- Modules 3, 4, 6;
+- duplicate Pillow labs.
 
-Recommended total use: about **3–5 hours**, not full-course completion.
+Required mapping:
 
-## Required conceptual mapping
-
-| VEX experience | CV concept |
+| VEX experience | Classical CV idea |
 |---|---|
-| Color Signature | color representation + thresholding |
-| centerX / centerY | object / bounding-box center |
-| width / height | bounding-box size |
-| Object Following | repeated perception + feedback control |
-| AprilTag | visual fiducial / marker-based decision |
+| Color Signature | HSV / threshold |
+| detected object | contour / object region |
+| centerX / centerY | bounding-box center |
+| width / height | bounding-box dimensions |
+| Object Following | repeated perception + feedback |
 
 ---
 
-# Layer 2 — Independent VEX Project
-
-Move away from tutorials.
-
-Recommended challenge:
+# Layer 2 — Independent VEX Vision Project
 
 > **Search → Detect → Center → Approach → Identify Marker → Choose Action → Navigate → Stop**
 
-Students should decide:
+Students design:
 - states;
 - transitions;
 - thresholds;
@@ -58,70 +51,65 @@ Students should decide:
 
 ---
 
-# Layer 3 — Modern CV Theory
+# Layer 3 — CS231n Core Mastery
 
-## Stanford CS231n
+Official course:
+https://cs231n.stanford.edu/
 
-Course: https://cs231n.stanford.edu/
+Public 2025 playlist:
+https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16
 
-Schedule: https://cs231n.stanford.edu/schedule
+Detailed guide:
+[cs231n-selected-viewing-guide.md](cs231n-selected-viewing-guide.md)
 
-Use selected topics only:
-- Computer Vision overview;
-- CNN / convolution;
-- feature learning / pooling;
-- architectures / transfer-learning overview;
+Core:
+> **L1 → L4 → L5 → L6 → L9**
+
+Students should master:
+- CV overview;
+- neural-network learning intuition;
+- CNN / convolution / pooling;
+- feature learning;
+- ResNet / transfer learning;
 - object detection;
-- bounding boxes / IoU / NMS / YOLO-style ideas.
-
-The purpose is conceptual depth, not completion of the Stanford assignment sequence.
+- bounding boxes;
+- IoU / NMS / YOLO.
 
 ---
 
-# Layer 4 — Optional Advanced Coursera
+# Layer 4 — CS231n Frontier Vision
 
-## University of Toronto — Visual Perception for Self-Driving Cars
+Frontier:
+> **L8 → L12 → L16 → L17 / current World Modeling**
 
+Themes:
+- Transformer / ViT;
+- Self-Supervised Learning / DINO;
+- Vision-Language Models;
+- World Models.
+
+The public playlist is 2025. Use the 2026 schedule/slides to keep frontier topics current.
+
+Teaching depth:
+- identify the problem;
+- explain the key idea;
+- explain why it matters;
+- connect to future robotics / AI;
+- no full implementation required.
+
+---
+
+# Layer 5 — Optional Advanced Coursera
+
+University of Toronto — Visual Perception for Self-Driving Cars:
 https://www.coursera.org/learn/visual-perception-self-driving-cars
 
-Status: **Optional Advanced / after-class enrichment**.
-
-Good for stronger students interested in:
-- camera calibration;
-- feature matching;
-- visual odometry;
-- detection / tracking;
-- semantic segmentation;
-- autonomous-vehicle and mobile-robot perception.
+Optional after-class enrichment.
 
 ---
 
-# Viewing Protocol
+# Teaching Principle
 
-For any video segment:
-1. Predict one idea before watching.
-2. Watch a focused segment.
-3. Represent the concept with a diagram / code / comparison.
-4. Apply it to OpenCV or VEX.
-5. Test and collect evidence.
-6. Explain without replaying the video.
+> **Core content goes deep. Frontier content goes wide.**
 
-## Student Note Format
-
-- Input
-- Processing
-- Output
-- VEX connection
-- Failure / limitation
-- Next test
-
----
-
-# Not in the Current Learning Path
-
-- Udemy Hands on Robotic Vision course;
-- mechanical-arm / pick-and-place content;
-- full IBM completion;
-- full CS231n completion.
-
-The physical VEX mobile robot remains the main assessed platform.
+The course should not become passive video consumption. Every core topic should be followed by explanation, diagramming, comparison, coding, or robot-system analysis.
