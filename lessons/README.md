@@ -1,71 +1,90 @@
 # Lessons — Current Use
 
-Use [../CURRENT-COURSE-PATH.md](../CURRENT-COURSE-PATH.md) as the authoritative sequence.
+Use [../CURRENT-COURSE-PATH.md](../CURRENT-COURSE-PATH.md) as authoritative.
 
 ## Current Status
 
-The current class has already:
-- built the TrainingBot;
-- completed the TrainingBot CAD model;
-- learned basic VEXcode V5 / Python;
-- completed the official VEX AI Vision Sensor project sequence.
+Completed:
+- TrainingBot;
+- TrainingBot CAD;
+- basic VEXcode / Python;
+- official VEX AI Vision Sensor projects.
 
-The current lesson sequence is:
+Current sequence:
 
-> **IBM OpenCV Bridge → Independent VEX Vision Challenge → Selected CS231n → Final Autonomous Vision Robot**
+> **IBM OpenCV Bridge → Independent VEX Vision Challenge → CS231n Core + Frontier → Final Autonomous Vision Robot**
 
 ## Existing Lesson Folders
 
 ### 01-trainingbot
-Reference only for hardware/build troubleshooting.
+Reference only.
 
 ### 02-driver-control
-Use only for VEXcode/Python review as needed.
+Review only as needed.
 
 ### 03-sensors-autonomy
-Reference / extension. Use individual topics only when a project creates a real need.
+Reference / extension only.
 
 ### 04-engineering-design
-Reuse testing, iteration, and redesign activities.
+Reuse testing, iteration, and redesign work.
 
 ### 05-computer-vision
-Reuse useful OpenCV labs, but the current video/course bridge is:
+
+Current bridge:
 
 **IBM — Introduction to Computer Vision and Image Processing**
-
 https://www.coursera.org/learn/introduction-computer-vision-watson-opencv
 
-Use selected Module 1, core Module 2, and selected Module 5.
+Use:
+- selected Module 1;
+- core Module 2;
+- selected Module 5;
+- local VEX/OpenCV bridge lab.
+
+Detailed guide:
+[../teacher-notes/ibm-opencv-bridge-guide.md](../teacher-notes/ibm-opencv-bridge-guide.md)
 
 ### 06-ai-robotics-integration
-Use perception → decision → action, state logic, closed-loop alignment, and robustness.
+
+Use perception → decision → action, state logic, feedback and robustness.
 
 ### 07-capstone
-Use for a mobile-robot autonomous vision project.
 
-Recommended behavior:
+Recommended:
 
 > **Search → Detect → Center → Approach → Identify → Decide → Navigate → Stop**
 
-## Modern CV Theory
+## Modern CV — Core + Frontier
 
-Selected Stanford CS231n:
-
+Stanford CS231n:
 https://cs231n.stanford.edu/
 
-Focus on CNNs and object-detection concepts.
+Public video playlist:
+https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16
+
+Detailed guide:
+[../teacher-notes/cs231n-selected-viewing-guide.md](../teacher-notes/cs231n-selected-viewing-guide.md)
+
+Core mastery:
+> **L1, L4, L5, L6, L9**
+
+Frontier vision:
+> **L8, L12, L16, current World Modeling**
+
+Teaching principle:
+> **Core deep; frontier broad.**
 
 ## Optional Advanced
 
 University of Toronto — Visual Perception for Self-Driving Cars:
-
 https://www.coursera.org/learn/visual-perception-self-driving-cars
 
-Treat as optional after-class enrichment.
+After-class enrichment only.
 
 ## Not Current Core
 
-- mechanical arm / claw / pick-and-place;
-- Udemy Robotics Vision course;
-- mandatory IBM full-course completion;
+- mechanical arm / pick-and-place;
+- Udemy Robotics Vision;
+- full IBM completion;
+- full CS231n completion;
 - mandatory Andrew Ng / Edge Impulse.
