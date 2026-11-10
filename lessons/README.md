@@ -2,83 +2,70 @@
 
 Use [../CURRENT-COURSE-PATH.md](../CURRENT-COURSE-PATH.md) as the authoritative sequence.
 
-## Current Path
+## Current Status
 
 The current class has already:
 - built the TrainingBot;
-- completed the TrainingBot CAD model in Onshape;
+- completed the TrainingBot CAD model;
 - learned basic VEXcode V5 / Python;
-- run the AI Vision Sensor successfully.
+- completed the official VEX AI Vision Sensor project sequence.
 
 The current lesson sequence is:
 
-> **AI Vision → Object Centering → Object Following → Arm + Claw → Vision-Guided Grab → AprilTag → Robotics-Focused OpenCV → CS231n selected theory → Final Intelligent Robot**
+> **IBM OpenCV Bridge → Independent VEX Vision Challenge → Selected CS231n → Final Autonomous Vision Robot**
 
-## How to Use the Existing Lesson Folders
+## Existing Lesson Folders
 
 ### 01-trainingbot
-Reference only for build/hardware troubleshooting.
+Reference only for hardware/build troubleshooting.
 
 ### 02-driver-control
-Use selectively for VEXcode/Python review.
+Use only for VEXcode/Python review as needed.
 
 ### 03-sensors-autonomy
-Extension/reference only. Separate Distance/Optical/Inertial units are not required before CV.
+Reference / extension. Use individual topics only when a project creates a real need.
 
 ### 04-engineering-design
-Reuse iteration/testing ideas. Mechanism content becomes useful now when adding arm + claw.
+Reuse testing, iteration, and redesign activities.
 
 ### 05-computer-vision
-Reuse the OpenCV labs and classical-CV concepts, but replace older required IBM/Coursera viewing assignments with the current robotics-focused CV video path.
+Reuse useful OpenCV labs, but the current video/course bridge is:
 
-Current practical CV resource:
+**IBM — Introduction to Computer Vision and Image Processing**
 
-**Udemy — Hands on Robotic Vision: OpenCV, PyTorch, YOLO, Simulation**
+https://www.coursera.org/learn/introduction-computer-vision-watson-opencv
 
-https://www.udemy.com/course/hands-on-computer-vision-for-robotics-opencv-pytorch-yolo/
-
-Use selected topics only:
-- Color Spaces
-- Thresholding
-- Contour Detection
-- Morphological Operations
-- Object Tracking
-- ArUco Marker
-- optional Visual Servoing
+Use selected Module 1, core Module 2, and selected Module 5.
 
 ### 06-ai-robotics-integration
-Use closed-loop alignment, robustness, perception → decision → action, and failure analysis.
-
-Current implementation should emphasize:
-- Color Signature
-- centerX / centerY
-- width / height
-- Object Centering
-- Object Following
-- arm + claw
-- AprilTag
+Use perception → decision → action, state logic, closed-loop alignment, and robustness.
 
 ### 07-capstone
-Use after students can combine vision, motion, and manipulation.
+Use for a mobile-robot autonomous vision project.
 
-Recommended final behavior:
+Recommended behavior:
 
-> **Search → Detect → Center → Approach → Grab → Navigate → Deliver / Place**
+> **Search → Detect → Center → Approach → Identify → Decide → Navigate → Stop**
 
 ## Modern CV Theory
 
-Use selected Stanford CS231n material only after students understand the VEX + classical OpenCV system:
+Selected Stanford CS231n:
 
 https://cs231n.stanford.edu/
 
-Focus on:
-- CV overview
-- CNNs
-- architectures / transfer learning
-- object detection
+Focus on CNNs and object-detection concepts.
 
-Older lesson references that call IBM, Andrew Ng, or Edge Impulse **required** should now be treated as legacy. They may be used as optional enrichment, but they are not the current core path.
+## Optional Advanced
 
-## Current Required CV Core
+University of Toronto — Visual Perception for Self-Driving Cars:
 
-> **VEX AI Vision + robotics-focused OpenCV + selected CS231n theory**
+https://www.coursera.org/learn/visual-perception-self-driving-cars
+
+Treat as optional after-class enrichment.
+
+## Not Current Core
+
+- mechanical arm / claw / pick-and-place;
+- Udemy Robotics Vision course;
+- mandatory IBM full-course completion;
+- mandatory Andrew Ng / Edge Impulse.
