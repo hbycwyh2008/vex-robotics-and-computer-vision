@@ -1,8 +1,8 @@
 # VEX Robotics + Computer Vision
 
-A project-based high school course using **VEX V5 + VEX AI Vision Sensor + Python + Onshape + selected OpenCV / modern CV theory**.
+A project-based high school course using **VEX V5 + VEX AI Vision Sensor + Python + selected OpenCV + modern CV theory**.
 
-> **Current architecture:** VEX AI Vision completed → OpenCV Bridge → Independent VEX Vision Challenge → Selected CS231n → Final Autonomous Vision Robot
+> **Current architecture:** VEX AI Vision completed → IBM OpenCV Bridge → Independent VEX Vision Challenge → CS231n Core + Frontier → Final Autonomous Vision Robot
 
 Start here:
 - [CURRENT-COURSE-PATH.md](CURRENT-COURSE-PATH.md)
@@ -12,80 +12,67 @@ Start here:
 
 ## Current Classroom Status
 
-Students have already:
-- built the VEX V5 TrainingBot / simple four-wheel robot;
-- completed the TrainingBot in Onshape;
-- learned basic VEXcode V5 / Python;
-- completed the official AI Vision Sensor project sequence.
+Completed:
+- TrainingBot;
+- TrainingBot CAD;
+- basic VEXcode V5 / Python;
+- official VEX AI Vision project sequence.
 
-The next step is **not another AI Vision tutorial and not a mechanical-arm unit**.
+## IBM OpenCV Bridge
 
-## Core Next Step — Short OpenCV Bridge
-
-Use selected material from:
-
-**IBM — Introduction to Computer Vision and Image Processing**
-
+Course:
 https://www.coursera.org/learn/introduction-computer-vision-watson-opencv
 
-Core scope:
-- selected Module 1;
-- Module 2 as the main OpenCV / digital-image bridge;
-- selected Module 5 object-detection concepts;
-- skip Modules 3, 4, and 6 as core requirements.
+Use a short selected bridge, not the full course.
 
-Students connect:
+Detailed selection:
+[teacher-notes/ibm-opencv-bridge-guide.md](teacher-notes/ibm-opencv-bridge-guide.md)
 
-> **image → HSV / threshold → mask → contour / object region → bounding box → center**
+Main requirement:
+> **image → HSV → threshold → mask → contour / object → bounding box → center**
 
-to:
-
+and map it back to:
 > **VEX Color Signature → centerX / centerY / width / height**
 
-## Independent VEX Project
-
-After the bridge, students should work without a step-by-step official tutorial.
-
-Recommended behavior:
+## Independent VEX Vision Challenge
 
 > **Search → Detect → Center → Approach → Identify Marker → Choose Action → Navigate → Stop**
 
-## Modern CV Theory
+## Stanford CS231n
 
-Use selected material from:
-
-**Stanford CS231n — Deep Learning for Computer Vision**
-
+Official course:
 https://cs231n.stanford.edu/
 
-Focus on:
-- CNNs;
-- feature learning;
-- transfer learning at overview level;
-- object detection;
-- IoU / NMS / YOLO-style concepts.
+Public 2025 Stanford Online playlist:
+https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16
+
+Detailed selection:
+[teacher-notes/cs231n-selected-viewing-guide.md](teacher-notes/cs231n-selected-viewing-guide.md)
+
+### Core mastery
+> **L1 → L4 → L5 → L6 → L9**
+
+### Frontier vision
+> **L8 → L12 → L16 → latest World Modeling discussion**
+
+Principle:
+> **Core deep; frontier broad.**
 
 ## Optional Advanced Study
 
-**University of Toronto — Visual Perception for Self-Driving Cars**
-
+University of Toronto — Visual Perception for Self-Driving Cars:
 https://www.coursera.org/learn/visual-perception-self-driving-cars
 
-This is **optional advanced after-class enrichment**, not a core assessment requirement.
+After-class enrichment only.
 
 ## Final Project
 
-Recommended capstone:
-
 > **Autonomous Vision Robot: Search → Detect → Center → Approach → Identify → Decide → Navigate → Stop**
 
-## Not in the Current Core
+## Not in Current Core
 
-- mechanical arm / claw / pick-and-place;
-- Udemy Hands on Robotic Vision course;
-- full IBM course;
+- mechanical arm / pick-and-place;
+- Udemy Hands on Robotic Vision;
+- full IBM;
 - full CS231n;
-- full University of Toronto advanced course;
 - mandatory Andrew Ng CNN / Edge Impulse.
-
-Older files remain reference material only when they agree with [CURRENT-COURSE-PATH.md](CURRENT-COURSE-PATH.md).
