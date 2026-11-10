@@ -6,62 +6,57 @@ This is an internal course-production audit, not external accreditation.
 
 **Status: ready for direct classroom delivery with normal local adaptation.**
 
-The repository now has a daily delivery layer rather than requiring teachers to expand every anchor lesson themselves:
+Current authoritative pathway:
 
-- 36-week pacing and 72 guaranteed core meetings;
-- minute-by-minute 90-minute meeting plans;
-- matching anchor lessons;
-- student daily lab evidence sheet;
-- major-project delivery requirements;
-- practical checkpoints C1–C8;
-- unit quiz bank + teacher answer key;
-- weekly teacher preparation checklist;
-- hardware continuity/failure planning;
-- required CV video pathway (IBM → Andrew Ng CNN → Edge Impulse);
+> **Official VEX AI Vision completed → IBM OpenCV Bridge → Independent VEX Vision Challenge → Selected CS231n → Final Autonomous Vision Robot**
+
+Optional advanced enrichment:
+
+> **University of Toronto — Visual Perception for Self-Driving Cars**
+
+The repository includes:
+- current course path and pacing;
+- engineering notebook expectations;
+- VEX / VEXcode references;
+- selected IBM Coursera OpenCV bridge;
 - OpenCV technical references;
-- Team Engineering Notebook + Individual Learning Log;
+- independent mobile-robot vision challenge;
+- selected CS231n modern-CV theory;
+- optional advanced Toronto visual-perception course;
+- practical checkpoints / assessment resources;
+- hardware continuity / failure planning;
 - portfolio and AI-use expectations.
 
-## Internal Readiness Rubric
+## Important Current Constraints
 
-| Dimension | Weight | Current status | Evidence |
-|---|---:|---:|---|
-| Curriculum coherence | 15% | 15/15 | 36-week progression and checkpoints align |
-| Daily teachability | 20% | 20/20 | 72 core meeting playbooks with 90-minute flow |
-| Student materials | 15% | 14/15 | lab sheet, notebook, project pack, test sheets, portfolio |
-| Teacher materials | 15% | 14/15 | prep, demos, continuity, CV guide, answer key |
-| Technical resources | 10% | 9/10 | VEX/VEXcode examples + OpenCV/Coursera pathway |
-| Assessment | 10% | 10/10 | formative, practical C1–C8, projects, capstone, keys |
-| Operations & safety | 10% | 9/10 | prep/storage/safety/failure plans; local inventory still varies |
-| Differentiation | 5% | 4/5 | roles/extensions/reassessment; class-specific IEP/ELL needs remain local |
+The current required course does **not** assume:
+- a mechanical arm / claw;
+- pick-and-place;
+- industrial robot simulation;
+- Udemy Robotics Vision completion;
+- full IBM completion;
+- full CS231n completion.
 
-**Internal course-production readiness: 95/100.**
+## Local Variables Still Requiring Teacher Adaptation
 
-## Remaining 5% Is Intentionally Local
-
-No robotics curriculum can pre-script these accurately without school context:
-
-- exact class size and robot-to-student ratio;
-- local VEX kit inventory/replacement stock;
-- VEXcode/firmware changes after the release date;
-- camera/edge hardware available;
+- class size / robot-to-student ratio;
+- local VEX inventory;
+- VEXcode / firmware changes;
 - school grading categories;
 - holidays and interrupted weeks;
-- accommodation/ELL/IEP requirements;
+- accommodation / ELL / IEP requirements;
 - local competition participation;
-- network/Coursera access restrictions.
-
-Use `00-TEACHER-START-HERE.md` and `teacher-notes/weekly-prep-checklist.md` to resolve those local variables before delivery.
+- network / Coursera access;
+- student readiness for optional advanced material.
 
 ## Release Rule
 
-Do not call a future revision “teacher ready” if it removes any of these without replacement:
-
-1. two core meeting plans per week;
-2. explicit evidence/exit checks;
-3. teacher preparation expectations;
-4. student deliverable definitions;
-5. practical/individual mastery checks;
-6. hardware/software failure continuity;
-7. tested resource links and CV viewing map;
-8. repeated-trial validation requirements.
+Future revisions should preserve:
+1. explicit evidence / exit checks;
+2. teacher preparation expectations;
+3. student deliverable definitions;
+4. practical / individual mastery checks;
+5. hardware / software continuity plans;
+6. verified resource links;
+7. repeated-trial validation requirements;
+8. the distinction between core content and optional advanced enrichment.
