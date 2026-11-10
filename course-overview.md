@@ -2,137 +2,88 @@
 
 ## What This Course Is
 
-A project-based high school course in which students use **VEX V5 + AI Vision Sensor + Python + Onshape + OpenCV** to build intelligent robotic systems.
+A project-based high school course using a **VEX V5 mobile robot** to study perception, autonomous decision-making, computer vision, testing, and engineering iteration.
 
-The course is organized in three layers:
+The current class has completed the official VEX AI Vision project sequence.
 
-1. **VEX official robotics mainline** — build, code, sense, move, grab, navigate.
-2. **Robotics-focused classical CV** — explain the vision pipeline with OpenCV.
-3. **Modern learned CV theory** — introduce CNNs and object detection after the classical system is understood.
+> **The robot remains the main course. CV material explains what the sensor is doing and prepares students to design independent autonomous behavior.**
 
-> **The robot is the main course. CV theory explains and extends what the robot already does.**
+## Current Sequence
 
-## Current Status
+> **VEX AI Vision completed → IBM OpenCV Bridge → Independent VEX Vision Challenge → Selected CS231n → Final Autonomous Vision Robot**
 
-Students have already:
-- built the TrainingBot;
-- recreated it in Onshape;
-- learned basic VEXcode V5 / Python;
-- run the AI Vision Sensor successfully.
+## Current Platform
 
-The next stage is **arm + claw + AI Vision**.
-
-## Standard Platform
-
-- VEX V5 Competition Starter Kit / equivalent V5 hardware
-- V5 Brain
-- Controller
-- Smart Motors
-- AI Vision Sensor
-- arm + claw / V5 Clawbot structure
+- VEX V5 mobile drivetrain
+- V5 Brain / Controller / Smart Motors
+- VEX AI Vision Sensor
 - VEXcode V5
 - Python
 - Onshape
 - OpenCV
 
-## Core Robotics Sequence
+There is **no required mechanical arm / manipulator pathway**.
 
-1. AI Vision Color Signature
-2. centerX / centerY / width / height
-3. Object Centering
-4. Object Following
-5. Add arm + claw
-6. Vision-Guided Grab
-7. AprilTag Navigation
-8. Integrated autonomous task
+## OpenCV Bridge
 
-Core feedback loop:
+Core resource:
 
-> **Camera → Perception Data → Decision Logic → Drivetrain / Arm / Claw → New Camera Data**
+**IBM — Introduction to Computer Vision and Image Processing**
 
-## Practical CV Sequence
+https://www.coursera.org/learn/introduction-computer-vision-watson-opencv
 
-Use selected sections from:
+Use selected Module 1, core Module 2, and selected Module 5 only.
 
-**Udemy — Hands on Robotic Vision: OpenCV, PyTorch, YOLO, Simulation**
+Students connect:
 
-https://www.udemy.com/course/hands-on-computer-vision-for-robotics-opencv-pytorch-yolo/
+> **image → threshold / mask → object region → bounding box → center**
 
-Focus on:
-- Color Spaces
-- Thresholding
-- Contours
-- Morphology
-- Object Tracking
-- ArUco Marker
-- optional Visual Servoing
+with:
 
-The goal is not to finish all 110+ lectures. The goal is to explain the computer-vision concepts that directly map to the VEX projects.
+> **VEX AI Vision → Color Signature → centerX / centerY / width / height**
 
-## Modern CV Sequence
+## Independent Robotics
 
-Use selected material from:
+After the bridge, students should stop following official tutorials.
 
-**Stanford CS231n — Deep Learning for Computer Vision**
+Recommended autonomous behavior:
+
+> **Search → Detect → Center → Approach → Identify Marker → Choose Action → Navigate → Stop**
+
+Core systems idea:
+
+> **Camera → Perception Data → Decision Logic → Drivetrain Action → New Camera Data**
+
+## Modern CV
+
+Selected Stanford CS231n:
 
 https://cs231n.stanford.edu/
 
-Focus on:
-- CV overview
-- CNNs
-- architectures / transfer learning
-- object detection
+Use CNN, feature learning, transfer-learning overview, and object-detection concepts to explain how learned vision differs from hand-designed classical CV.
 
-Students should understand the progression:
+## Optional Advanced Study
 
-> **hand-written visual rules → learned features → modern object detection**
+**University of Toronto — Visual Perception for Self-Driving Cars**
 
-## Core Concept Mapping
+https://www.coursera.org/learn/visual-perception-self-driving-cars
 
-| Robot experience | CV concept |
-|---|---|
-| Color Signature | HSV + thresholding |
-| centerX / centerY | object / bounding-box center |
-| width / height | object scale / bounding-box size |
-| Following | tracking / visual servoing |
-| AprilTag | fiducial markers |
-| Grab | vision-guided manipulation |
-| AI Classification | learned perception |
+This is optional after-class enrichment for stronger students, not required core work.
 
 ## Final Project
 
 Recommended capstone:
 
-> **Search → Detect → Center → Approach → Grab → Navigate → Deliver / Place**
+> **Autonomous Vision Robot: Search → Detect → Center → Approach → Identify → Decide → Navigate → Stop**
 
-Students must explain:
-- perception;
-- decision logic;
-- control;
-- manipulator action;
-- failure modes;
-- test evidence;
-- classical vs learned CV.
-
-## CAD Role
-
-Onshape remains a just-enough engineering tool.
-
-Return to CAD only when real testing creates a design need such as:
-- poor camera angle;
-- occlusion by the arm;
-- unstable sensor mount;
-- claw interference;
-- cable routing.
-
-> **CAD → Build → Code → Vision → Test → Redesign**
+Students must explain perception, decision logic, control, failure modes, test evidence, and the difference between classical and learned CV.
 
 ## What Is No Longer Core
 
-Not required as the main sequence:
-- IBM CV course;
-- previous Coursera OpenCV main-course plan;
+- robot arm / claw / pick-and-place;
+- Udemy Robotics Vision course;
+- full IBM completion;
+- full CS231n completion;
 - mandatory Andrew Ng CNN;
 - mandatory Edge Impulse;
-- separate traditional VEX sensor units before CV;
-- full Onshape Fundamentals.
+- full University of Toronto advanced course.
