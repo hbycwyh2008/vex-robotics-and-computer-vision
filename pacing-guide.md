@@ -5,12 +5,12 @@ This guide follows [CURRENT-COURSE-PATH.md](CURRENT-COURSE-PATH.md).
 ## Current Entry Point
 
 Already completed:
-- TrainingBot / four-wheel build;
-- TrainingBot CAD in Onshape;
+- TrainingBot build;
+- TrainingBot CAD;
 - basic VEXcode V5 / Python;
-- official VEX AI Vision Sensor project sequence.
+- official VEX AI Vision project sequence.
 
-Start from the OpenCV bridge below.
+Start from the IBM OpenCV bridge.
 
 ## Phase 1 — Engineering Notebook (ongoing)
 
@@ -20,95 +20,110 @@ Use 10–15 minutes inside major project sessions.
 
 ## Phase 2 — IBM OpenCV Bridge
 
-Suggested time: **3–5 class meetings / selected homework**.
+Suggested time: **3–5 focused hours plus one local lab**.
 
-Course:
+Detailed guide:
+[teacher-notes/ibm-opencv-bridge-guide.md](teacher-notes/ibm-opencv-bridge-guide.md)
 
-**IBM — Introduction to Computer Vision and Image Processing**
+### Module 1
+Watch:
+- Introduction to Computer Vision
+- Applications of Computer Vision
+- Recent Research in Computer Vision
 
-https://www.coursera.org/learn/introduction-computer-vision-watson-opencv
+### Module 2
+Watch all six videos.
 
-Use:
-- selected Module 1;
-- core Module 2;
-- selected Module 5 object-detection concepts.
+Required labs:
+- Image processing with OpenCV
+- Basic Image Manipulation with OpenCV
+- Spatial Filtering OpenCV
 
-Skip as core:
-- Module 3;
-- Module 4;
-- Module 6.
+Optional:
+- Geometric Transformations with OpenCV
 
-Local bridge topics:
-1. image / pixel / channels;
-2. RGB/BGR and HSV;
-3. threshold / mask;
-4. contour / object region;
-5. bounding box / center;
-6. connection to VEX centerX / centerY / width / height.
+### Local required lab
+Build:
+
+> **image → HSV → threshold → mask → contour / object → bounding box → centerX / centerY / width / height**
+
+### Module 5
+Use selected detection concepts only.
+
+Skip Modules 3, 4 and 6 as core.
 
 ## Phase 3 — Independent VEX Vision Challenge
 
 Suggested time: **4–8 meetings**.
 
-Students receive a behavior goal, not step-by-step code.
-
-Recommended challenge:
-
 > **Search → Detect → Center → Approach → Identify Marker → Choose Action → Navigate → Stop**
 
-Assessment emphasis:
-- state / decision logic;
-- repeated visual feedback;
+Assessment:
+- state logic;
+- visual feedback;
 - reliability;
-- failure analysis;
-- test evidence;
-- engineering notebook.
+- robustness;
+- debugging;
+- evidence.
 
-## Phase 4 — Selected Stanford CS231n
+## Phase 4 — CS231n Core Mastery
 
-Suggested time: **3–6 meetings**, depending on class level.
+Suggested time: **5–8 focused class sessions / homework segments**.
 
-Use selected topics only:
-- CV overview;
-- CNN / convolution;
-- feature learning / pooling;
-- transfer learning overview;
-- object detection;
-- bounding boxes / IoU / NMS / YOLO concepts.
+Detailed guide:
+[teacher-notes/cs231n-selected-viewing-guide.md](teacher-notes/cs231n-selected-viewing-guide.md)
 
-Course:
-https://cs231n.stanford.edu/
+Core:
+- L1 Introduction
+- L4 Neural Networks / Backprop
+- L5 CNNs
+- L6 Architectures / Transfer Learning
+- L9 Object Detection / Segmentation
 
-Do not require full assignments.
+Expected depth:
+- explain;
+- diagram;
+- compare;
+- apply concepts to examples.
 
-## Phase 5 — Final Autonomous Vision Robot
+## Phase 5 — CS231n Frontier Vision
+
+Suggested time: **3–5 focused sessions**, often using selected segments + discussion / poster / presentation.
+
+Frontier:
+- L8 Transformers / ViT
+- L12 Self-Supervised Learning / DINO
+- L16 Vision-Language
+- 2026 L17 World Modeling
+
+Expected depth:
+- what problem does it solve?
+- why does it matter?
+- how is it different from older methods?
+- where could it matter in robotics / AI?
+
+Do not require graduate-level derivations.
+
+## Phase 6 — Final Autonomous Vision Robot
 
 Suggested time: **5–10 meetings**.
-
-Recommended behavior:
 
 > **Search → Detect → Center → Approach → Identify → Decide → Navigate → Stop**
 
 Required:
 - VEX drivetrain;
 - Python;
-- AI Vision Sensor;
-- repeated perception / action loop;
+- AI Vision;
+- repeated perception/action loop;
 - decision logic;
-- robustness tests;
+- robustness testing;
 - engineering notebook;
-- explanation of classical vs learned CV.
+- classical-vs-learned-CV explanation;
+- short reflection connecting the system to modern CV trends.
 
-## Phase 6 — Evidence-Based Onshape Redesign
+## Phase 7 — Evidence-Based Onshape Redesign
 
-Suggested time: **1–3 meetings only if needed**.
-
-Possible redesign targets:
-- camera angle / height;
-- field of view;
-- vibration;
-- cable routing;
-- sensor mount stiffness.
+Suggested time: **1–3 meetings only if evidence shows a need**.
 
 ## Optional Advanced Homework / Enrichment
 
@@ -116,24 +131,21 @@ Possible redesign targets:
 
 https://www.coursera.org/learn/visual-perception-self-driving-cars
 
-Do not assign it to the entire class as required work. It is for stronger students who want deeper mobile-perception study.
+For stronger students; not required for the entire class.
 
-## Not in the Current Pacing
+## Not in Current Pacing
 
 - mechanical arm / claw;
-- pick-and-place;
-- Udemy Robotics Vision course;
-- full IBM course;
+- Udemy Robotics Vision;
+- full IBM;
 - full CS231n;
-- long separate traditional sensor units before CV.
+- long duplicate CV-video tracks.
 
 ## Recommended 90-Minute Rhythm
 
 - 0–10: retrieval / setup
 - 10–25: focused concept / video
-- 25–60: code / build / investigation
-- 60–78: test / debug / retest
+- 25–60: code / investigation / robot application
+- 60–78: test / debug / discuss
 - 78–87: engineering notebook
 - 87–90: exit check
-
-The robot task remains the main evidence of learning.
