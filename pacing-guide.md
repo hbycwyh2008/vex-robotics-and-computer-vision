@@ -1,174 +1,139 @@
 # Pacing Guide — Current VEX Robotics + Computer Vision Path
 
-This pacing guide follows [CURRENT-COURSE-PATH.md](CURRENT-COURSE-PATH.md).
+This guide follows [CURRENT-COURSE-PATH.md](CURRENT-COURSE-PATH.md).
 
-## Current Class Entry Point
+## Current Entry Point
 
 Already completed:
 - TrainingBot / four-wheel build;
 - TrainingBot CAD in Onshape;
 - basic VEXcode V5 / Python;
-- initial AI Vision Sensor setup and successful operation.
+- official VEX AI Vision Sensor project sequence.
 
-Begin from the AI Vision control / claw integration stages below.
+Start from the OpenCV bridge below.
 
 ## Phase 1 — Engineering Notebook (ongoing)
-Use 10–15 minutes within major work sessions.
+
+Use 10–15 minutes inside major project sessions.
 
 > **Goal → Work → Evidence → Decision → Next Step**
 
-## Phase 2 — AI Vision Reliability
-Suggested time: 2–3 meetings.
+## Phase 2 — IBM OpenCV Bridge
 
-- Color Signature
-- lighting / distance / angle / background tests
-- centerX / centerY / width / height
-- repeated snapshots
+Suggested time: **3–5 class meetings / selected homework**.
 
-Checkpoint:
-> **Stable detection under several classroom conditions**
+Course:
 
-## Phase 3 — Object Centering
-Suggested time: 2–4 meetings.
+**IBM — Introduction to Computer Vision and Image Processing**
 
-> **error = centerX - 160**
-
-Build:
-> **See → Measure → Decide → Turn → See Again**
-
-## Phase 4 — Object Following
-Suggested time: 3–5 meetings.
+https://www.coursera.org/learn/introduction-computer-vision-watson-opencv
 
 Use:
-- centerX for steering;
-- width / height as rough near/far evidence.
+- selected Module 1;
+- core Module 2;
+- selected Module 5 object-detection concepts.
 
-Checkpoint:
-> **Find → Center → Approach → Stop**
+Skip as core:
+- Module 3;
+- Module 4;
+- Module 6.
 
-## Phase 5 — Add Arm + Claw
-Suggested time: 3–6 meetings.
+Local bridge topics:
+1. image / pixel / channels;
+2. RGB/BGR and HSV;
+3. threshold / mask;
+4. contour / object region;
+5. bounding box / center;
+6. connection to VEX centerX / centerY / width / height.
 
-Tasks:
-1. build / integrate arm and claw;
-2. learn arm/claw motor control;
-3. mount AI Vision in a useful viewing position;
-4. test occlusion and camera angle;
-5. integrate vision and manipulation.
+## Phase 3 — Independent VEX Vision Challenge
 
-Core project:
-> **Detect → Center → Approach → Open → Grab → Lift**
+Suggested time: **4–8 meetings**.
 
-## Phase 6 — AprilTag Navigation
-Suggested time: 2–4 meetings.
+Students receive a behavior goal, not step-by-step code.
 
-Students use:
-- Tag ID;
-- center;
-- size;
-- orientation / angle;
-- tag-based decisions.
+Recommended challenge:
 
-Possible challenge:
-> **Grab target → find target AprilTag → navigate → deliver**
+> **Search → Detect → Center → Approach → Identify Marker → Choose Action → Navigate → Stop**
 
-## Phase 7 — Robotics-Focused OpenCV Video Study
-Suggested time: 4–8 meetings plus selected homework/video time.
+Assessment emphasis:
+- state / decision logic;
+- repeated visual feedback;
+- reliability;
+- failure analysis;
+- test evidence;
+- engineering notebook.
 
-Use selected sections from:
+## Phase 4 — Selected Stanford CS231n
 
-**Udemy — Hands on Robotic Vision: OpenCV, PyTorch, YOLO, Simulation**
+Suggested time: **3–6 meetings**, depending on class level.
 
-https://www.udemy.com/course/hands-on-computer-vision-for-robotics-opencv-pytorch-yolo/
+Use selected topics only:
+- CV overview;
+- CNN / convolution;
+- feature learning / pooling;
+- transfer learning overview;
+- object detection;
+- bounding boxes / IoU / NMS / YOLO concepts.
 
-Selected topics:
-1. Color Spaces
-2. Thresholding
-3. Contour Detection
-4. Morphological Operations
-5. Object Tracking
-6. ArUco Marker
-7. optional Visual Servoing
+Course:
+https://cs231n.stanford.edu/
 
-Local labs should map each idea back to the VEX robot.
+Do not require full assignments.
 
-## Phase 8 — OpenCV Concept Mapping
-Suggested time: 2–4 meetings.
+## Phase 5 — Final Autonomous Vision Robot
 
-Students explicitly connect:
-
-> **VEX Color Signature ↔ HSV + thresholding**
-
-> **centerX / centerY ↔ contour / bounding-box center**
-
-> **width / height ↔ bounding-box size**
-
-> **Object Following ↔ tracking / visual servoing**
-
-> **AprilTag ↔ fiducial marker concepts**
-
-## Phase 9 — Stanford CS231n Selected Theory
-Suggested time: 3–6 meetings.
-
-Use selected lectures only:
-- Computer Vision overview;
-- CNNs;
-- architectures / transfer learning;
-- object detection.
-
-Goal:
-> **Understand how learned vision goes beyond hand-written thresholds and contours.**
-
-Do not require the full Stanford assignments.
-
-## Phase 10 — Final Integrated Intelligent Robot
-Suggested time: 5–10 meetings.
+Suggested time: **5–10 meetings**.
 
 Recommended behavior:
 
-> **Search → Detect → Center → Approach → Grab → Navigate → Deliver / Place**
+> **Search → Detect → Center → Approach → Identify → Decide → Navigate → Stop**
 
 Required:
-- drivetrain;
+- VEX drivetrain;
 - Python;
 - AI Vision Sensor;
-- arm + claw;
-- repeated feedback;
-- AprilTag or target navigation;
-- test evidence;
+- repeated perception / action loop;
+- decision logic;
+- robustness tests;
 - engineering notebook;
 - explanation of classical vs learned CV.
 
-## Phase 11 — Evidence-Based Onshape Redesign
-Suggested time: 1–3 meetings.
+## Phase 6 — Evidence-Based Onshape Redesign
 
-Redesign only when data shows a need:
+Suggested time: **1–3 meetings only if needed**.
+
+Possible redesign targets:
 - camera angle / height;
 - field of view;
-- arm occlusion;
 - vibration;
 - cable routing;
-- claw geometry;
-- mount stiffness.
+- sensor mount stiffness.
 
-> **CAD → Build → Code → Vision → Test → Redesign**
+## Optional Advanced Homework / Enrichment
 
-## Optional Extensions
-Only after the core project works:
-- state machine;
-- multi-target sorting;
-- learned object detection;
-- YOLO;
-- Edge Impulse;
-- MobileNet;
-- advanced visual servoing.
+**University of Toronto — Visual Perception for Self-Driving Cars**
+
+https://www.coursera.org/learn/visual-perception-self-driving-cars
+
+Do not assign it to the entire class as required work. It is for stronger students who want deeper mobile-perception study.
+
+## Not in the Current Pacing
+
+- mechanical arm / claw;
+- pick-and-place;
+- Udemy Robotics Vision course;
+- full IBM course;
+- full CS231n;
+- long separate traditional sensor units before CV.
 
 ## Recommended 90-Minute Rhythm
-- 0–10: retrieval / prediction / setup
-- 10–25: focused video/demo
-- 25–60: build/code/practice
-- 60–78: test/debug/retest
-- 78–87: engineering notebook
-- 87–90: exit check / reset
 
-The robot task remains the main learning evidence; videos support the project rather than replacing it.
+- 0–10: retrieval / setup
+- 10–25: focused concept / video
+- 25–60: code / build / investigation
+- 60–78: test / debug / retest
+- 78–87: engineering notebook
+- 87–90: exit check
+
+The robot task remains the main evidence of learning.
