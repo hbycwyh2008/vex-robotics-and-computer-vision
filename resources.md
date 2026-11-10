@@ -12,22 +12,31 @@ This resource list follows [CURRENT-COURSE-PATH.md](CURRENT-COURSE-PATH.md).
 - AI Vision Python API: https://api.vex.com/v5/home/python/Vision/AiVision.html
 - AprilTags: https://kb.vex.com/hc/en-us/articles/30488063603988-Using-AprilTags-with-the-AI-Vision-Sensor
 
-Current status: the class has completed the official AI Vision project sequence.
+Current status: official AI Vision project sequence completed.
 
-# 2. Core OpenCV Bridge — Coursera / IBM
+# 2. IBM OpenCV Bridge — Core
 
 **IBM — Introduction to Computer Vision and Image Processing**
 
 https://www.coursera.org/learn/introduction-computer-vision-watson-opencv
 
-Use only selected material:
-- Module 1 — selected introduction;
-- Module 2 — core digital-image / OpenCV content;
-- Module 5 — selected object-detection concepts.
+Detailed selection:
+[teacher-notes/ibm-opencv-bridge-guide.md](teacher-notes/ibm-opencv-bridge-guide.md)
 
-Skip Modules 3, 4, and 6 as core requirements.
+Required:
+- Module 1: Introduction to CV / Applications / Recent Research
+- Module 2: all six videos
+- Module 2 OpenCV labs: Image Processing, Basic Image Manipulation, Spatial Filtering
+- local VEX/OpenCV Bridge Lab
+- Module 5: Object Detection + Deep Learning Object Detection reading
 
-Recommended total use: about **3–5 hours** of focused video/lab work, not full-course completion.
+Optional:
+- Geometric Transformations with OpenCV
+- Haar / Faster R-CNN labs
+
+Skip as core:
+- Modules 3, 4, 6
+- Pillow duplicate labs
 
 # 3. OpenCV Official References
 
@@ -37,67 +46,79 @@ Recommended total use: about **3–5 hours** of focused video/lab work, not full
 - Contours: https://docs.opencv.org/4.x/d4/d73/tutorial_py_contours_begin.html
 - Contour features / bounding box: https://docs.opencv.org/4.x/dd/d49/tutorial_py_contour_features.html
 
-Core bridge pipeline:
+Core bridge:
 
-> **image → HSV / threshold → mask → contour / object region → bounding box → center**
+> **image → HSV → threshold → mask → contour / region → bounding box → center**
 
-Connect to:
+# 4. Stanford CS231n — Core + Frontier
 
-> **VEX Color Signature → centerX / centerY / width / height**
+Official course:
+https://cs231n.stanford.edu/
 
-# 4. Modern CV Theory — Stanford CS231n
+2026 schedule:
+https://cs231n.stanford.edu/schedule
 
-- Course: https://cs231n.stanford.edu/
-- Schedule: https://cs231n.stanford.edu/schedule
+Public Stanford Online 2025 playlist:
+https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16
 
-Use selected topics only:
-- CV overview;
-- CNNs;
-- feature learning / pooling;
-- architectures / transfer learning overview;
-- object detection;
-- IoU / NMS / YOLO-style ideas.
+Lecture 1:
+https://www.youtube.com/watch?v=2fq9wYslV0A
 
-Do not require the full course or all assignments.
+Detailed selection:
+[teacher-notes/cs231n-selected-viewing-guide.md](teacher-notes/cs231n-selected-viewing-guide.md)
 
-# 5. Optional Advanced Coursera Study
+## Core mastery
+- L1 Introduction
+- L4 Neural Networks & Backpropagation
+- L5 Image Classification with CNNs
+- L6 CNN Architectures / Transfer Learning
+- L9 Object Detection / Segmentation
+
+## Frontier vision
+- L8 Attention / Transformers / ViT
+- L12 Self-Supervised Learning / DINO
+- L16 Vision and Language
+- L17: use current 2026 **World Modeling** as latest frontier discussion; 2025 public video L17 is Robot Learning
+
+Teaching rule:
+> **Core deep, frontier broad.**
+
+# 5. Optional Advanced Coursera
 
 **University of Toronto — Visual Perception for Self-Driving Cars**
 
 https://www.coursera.org/learn/visual-perception-self-driving-cars
 
-Status: **Optional Advanced / after-class enrichment**.
+Status: optional after-class study.
 
-High-value topics for stronger students:
-- camera model / calibration;
-- feature detection / matching;
-- visual odometry;
-- object detection / tracking;
-- semantic segmentation;
-- mobile-platform perception.
+High-value topics:
+- camera model / calibration
+- feature matching
+- visual odometry
+- object detection / tracking
+- semantic segmentation
+- mobile-platform perception
 
 # 6. Onshape
 
 - Onshape Fundamentals: https://learn.onshape.com/learning-paths/onshape-fundamentals-cad
 - VEX V5 Parts Libraries: https://www.onshape.com/en/blog/vex-iq-vex-v5-parts-libraries
 
-Return to Onshape only for evidence-based redesign.
+# 7. Not Planned as Core
 
-# 7. No Longer Planned as Core
-
-- Udemy — Hands on Robotic Vision: OpenCV, PyTorch, YOLO, Simulation
-- Coursera — Master OpenCV Fundamentals for Real-Time Computer Vision
-- full IBM course
+- Udemy Hands on Robotic Vision
+- Coursera Master OpenCV Fundamentals
+- full IBM completion
+- full CS231n completion
+- mechanical-arm / pick-and-place pathways
 - mandatory Andrew Ng CNN
 - mandatory Edge Impulse
-- robot-arm / pick-and-place pathways
-
-These may be used only if a specific future need justifies them.
 
 # 8. Teacher Verification Rule
 
 Before assigning an external resource:
-1. verify the page still exists;
-2. preview the exact section;
-3. assign only material that supports the current project;
-4. keep the physical robot task as the main evidence of learning.
+1. verify the current page / lecture topic;
+2. preview the exact segment;
+3. assign only the depth needed;
+4. distinguish **core mastery** from **frontier literacy**;
+5. keep the physical VEX project as the primary evidence of learning.
